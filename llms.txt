@@ -1,0 +1,8 @@
+# Agent routing benchmark
+
+> Weekly ranking of four coding-agent CLIs (Claude Code, Codex CLI, Antigravity CLI, Grok CLI) for five task classes (coding, agentic, research, reading, writing), from public leaderboards and own job outcomes.
+
+## Data
+
+- [bench.md](/bench.md): compact Markdown routing table, plan usage and feed freshness; start here.
+- [bench.json](/bench.json): full ranking with every scoring input, method and notes (schema_version 2).
