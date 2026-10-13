@@ -1,7 +1,8 @@
 {
- "schema_version": 2,
- "generated_at": "2026-10-13T20:03:02+00:00",
- "how_to_use": "For task class X use classes.X.first_choice unless it is gated; else the next entry in fallbacks.",
+ "schema_version": 3,
+ "generated_at": "2026-10-13T20:25:08+00:00",
+ "title": "Multi-agent tasks: which coding agent",
+ "how_to_use": "For task class X use classes.X.first_choice; if it cannot run right now (plan limit reached, engine unavailable), take the next entry in fallbacks.",
  "weights": {
   "public": 0.5,
   "own_success": 0.3,
@@ -9,11 +10,9 @@
  },
  "method": {
   "formula": "priority = 0.5*public_norm + 0.3*own_success + 0.2*speed_rank",
-  "gate_weekly_pct": 95,
   "tie_band": 0.03,
   "tie_order": [
    "own_jobs desc",
-   "quota_remaining_pct desc",
    "speed_rank desc"
   ],
   "evidence_rule": "An unproven entry (no own jobs) ranks above a proven one only if its priority is more than 0.03 higher and its public_norm is higher.",
@@ -28,11 +27,10 @@
   ],
   "min_jobs_for_own_success": 10,
   "own_outcomes_window_days": 28,
+  "limits": "Plan limits are checked live when a job is dispatched; this table does not track them.",
   "status_meanings": {
    "proven": "ranked with own jobs from the last 28 days",
-   "unproven": "public scores only, no own jobs yet",
-   "gated": "weekly plan usage at or above the gate; skipped",
-   "stale": "a source behind this row was not refreshed this run"
+   "unproven": "public scores only, no own jobs yet"
   }
  },
  "engines": {
@@ -131,9 +129,7 @@
      "own_success_default": false,
      "own_median_minutes": 1.9,
      "speed_rank": 0.8,
-     "speed_source": "own median minutes",
-     "quota_remaining_pct": 91,
-     "quota_known": true
+     "speed_source": "own median minutes"
     }
    },
    "fallbacks": [
@@ -169,9 +165,7 @@
       "own_success_default": false,
       "own_median_minutes": 2.9,
       "speed_rank": 0.4,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -206,9 +200,7 @@
       "own_success_default": false,
       "own_median_minutes": 4.0,
       "speed_rank": 0.2,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -243,9 +235,7 @@
       "own_success_default": true,
       "own_median_minutes": 1.8,
       "speed_rank": 1.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -280,9 +270,7 @@
       "own_success_default": false,
       "own_median_minutes": 10.2,
       "speed_rank": 0.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -317,9 +305,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -354,9 +340,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -380,9 +364,7 @@
       "own_success_default": true,
       "own_median_minutes": 2.1,
       "speed_rank": 0.6,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -417,9 +399,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -454,46 +434,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "agy",
-     "engine_name": "Antigravity CLI",
-     "model": "gemini-3.8-flash",
-     "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3135,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": "tie",
-     "tie_broken": true,
-     "inputs": {
-      "public_norm": 0.127,
-      "public_default": false,
-      "public_metrics": {
-       "terminal_bench_4_accuracy": {
-        "score": 19.09,
-        "norm": 0.127,
-        "norm_before_discount": 0.127,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Gemini 3.8 Flash (high)",
-        "harness": "mini-SWE-agent",
-        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -528,9 +469,77 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "grok",
+     "engine_name": "Grok CLI",
+     "model": "grok-4.6",
+     "model_display": "Grok 4.6",
+     "priority": 0.325,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.15,
+      "public_default": false,
+      "public_metrics": {
+       "terminal_bench_4_accuracy": {
+        "score": 20.3,
+        "norm": 0.15,
+        "norm_before_discount": 0.15,
+        "harness_relation": "own",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Grok 4.6 (none)",
+        "harness": "Grok Build",
+        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "agy",
+     "engine_name": "Antigravity CLI",
+     "model": "gemini-3.8-flash",
+     "model_display": "Gemini 3.8 Flash",
+     "priority": 0.3135,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.127,
+      "public_default": false,
+      "public_metrics": {
+       "terminal_bench_4_accuracy": {
+        "score": 19.09,
+        "norm": 0.127,
+        "norm_before_discount": 0.127,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 3.8 Flash (high)",
+        "harness": "mini-SWE-agent",
+        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
      }
     },
     {
@@ -565,46 +574,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "grok",
-     "engine_name": "Grok CLI",
-     "model": "grok-4.6",
-     "model_display": "Grok 4.6",
-     "priority": 0.325,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": null,
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.15,
-      "public_default": false,
-      "public_metrics": {
-       "terminal_bench_4_accuracy": {
-        "score": 20.3,
-        "norm": 0.15,
-        "norm_before_discount": 0.15,
-        "harness_relation": "own",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Grok 4.6 (none)",
-        "harness": "Grok Build",
-        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     },
     {
@@ -639,9 +609,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -676,13 +644,10 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     }
-   ],
-   "gated": []
+   ]
   },
   "agentic": {
    "description": "terminal and multi-step tool work",
@@ -722,9 +687,7 @@
      "own_success_default": true,
      "own_median_minutes": null,
      "speed_rank": 0.5,
-     "speed_source": "default",
-     "quota_remaining_pct": 91,
-     "quota_known": true
+     "speed_source": "default"
     }
    },
    "fallbacks": [
@@ -760,9 +723,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -797,9 +758,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -834,9 +793,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -871,9 +828,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -908,9 +863,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -945,9 +898,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -982,46 +933,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "agy",
-     "engine_name": "Antigravity CLI",
-     "model": "gemini-3.8-flash",
-     "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3135,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": "tie",
-     "tie_broken": true,
-     "inputs": {
-      "public_norm": 0.127,
-      "public_default": false,
-      "public_metrics": {
-       "terminal_bench_4_accuracy": {
-        "score": 19.09,
-        "norm": 0.127,
-        "norm_before_discount": 0.127,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Gemini 3.8 Flash (high)",
-        "harness": "mini-SWE-agent",
-        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1056,9 +968,77 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "grok",
+     "engine_name": "Grok CLI",
+     "model": "grok-4.6",
+     "model_display": "Grok 4.6",
+     "priority": 0.325,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.15,
+      "public_default": false,
+      "public_metrics": {
+       "terminal_bench_4_accuracy": {
+        "score": 20.3,
+        "norm": 0.15,
+        "norm_before_discount": 0.15,
+        "harness_relation": "own",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Grok 4.6 (none)",
+        "harness": "Grok Build",
+        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "agy",
+     "engine_name": "Antigravity CLI",
+     "model": "gemini-3.8-flash",
+     "model_display": "Gemini 3.8 Flash",
+     "priority": 0.3135,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.127,
+      "public_default": false,
+      "public_metrics": {
+       "terminal_bench_4_accuracy": {
+        "score": 19.09,
+        "norm": 0.127,
+        "norm_before_discount": 0.127,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 3.8 Flash (high)",
+        "harness": "mini-SWE-agent",
+        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
      }
     },
     {
@@ -1093,46 +1073,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "grok",
-     "engine_name": "Grok CLI",
-     "model": "grok-4.6",
-     "model_display": "Grok 4.6",
-     "priority": 0.325,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": null,
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.15,
-      "public_default": false,
-      "public_metrics": {
-       "terminal_bench_4_accuracy": {
-        "score": 20.3,
-        "norm": 0.15,
-        "norm_before_discount": 0.15,
-        "harness_relation": "own",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Grok 4.6 (none)",
-        "harness": "Grok Build",
-        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     },
     {
@@ -1167,9 +1108,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1204,13 +1143,10 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     }
-   ],
-   "gated": []
+   ]
   },
   "research": {
    "description": "web research and fact-finding",
@@ -1250,9 +1186,7 @@
      "own_success_default": true,
      "own_median_minutes": null,
      "speed_rank": 0.5,
-     "speed_source": "default",
-     "quota_remaining_pct": 95,
-     "quota_known": true
+     "speed_source": "default"
     }
    },
    "fallbacks": [
@@ -1277,9 +1211,7 @@
       "own_success_default": false,
       "own_median_minutes": 5.0,
       "speed_rank": 0.5,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1303,9 +1235,7 @@
       "own_success_default": true,
       "own_median_minutes": 0.1,
       "speed_rank": 1.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1329,9 +1259,31 @@
       "own_success_default": true,
       "own_median_minutes": 1.4,
       "speed_rank": 0.75,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
+     }
+    },
+    {
+     "engine": "codex",
+     "engine_name": "Codex CLI",
+     "model": "gpt-6.1-sol",
+     "model_display": "GPT-6.1 Sol",
+     "priority": 0.4213,
+     "status": [
+      "proven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.5,
+      "public_default": true,
+      "public_metrics": {},
+      "own_success": 0.571,
+      "own_jobs": 28,
+      "own_success_rate": 0.571,
+      "own_success_default": false,
+      "own_median_minutes": 13.7,
+      "speed_rank": 0.0,
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1355,35 +1307,7 @@
       "own_success_default": true,
       "own_median_minutes": 6.9,
       "speed_rank": 0.25,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "codex",
-     "engine_name": "Codex CLI",
-     "model": "gpt-6.1-sol",
-     "model_display": "GPT-6.1 Sol",
-     "priority": 0.4,
-     "status": [
-      "proven"
-     ],
-     "rank_rule": null,
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.5,
-      "public_default": true,
-      "public_metrics": {},
-      "own_success": 0.5,
-      "own_jobs": 24,
-      "own_success_rate": 0.5,
-      "own_success_default": false,
-      "own_median_minutes": 12.3,
-      "speed_rank": 0.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1418,13 +1342,10 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     }
-   ],
-   "gated": []
+   ]
   },
   "reading": {
    "description": "long documents, transcripts, summaries, extraction",
@@ -1463,9 +1384,7 @@
      "own_success_default": true,
      "own_median_minutes": null,
      "speed_rank": 0.5,
-     "speed_source": "default",
-     "quota_remaining_pct": 91,
-     "quota_known": true
+     "speed_source": "default"
     }
    },
    "fallbacks": [
@@ -1490,9 +1409,7 @@
       "own_success_default": true,
       "own_median_minutes": 1.3,
       "speed_rank": 1.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1516,9 +1433,7 @@
       "own_success_default": false,
       "own_median_minutes": 9.1,
       "speed_rank": 0.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1553,9 +1468,7 @@
       "own_success_default": true,
       "own_median_minutes": 5.8,
       "speed_rank": 0.5,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1590,9 +1503,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1627,9 +1538,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1664,9 +1573,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1701,9 +1608,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     },
     {
@@ -1738,13 +1643,10 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     }
-   ],
-   "gated": []
+   ]
   },
   "writing": {
    "description": "drafting and editing prose",
@@ -1784,9 +1686,7 @@
      "own_success_default": true,
      "own_median_minutes": 1.3,
      "speed_rank": 0.667,
-     "speed_source": "own median minutes",
-     "quota_remaining_pct": 91,
-     "quota_known": true
+     "speed_source": "own median minutes"
     }
    },
    "fallbacks": [
@@ -1822,9 +1722,7 @@
       "own_success_default": true,
       "own_median_minutes": 2.4,
       "speed_rank": 0.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1859,9 +1757,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1896,9 +1792,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1933,9 +1827,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -1959,9 +1851,7 @@
       "own_success_default": true,
       "own_median_minutes": 0.0,
       "speed_rank": 1.0,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 91,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -1996,9 +1886,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -2033,9 +1921,42 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "grok",
+     "engine_name": "Grok CLI",
+     "model": "grok-4.5",
+     "model_display": "Grok 4.5",
+     "priority": 0.5265,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.553,
+      "public_default": false,
+      "public_metrics": {
+       "arena_text_overall": {
+        "score": 1448.1066515962236,
+        "norm": 0.553,
+        "norm_before_discount": 0.553,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "grok-4.5",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
      }
     },
     {
@@ -2070,9 +1991,7 @@
       "own_success_default": true,
       "own_median_minutes": 2.2,
       "speed_rank": 0.333,
-      "speed_source": "own median minutes",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "own median minutes"
      }
     },
     {
@@ -2107,9 +2026,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -2121,8 +2038,8 @@
      "status": [
       "unproven"
      ],
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": null,
+     "tie_broken": false,
      "inputs": {
       "public_norm": 0.502,
       "public_default": false,
@@ -2144,46 +2061,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "grok",
-     "engine_name": "Grok CLI",
-     "model": "grok-4.5",
-     "model_display": "Grok 4.5",
-     "priority": 0.5265,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": null,
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.553,
-      "public_default": false,
-      "public_metrics": {
-       "arena_text_overall": {
-        "score": 1448.1066515962236,
-        "norm": 0.553,
-        "norm_before_discount": 0.553,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "grok-4.5",
-        "harness": "",
-        "source_url": "https://arena.ai/leaderboard/text"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     },
     {
@@ -2218,9 +2096,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -2255,9 +2131,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
      }
     },
     {
@@ -2292,46 +2166,7 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
-     }
-    },
-    {
-     "engine": "codex",
-     "engine_name": "Codex CLI",
-     "model": "gpt-6-luna",
-     "model_display": "GPT-6 Luna",
-     "priority": 0.336,
-     "status": [
-      "unproven"
-     ],
-     "rank_rule": "tie",
-     "tie_broken": true,
-     "inputs": {
-      "public_norm": 0.172,
-      "public_default": false,
-      "public_metrics": {
-       "arena_text_overall": {
-        "score": 1391.0651807781835,
-        "norm": 0.172,
-        "norm_before_discount": 0.172,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "gpt-6-luna-max",
-        "harness": "",
-        "source_url": "https://arena.ai/leaderboard/text"
-       }
-      },
-      "own_success": 0.5,
-      "own_jobs": 0,
-      "own_success_rate": null,
-      "own_success_default": true,
-      "own_median_minutes": null,
-      "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 95,
-      "quota_known": true
+      "speed_source": "default"
      }
     },
     {
@@ -2343,8 +2178,8 @@
      "status": [
       "unproven"
      ],
-     "rank_rule": null,
-     "tie_broken": false,
+     "rank_rule": "tie",
+     "tie_broken": true,
      "inputs": {
       "public_norm": 0.227,
       "public_default": false,
@@ -2366,9 +2201,42 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 50,
-      "quota_known": false
+      "speed_source": "default"
+     }
+    },
+    {
+     "engine": "codex",
+     "engine_name": "Codex CLI",
+     "model": "gpt-6-luna",
+     "model_display": "GPT-6 Luna",
+     "priority": 0.336,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": null,
+     "tie_broken": false,
+     "inputs": {
+      "public_norm": 0.172,
+      "public_default": false,
+      "public_metrics": {
+       "arena_text_overall": {
+        "score": 1391.0651807781835,
+        "norm": 0.172,
+        "norm_before_discount": 0.172,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "gpt-6-luna-max",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       }
+      },
+      "own_success": 0.5,
+      "own_jobs": 0,
+      "own_success_rate": null,
+      "own_success_default": true,
+      "own_median_minutes": null,
+      "speed_rank": 0.5,
+      "speed_source": "default"
      }
     },
     {
@@ -2403,150 +2271,28 @@
       "own_success_default": true,
       "own_median_minutes": null,
       "speed_rank": 0.5,
-      "speed_source": "default",
-      "quota_remaining_pct": 100,
-      "quota_known": true
+      "speed_source": "default"
      }
     }
-   ],
-   "gated": []
+   ]
   }
  },
- "usage": [
+ "sources": [
   {
-   "engine": "claude",
-   "seat": "seat 1",
-   "five_hour_pct": 5,
-   "weekly_pct": 22,
-   "resets_at": "2026-10-19T05:00:00+00:00",
-   "source": "Claude Code rate_limit_event (latest run or probe)",
-   "ok": true,
-   "note": "reading 0 h old"
-  },
-  {
-   "engine": "claude",
-   "seat": "seat 2",
-   "five_hour_pct": 0,
-   "weekly_pct": 77,
-   "resets_at": "2026-10-15T15:00:00+00:00",
-   "source": "Claude Code rate_limit_event (latest run or probe)",
-   "ok": true,
-   "note": "reading 2 h old"
-  },
-  {
-   "engine": "claude",
-   "seat": "seat 3",
-   "five_hour_pct": 69,
-   "weekly_pct": 9,
-   "resets_at": "2026-10-17T02:00:00+00:00",
-   "source": "Claude Code rate_limit_event (latest run or probe)",
-   "ok": true,
-   "note": "reading 0 h old"
-  },
-  {
-   "engine": "codex",
-   "seat": "seat 1",
-   "five_hour_pct": 15,
-   "weekly_pct": 5,
-   "resets_at": "2026-10-20T06:37:37+00:00",
-   "source": "codex app-server account/rateLimits/read",
-   "ok": true,
-   "note": ""
-  },
-  {
-   "engine": "agy",
-   "seat": "gemini models",
-   "five_hour_pct": 0,
-   "weekly_pct": 0,
-   "resets_at": "2026-10-20T20:02:58Z",
-   "source": "agy -p /usage",
-   "ok": true,
-   "note": ""
-  },
-  {
-   "engine": "agy",
-   "seat": "claude and gpt models",
-   "five_hour_pct": 0,
-   "weekly_pct": 0,
-   "resets_at": "2026-10-20T20:02:58Z",
-   "source": "agy -p /usage",
-   "ok": true,
-   "note": ""
-  },
-  {
-   "engine": "grok",
-   "seat": "seat 1",
-   "five_hour_pct": null,
-   "weekly_pct": null,
-   "resets_at": null,
-   "source": "grok CLI",
-   "ok": false,
-   "note": "no plan-usage command: `grok usage` reports per-session tokens/cost only"
-  }
- ],
- "feeds": [
-  {
-   "source": "terminal_bench",
    "title": "Terminal-Bench 4.0",
-   "url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/leaderboard.yaml",
-   "fetched_at": "2026-10-13T20:01:22+00:00",
-   "ok": true,
-   "stale": false,
-   "rows": 21,
-   "matched_rows": 12,
-   "note": "scores from leaderboard/submissions/*.json (leaderboard.yaml holds only the definition)"
+   "url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/leaderboard.yaml"
   },
   {
-   "source": "swe_bench",
    "title": "SWE-bench",
-   "url": "https://www.swebench.com/",
-   "fetched_at": "2026-10-13T20:01:23+00:00",
-   "ok": true,
-   "stale": false,
-   "rows": 193,
-   "matched_rows": 1,
-   "note": ""
+   "url": "https://www.swebench.com/"
   },
   {
-   "source": "deepresearch_bench",
    "title": "DeepResearch Bench",
-   "url": "https://huggingface.co/spaces/muset-ai/DeepResearch-Bench-Leaderboard",
-   "fetched_at": "2026-10-13T20:01:23+00:00",
-   "ok": true,
-   "stale": false,
-   "rows": 6,
-   "matched_rows": 0,
-   "note": ""
+   "url": "https://huggingface.co/spaces/muset-ai/DeepResearch-Bench-Leaderboard"
   },
   {
-   "source": "arena",
    "title": "Arena (text, document, search)",
-   "url": "https://arena.ai/leaderboard",
-   "fetched_at": "2026-10-13T20:02:56+00:00",
-   "ok": true,
-   "stale": false,
-   "rows": 492,
-   "matched_rows": 25,
-   "note": ""
-  },
-  {
-   "source": "artificial_analysis",
-   "title": "Artificial Analysis",
-   "url": "https://artificialanalysis.ai/",
-   "fetched_at": null,
-   "ok": false,
-   "stale": false,
-   "rows": 0,
-   "matched_rows": 0,
-   "note": "needs key: set ARTIFICIAL_ANALYSIS_API_KEY (free key from artificialanalysis.ai)"
+   "url": "https://arena.ai/leaderboard"
   }
- ],
- "notes": [
-  "Own outcomes cover Claude Code and Codex CLI jobs only; Antigravity and Grok jobs are not logged yet, so their own_success is the 0.5 default.",
-  "Codex jobs that do not record a model are counted under the Codex default model.",
-  "Grok CLI has no plan-usage reading (per-session cost only), so it is never gated.",
-  "Gemini 4 Argon leads Arena text but is not ranked: `agy models` does not list it.",
-  "Grok CLI model names come from `grok models` and are unverified: no Grok job has run.",
-  "Feed artificial_analysis: needs key: set ARTIFICIAL_ANALYSIS_API_KEY (free key from artificialanalysis.ai)"
  ]
 }
