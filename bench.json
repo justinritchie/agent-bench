@@ -1,6 +1,6 @@
 {
  "schema_version": 6,
- "generated_at": "2026-10-14T05:30:41+00:00",
+ "generated_at": "2026-10-14T07:16:33+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "how_to_use": "For task class X use classes.X.first_choice; if it cannot run right now, take the next entry in fallbacks. For coding and agentic work, use classes.X.subclasses.Y instead when the task is clearly kind Y.",
  "weights": {
@@ -20,6 +20,7 @@
   "own_success": "own_success: a weekly random sample of jobs graded against their own instructions (pass 1, partial 0.5, fail 0) once a pair has enough graded jobs, else the share of jobs that finished cleanly.",
   "cost": "cost_rank: estimated list-price cost per successful job, cheapest 1, dearest 0 (inverted min-max over log cost across the class's candidates); cheaper wins when quality is close. Estimate from own jobs when a pair has 3 or more successful ones in the class (cost_source 'own jobs'), else the model's blended list price times the engine's typical job size ('list price'), else 0.5 ('default').",
   "cost_tier": "cost_tier: $ to $$$$, the model's blended list price (3 input : 1 output tokens) in four log-spaced bins from the cheapest to the dearest ranked model. Prices: OpenRouter model list.",
+  "effort": "effort: the reasoning effort to run the entry at. Default: Claude Code Fable medium, Opus, Sonnet and Haiku high; Codex and Grok their CLI config (marked config); Antigravity the -high model id. A public leaderboard that scores the same model at several effort levels moves it only when another level beats the default by at least 0.03 on the class's normalized public score (marked with the source).",
   "min_own_jobs_for_proven": 5,
   "evidence_rule": "Proven means at least 5 own jobs in the window. An unproven entry ranks above a proven one only if its priority is more than 0.03 higher and its public_norm is higher; never on cost or speed alone. Quality before cost: an unproven entry leads only if its public_norm is within 0.05 of the best in the pool.",
   "harness_discount": 0.8,
@@ -134,7 +135,9 @@
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
-     "price_blended_per_mtok": 4.0
+     "price_blended_per_mtok": 4.0,
+     "effort": "high",
+     "effort_source": "default"
     }
    },
    "fallbacks": [
@@ -175,7 +178,9 @@
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
      }
     },
     {
@@ -183,7 +188,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.6742,
+     "priority": 0.6743,
      "status": [
       "unproven"
      ],
@@ -211,11 +216,13 @@
       "own_median_minutes": 9.0,
       "speed_rank": 0.333,
       "speed_source": "own median minutes",
-      "cost_rank": 0.328,
+      "cost_rank": 0.329,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 8.0
+      "price_blended_per_mtok": 8.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -255,7 +262,9 @@
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 20.0
+      "price_blended_per_mtok": 20.0,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -295,7 +304,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -335,7 +346,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 8.0
+      "price_blended_per_mtok": 8.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -375,7 +388,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
-      "price_blended_per_mtok": 0.2625
+      "price_blended_per_mtok": 0.2625,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -415,7 +430,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$",
-      "price_blended_per_mtok": 1.5
+      "price_blended_per_mtok": 1.5,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -455,7 +472,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -495,7 +514,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     }
    ],
@@ -531,7 +552,9 @@
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
-       "price_blended_per_mtok": 4.0
+       "price_blended_per_mtok": 4.0,
+       "effort": "high",
+       "effort_source": "default"
       }
      },
      "fallbacks": [
@@ -572,7 +595,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$",
-        "price_blended_per_mtok": 0.2625
+        "price_blended_per_mtok": 0.2625,
+        "effort": "medium",
+        "effort_source": "default"
        }
       }
      ]
@@ -587,7 +612,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.7886,
+      "priority": 0.7885,
       "status": [
        "proven"
       ],
@@ -615,11 +640,13 @@
        "own_median_minutes": 5.8,
        "speed_rank": 1.0,
        "speed_source": "own median minutes",
-       "cost_rank": 0.197,
+       "cost_rank": 0.196,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
-       "price_blended_per_mtok": 4.0
+       "price_blended_per_mtok": 4.0,
+       "effort": "high",
+       "effort_source": "default"
       }
      },
      "fallbacks": [
@@ -628,7 +655,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6689,
+       "priority": 0.6686,
        "status": [
         "unproven"
        ],
@@ -656,11 +683,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.126,
+        "cost_rank": 0.124,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -668,7 +697,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6101,
+       "priority": 0.6102,
        "status": [
         "unproven"
        ],
@@ -696,11 +725,13 @@
         "own_median_minutes": 9.0,
         "speed_rank": 0.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.234,
+        "cost_rank": 0.235,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -740,7 +771,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 20.0
+        "price_blended_per_mtok": 20.0,
+        "effort": "medium",
+        "effort_source": "default"
        }
       },
       {
@@ -748,7 +781,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.6327,
+       "priority": 0.6326,
        "status": [
         "unproven"
        ],
@@ -776,11 +809,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.554,
+        "cost_rank": 0.553,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$",
-        "price_blended_per_mtok": 1.5
+        "price_blended_per_mtok": 1.5,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -788,7 +823,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6046,
+       "priority": 0.6044,
        "status": [
         "unproven"
        ],
@@ -816,11 +851,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.303,
+        "cost_rank": 0.302,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -828,7 +865,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.1-sol",
        "model_display": "GPT-6.1 Sol",
-       "priority": 0.5467,
+       "priority": 0.5456,
        "status": [
         "unproven"
        ],
@@ -856,11 +893,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.388,
+        "cost_rank": 0.381,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "xhigh",
+        "effort_source": "config"
        }
       },
       {
@@ -900,7 +939,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -940,7 +981,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -980,7 +1023,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -1020,7 +1065,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$",
-        "price_blended_per_mtok": 0.2625
+        "price_blended_per_mtok": 0.2625,
+        "effort": "medium",
+        "effort_source": "default"
        }
       }
      ]
@@ -1067,7 +1114,9 @@
        "cost_source": "list price",
        "cost_default": false,
        "cost_tier": "$$$$",
-       "price_blended_per_mtok": 8.0
+       "price_blended_per_mtok": 8.0,
+       "effort": "high",
+       "effort_source": "default"
       }
      },
      "fallbacks": [
@@ -1076,7 +1125,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.666,
+       "priority": 0.6657,
        "status": [
         "unproven"
        ],
@@ -1104,11 +1153,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.107,
+        "cost_rank": 0.105,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -1148,7 +1199,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "xhigh",
+        "effort_source": "Arena"
        }
       },
       {
@@ -1156,7 +1209,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6215,
+       "priority": 0.6213,
        "status": [
         "unproven"
        ],
@@ -1184,11 +1237,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.257,
+        "cost_rank": 0.256,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -1196,7 +1251,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.1-sol",
        "model_display": "GPT-6.1 Sol",
-       "priority": 0.6,
+       "priority": 0.599,
        "status": [
         "unproven"
        ],
@@ -1224,11 +1279,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.33,
+        "cost_rank": 0.323,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "xhigh",
+        "effort_source": "config"
        }
       },
       {
@@ -1268,7 +1325,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 20.0
+        "price_blended_per_mtok": 20.0,
+        "effort": "medium",
+        "effort_source": "default"
        }
       },
       {
@@ -1276,7 +1335,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.4083,
+       "priority": 0.4082,
        "status": [
         "unproven"
        ],
@@ -1304,11 +1363,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.393,
+        "cost_rank": 0.392,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -1316,7 +1377,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3701,
+       "priority": 0.37,
        "status": [
         "unproven"
        ],
@@ -1344,11 +1405,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.393,
+        "cost_rank": 0.392,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -1388,7 +1451,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$",
-        "price_blended_per_mtok": 0.2
+        "price_blended_per_mtok": 0.2,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -1396,7 +1461,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3236,
+       "priority": 0.3235,
        "status": [
         "unproven"
        ],
@@ -1424,11 +1489,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.47,
+        "cost_rank": 0.469,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$",
-        "price_blended_per_mtok": 1.5
+        "price_blended_per_mtok": 1.5,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -1436,7 +1503,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.259,
+       "priority": 0.2588,
        "status": [
         "unproven"
        ],
@@ -1464,11 +1531,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.393,
+        "cost_rank": 0.392,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       }
      ]
@@ -1502,7 +1571,9 @@
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
-       "price_blended_per_mtok": 4.0
+       "price_blended_per_mtok": 4.0,
+       "effort": "high",
+       "effort_source": "default"
       }
      },
      "fallbacks": [
@@ -1532,7 +1603,9 @@
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "xhigh",
+        "effort_source": "config"
        }
       },
       {
@@ -1561,7 +1634,9 @@
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 20.0
+        "price_blended_per_mtok": 20.0,
+        "effort": "medium",
+        "effort_source": "default"
        }
       }
      ]
@@ -1579,7 +1654,7 @@
     "engine_name": "Claude Code",
     "model": "claude-opus-5.5",
     "model_display": "Claude Opus 5.5",
-    "priority": 0.7134,
+    "priority": 0.7136,
     "status": [
      "unproven"
     ],
@@ -1607,11 +1682,13 @@
      "own_median_minutes": null,
      "speed_rank": 0.5,
      "speed_source": "default",
-     "cost_rank": 0.423,
+     "cost_rank": 0.424,
      "cost_source": "list price",
      "cost_default": false,
      "cost_tier": "$$$$",
-     "price_blended_per_mtok": 8.0
+     "price_blended_per_mtok": 8.0,
+     "effort": "high",
+     "effort_source": "default"
     }
    },
    "fallbacks": [
@@ -1620,7 +1697,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.7353,
+     "priority": 0.7356,
      "status": [
       "unproven"
      ],
@@ -1648,11 +1725,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.743,
+      "cost_rank": 0.745,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -1660,7 +1739,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.1-sol",
      "model_display": "GPT-6.1 Sol",
-     "priority": 0.698,
+     "priority": 0.696,
      "status": [
       "unproven"
      ],
@@ -1688,11 +1767,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.701,
+      "cost_rank": 0.688,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
      }
     },
     {
@@ -1732,7 +1813,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 20.0
+      "price_blended_per_mtok": 20.0,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -1740,7 +1823,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.6213,
+     "priority": 0.6212,
      "status": [
       "unproven"
      ],
@@ -1768,11 +1851,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.547,
+      "cost_rank": 0.546,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -1780,7 +1865,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5941,
+     "priority": 0.5938,
      "status": [
       "unproven"
      ],
@@ -1808,11 +1893,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.227,
+      "cost_rank": 0.225,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 8.0
+      "price_blended_per_mtok": 8.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -1852,7 +1939,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$",
-      "price_blended_per_mtok": 1.5
+      "price_blended_per_mtok": 1.5,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -1892,7 +1981,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -1932,7 +2023,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     }
    ],
@@ -1949,7 +2042,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.734,
+      "priority": 0.7343,
       "status": [
        "unproven"
       ],
@@ -1997,11 +2090,13 @@
        "own_median_minutes": null,
        "speed_rank": 0.5,
        "speed_source": "default",
-       "cost_rank": 0.743,
+       "cost_rank": 0.745,
        "cost_source": "list price",
        "cost_default": false,
        "cost_tier": "$$$",
-       "price_blended_per_mtok": 4.0
+       "price_blended_per_mtok": 4.0,
+       "effort": "high",
+       "effort_source": "default"
       }
      },
      "fallbacks": [
@@ -2010,7 +2105,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6995,
+       "priority": 0.6996,
        "status": [
         "unproven"
        ],
@@ -2058,11 +2153,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.423,
+        "cost_rank": 0.424,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2070,7 +2167,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6762,
+       "priority": 0.6761,
        "status": [
         "unproven"
        ],
@@ -2118,11 +2215,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.547,
+        "cost_rank": 0.546,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2130,7 +2229,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.64,
+       "priority": 0.6397,
        "status": [
         "unproven"
        ],
@@ -2178,11 +2277,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.227,
+        "cost_rank": 0.225,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2242,7 +2343,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 20.0
+        "price_blended_per_mtok": 20.0,
+        "effort": "medium",
+        "effort_source": "default"
        }
       },
       {
@@ -2292,7 +2395,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -2300,7 +2405,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.1-sol",
        "model_display": "GPT-6.1 Sol",
-       "priority": 0.5212,
+       "priority": 0.5192,
        "status": [
         "unproven"
        ],
@@ -2348,11 +2453,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.701,
+        "cost_rank": 0.688,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "xhigh",
+        "effort_source": "config"
        }
       },
       {
@@ -2412,7 +2519,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -2472,7 +2581,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$",
-        "price_blended_per_mtok": 1.5
+        "price_blended_per_mtok": 1.5,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2532,7 +2643,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       }
      ]
@@ -2548,7 +2661,7 @@
       "engine_name": "Codex CLI",
       "model": "gpt-6.1-sol",
       "model_display": "GPT-6.1 Sol",
-      "priority": 0.7164,
+      "priority": 0.7145,
       "status": [
        "unproven"
       ],
@@ -2586,11 +2699,13 @@
        "own_median_minutes": null,
        "speed_rank": 0.5,
        "speed_source": "default",
-       "cost_rank": 0.701,
+       "cost_rank": 0.688,
        "cost_source": "list price",
        "cost_default": false,
        "cost_tier": "$$$",
-       "price_blended_per_mtok": 4.0
+       "price_blended_per_mtok": 4.0,
+       "effort": "xhigh",
+       "effort_source": "config"
       }
      },
      "fallbacks": [
@@ -2599,7 +2714,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.5681,
+       "priority": 0.5683,
        "status": [
         "unproven"
        ],
@@ -2637,11 +2752,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.423,
+        "cost_rank": 0.424,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2649,7 +2766,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.5387,
+       "priority": 0.5384,
        "status": [
         "unproven"
        ],
@@ -2687,11 +2804,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.227,
+        "cost_rank": 0.225,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 8.0
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2741,7 +2860,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
-        "price_blended_per_mtok": 20.0
+        "price_blended_per_mtok": 20.0,
+        "effort": "medium",
+        "effort_source": "default"
        }
       },
       {
@@ -2791,7 +2912,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -2799,7 +2922,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5171,
+       "priority": 0.5174,
        "status": [
         "unproven"
        ],
@@ -2837,11 +2960,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.743,
+        "cost_rank": 0.745,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2849,7 +2974,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.4877,
+       "priority": 0.4876,
        "status": [
         "unproven"
        ],
@@ -2887,11 +3012,13 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.547,
+        "cost_rank": 0.546,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 4.0
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -2941,7 +3068,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       },
       {
@@ -2991,7 +3120,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$",
-        "price_blended_per_mtok": 1.5
+        "price_blended_per_mtok": 1.5,
+        "effort": "high",
+        "effort_source": "default"
        }
       },
       {
@@ -3041,7 +3172,9 @@
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
-        "price_blended_per_mtok": 3.0
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
        }
       }
      ]
@@ -3080,7 +3213,9 @@
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$$",
-     "price_blended_per_mtok": 20.0
+     "price_blended_per_mtok": 20.0,
+     "effort": "medium",
+     "effort_source": "default"
     }
    },
    "fallbacks": [
@@ -3110,7 +3245,9 @@
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -3118,7 +3255,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.1-sol",
      "model_display": "GPT-6.1 Sol",
-     "priority": 0.3813,
+     "priority": 0.3811,
      "status": [
       "proven"
      ],
@@ -3135,11 +3272,13 @@
       "own_median_minutes": 12.6,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.052,
+      "cost_rank": 0.051,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
      }
     },
     {
@@ -3179,7 +3318,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -3208,7 +3349,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
-      "price_blended_per_mtok": 0.2
+      "price_blended_per_mtok": 0.2,
+      "effort": "high",
+      "effort_source": "default"
      }
     }
    ]
@@ -3244,7 +3387,9 @@
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
-     "price_blended_per_mtok": 4.0
+     "price_blended_per_mtok": 4.0,
+     "effort": "high",
+     "effort_source": "default"
     }
    },
    "fallbacks": [
@@ -3285,7 +3430,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 20.0
+      "price_blended_per_mtok": 20.0,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -3293,7 +3440,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.1-sol",
      "model_display": "GPT-6.1 Sol",
-     "priority": 0.511,
+     "priority": 0.5132,
      "status": [
       "proven"
      ],
@@ -3303,18 +3450,20 @@
       "public_norm": 0.5,
       "public_default": true,
       "public_metrics": {},
-      "own_success": 0.706,
-      "own_jobs": 17,
-      "own_success_rate": 0.706,
+      "own_success": 0.722,
+      "own_jobs": 18,
+      "own_success_rate": 0.722,
       "own_success_default": false,
-      "own_median_minutes": 9.1,
+      "own_median_minutes": 9.5,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.73,
+      "cost_rank": 0.718,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
      }
     },
     {
@@ -3354,7 +3503,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -3394,7 +3545,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     }
    ]
@@ -3452,7 +3605,9 @@
      "cost_source": "list price",
      "cost_default": false,
      "cost_tier": "$$$$",
-     "price_blended_per_mtok": 8.0
+     "price_blended_per_mtok": 8.0,
+     "effort": "high",
+     "effort_source": "default"
     }
    },
    "fallbacks": [
@@ -3461,7 +3616,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.666,
+     "priority": 0.6657,
      "status": [
       "unproven"
      ],
@@ -3499,11 +3654,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.107,
+      "cost_rank": 0.105,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 8.0
+      "price_blended_per_mtok": 8.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -3553,7 +3710,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
-      "price_blended_per_mtok": 20.0
+      "price_blended_per_mtok": 20.0,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -3561,7 +3720,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5579,
+     "priority": 0.5577,
      "status": [
       "proven"
      ],
@@ -3599,11 +3758,13 @@
       "own_median_minutes": 3.3,
       "speed_rank": 0.4,
       "speed_source": "own median minutes",
-      "cost_rank": 0.32,
+      "cost_rank": 0.319,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -3611,7 +3772,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.5861,
+     "priority": 0.586,
      "status": [
       "unproven"
      ],
@@ -3649,11 +3810,13 @@
       "own_median_minutes": 6.9,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.47,
+      "cost_rank": 0.469,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$",
-      "price_blended_per_mtok": 1.5
+      "price_blended_per_mtok": 1.5,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -3661,7 +3824,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5635,
+     "priority": 0.5633,
      "status": [
       "unproven"
      ],
@@ -3699,11 +3862,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.257,
+      "cost_rank": 0.256,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     },
     {
@@ -3711,7 +3876,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.5294,
+     "priority": 0.5292,
      "status": [
       "unproven"
      ],
@@ -3749,11 +3914,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.393,
+      "cost_rank": 0.392,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -3761,7 +3928,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.1-sol",
      "model_display": "GPT-6.1 Sol",
-     "priority": 0.4703,
+     "priority": 0.4701,
      "status": [
       "proven"
      ],
@@ -3799,11 +3966,13 @@
       "own_median_minutes": 3.8,
       "speed_rank": 0.2,
       "speed_source": "own median minutes",
-      "cost_rank": 0.371,
+      "cost_rank": 0.37,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
      }
     },
     {
@@ -3811,7 +3980,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4867,
+     "priority": 0.4865,
      "status": [
       "unproven"
      ],
@@ -3849,11 +4018,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.393,
+      "cost_rank": 0.392,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -3861,7 +4032,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.4115,
+     "priority": 0.4114,
      "status": [
       "unproven"
      ],
@@ -3899,11 +4070,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.393,
+      "cost_rank": 0.392,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
-      "price_blended_per_mtok": 3.0
+      "price_blended_per_mtok": 3.0,
+      "effort": "medium",
+      "effort_source": "config"
      }
     },
     {
@@ -3911,7 +4084,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gpt-oss-120b",
      "model_display": "GPT-OSS 120B",
-     "priority": 0.3274,
+     "priority": 0.3271,
      "status": [
       "unproven"
      ],
@@ -3949,11 +4122,13 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.849,
+      "cost_rank": 0.847,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
-      "price_blended_per_mtok": 0.2625
+      "price_blended_per_mtok": 0.2625,
+      "effort": "medium",
+      "effort_source": "default"
      }
     },
     {
@@ -3982,7 +4157,9 @@
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
-      "price_blended_per_mtok": 0.2
+      "price_blended_per_mtok": 0.2,
+      "effort": "high",
+      "effort_source": "default"
      }
     }
    ]
