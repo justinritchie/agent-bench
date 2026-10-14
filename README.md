@@ -18,7 +18,7 @@ A weekly routing table for multi-agent work: which coding-agent CLI (Claude Code
 - Own success: aggregate outcomes of our own dispatched jobs over the last 28 days, with quality from a weekly random sample of jobs graded against their own instructions.
 - Speed: median minutes of our own jobs, else a public output-speed figure.
 - Cost: estimated list-price cost per successful job, ranked on a log scale; the $ to $$$$ tier is the model's list price alone.
-- Evidence first: Proven means at least 5 own jobs in the window. An unproven entry ranks above a proven one only with a clearly better public score, never on cost or speed alone.
+- Evidence first: Proven means at least 5 own jobs in the window. An unproven entry ranks above a proven one only with a clearly better public score, never on cost or speed alone, and leads at all only with a public score within 0.05 of the best.
 
 Only aggregate job counts, success rates and median minutes are published; no prompts, job details, grades or dollar amounts.
 
