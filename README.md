@@ -24,8 +24,21 @@ Only aggregate job counts, success rates and median minutes are published; no pr
 
 ## Public sources
 
-- [Terminal-Bench 4.0](https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/leaderboard.yaml)
-- [SWE-bench](https://www.swebench.com/)
-- [DeepResearch Bench](https://huggingface.co/spaces/muset-ai/DeepResearch-Bench-Leaderboard)
-- [Arena (text, document, search, webdev, agent)](https://arena.ai/leaderboard)
-- [OpenRouter model prices](https://openrouter.ai/api/v1/models)
+- [Terminal-Bench 4.0](https://www.tbench.ai/): terminal tasks an agent completes
+- [SWE-bench Verified](https://www.swebench.com/verified.html): real repo issues resolved
+- [SWE-bench Multilingual](https://www.swebench.com/multilingual.html): repo issues resolved in nine languages
+- [Artificial Analysis coding index](https://artificialanalysis.ai/): composite coding score
+- [Arena Text: coding](https://arena.ai/leaderboard/text): people's votes on coding prompts
+- [Arena WebDev](https://arena.ai/leaderboard/webdev): people's votes on built web apps
+- [Artificial Analysis agentic index](https://artificialanalysis.ai/): composite agentic score
+- [Arena Agent: bash reliability](https://arena.ai/blog/agent-arena-methodology/): shell work in real agent sessions
+- [Arena Agent: bash recovery](https://arena.ai/blog/agent-arena-methodology/): recovering from a failed shell command
+- [Arena Agent: tool calls](https://arena.ai/blog/agent-arena-methodology/): not calling tools that do not exist
+- [Arena Agent: task outcome](https://arena.ai/blog/agent-arena-methodology/): users marking the task done
+- [DeepResearch Bench](https://deepresearch-bench.github.io/): long research reports
+- [Arena Search](https://arena.ai/leaderboard/search): people's votes on search answers
+- [Arena Document](https://arena.ai/leaderboard/document): people's votes on answers about PDFs
+- [Arena Text: creative writing](https://arena.ai/leaderboard/text): people's votes on creative writing
+- [Arena Text](https://arena.ai/leaderboard/text): people's votes on all text prompts
+- [Artificial Analysis output speed](https://artificialanalysis.ai/methodology): output tokens per second
+- [OpenRouter prices](https://openrouter.ai/models): list price per token
