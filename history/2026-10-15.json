@@ -1,6 +1,6 @@
 {
  "schema_version": 6,
- "generated_at": "2026-10-15T19:44:14+00:00",
+ "generated_at": "2026-10-15T20:14:31+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "how_to_use": "For task class X use classes.X.first_choice; if it cannot run right now, take the next entry in fallbacks. For coding and agentic work, use classes.X.subclasses.Y instead when the task is clearly kind Y.",
  "weights": {
