@@ -6,9 +6,9 @@ A weekly routing table for multi-agent work: which coding-agent CLI (Claude Code
 
 - `index.html`: the page for people.
 - `bench.md`: compact Markdown table for agents; start here.
-- `bench.json`: every ranked candidate with its scoring inputs and the method (schema_version 6).
+- `bench.json`: every ranked candidate with its scoring inputs and the method (schema_version 10).
 - `llms.txt`: pointers for language models.
-- `history/`: one `bench.json` snapshot per week.
+- `history/`: one `bench.json` per day the site was built, listed in `history/index.json`.
 
 ## How the ranking works
 
@@ -20,7 +20,9 @@ A weekly routing table for multi-agent work: which coding-agent CLI (Claude Code
 - Cost: estimated list-price cost per successful job, ranked on a log scale; the $ to $$$$ tier is the model's list price alone.
 - Evidence first: Proven means at least 5 own jobs in the window. An unproven entry ranks above a proven one only with a clearly better public score, never on cost or speed alone, and leads at all only with a public score within 0.05 of the best.
 
-Only aggregate job counts, success rates and median minutes are published; no prompts, job details, grades or dollar amounts.
+`bench.json` also holds `effort_charts` (each benchmark's published score per model and effort level, as charted on the page) and, per class, `effort_evidence` (the score a board gains between two effort levels, beside our own jobs of one model at two levels, and our jobs per effort level) and `cost_curve` (the Artificial Analysis Intelligence Index against what running it cost per task at API list price, per model and effort level; in no score), with `cost_steps` (what each step up gains and costs), `data_dates` (the build date against the range of source snapshot dates), `changes` (first choices that differ from an earlier build) and `method.fields` (what each field means).
+
+Only aggregates of our own jobs are published: job counts, success rates, median minutes and, per effort level, median turns and median output tokens; no prompts, job details, grades or dollar amounts of our jobs.
 
 ## Public sources
 
@@ -40,5 +42,6 @@ Only aggregate job counts, success rates and median minutes are published; no pr
 - [Arena Document](https://arena.ai/leaderboard/document): people's votes on answers about PDFs
 - [Arena Text: creative writing](https://arena.ai/leaderboard/text): people's votes on creative writing
 - [Arena Text](https://arena.ai/leaderboard/text): people's votes on all text prompts
+- [Artificial Analysis Intelligence Index v5](https://artificialanalysis.ai/): overall index, per effort level, with cost per task
 - [Artificial Analysis output speed](https://artificialanalysis.ai/methodology): output tokens per second
 - [OpenRouter prices](https://openrouter.ai/models): list price per token

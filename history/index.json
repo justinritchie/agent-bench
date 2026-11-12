@@ -1,0 +1,74 @@
+[
+ {
+  "date": "2026-10-13",
+  "path": "/history/2026-10-13.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-14T05:30:41+00:00"
+ },
+ {
+  "date": "2026-10-14",
+  "path": "/history/2026-10-14.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-14T20:54:33+00:00"
+ },
+ {
+  "date": "2026-10-15",
+  "path": "/history/2026-10-15.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-15T23:09:40+00:00"
+ },
+ {
+  "date": "2026-10-19",
+  "path": "/history/2026-10-19.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-19T14:22:15+00:00"
+ },
+ {
+  "date": "2026-10-22",
+  "path": "/history/2026-10-22.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-22T17:25:08+00:00"
+ },
+ {
+  "date": "2026-10-25",
+  "path": "/history/2026-10-25.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-26T06:13:48+00:00"
+ },
+ {
+  "date": "2026-10-26",
+  "path": "/history/2026-10-26.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-26T15:29:52+00:00"
+ },
+ {
+  "date": "2026-10-28",
+  "path": "/history/2026-10-28.json",
+  "schema_version": 6,
+  "generated_at": "2026-10-29T00:31:12+00:00"
+ },
+ {
+  "date": "2026-11-02",
+  "path": "/history/2026-11-02.json",
+  "schema_version": 6,
+  "generated_at": "2026-11-02T15:27:20+00:00"
+ },
+ {
+  "date": "2026-11-09",
+  "path": "/history/2026-11-09.json",
+  "schema_version": 7,
+  "generated_at": "2026-11-09T19:58:49+00:00"
+ },
+ {
+  "date": "2026-11-11",
+  "path": "/history/2026-11-11.json",
+  "schema_version": 7,
+  "generated_at": "2026-11-12T05:18:48+00:00"
+ },
+ {
+  "date": "2026-11-12",
+  "path": "/history/2026-11-12.json",
+  "schema_version": 10,
+  "generated_at": "2026-11-12T21:13:19+00:00"
+ }
+]

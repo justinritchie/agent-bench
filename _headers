@@ -1,6 +1,12 @@
 /bench.md
   Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
 /llms.txt
   Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+/bench.json
+  Access-Control-Allow-Origin: *
+/history/*
+  Access-Control-Allow-Origin: *
 /favicon.svg
   Content-Type: image/svg+xml
