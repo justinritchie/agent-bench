@@ -1,13 +1,13 @@
 {
- "schema_version": 10,
- "generated_at": "2026-11-12T22:27:15+00:00",
+ "schema_version": 11,
+ "generated_at": "2026-11-13T00:07:21+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-12T22:27:15+00:00",
+  "generated_at": "2026-11-13T00:07:21+00:00",
   "sources_oldest": "2026-11-12",
   "sources_newest": "2026-11-12",
   "own_jobs_window_days": 28,
-  "own_jobs_window_end": "2026-11-12",
+  "own_jobs_window_end": "2026-11-13",
   "rebuilt": "about weekly",
   "history": "/history/index.json"
  },
@@ -172,6 +172,7 @@
    "effort": "the reasoning effort to run the entry at; effort_source = 'default' (the standing default), 'config' (the CLI's own config) or the name of the leaderboard whose scores moved it (method.effort).",
    "model": "this site's key for the model; engines.X.models lists the keys each CLI runs. The CLI's own model id can be spelled differently.",
    "cost_curve": "series[].points[]: level = reasoning effort; index = Artificial Analysis Intelligence Index (higher is better); cost_per_task = US dollars per task of that index at API list price (lower is cheaper; not the cost of a coding job or of our jobs); seconds = median end-to-end response time per response. source = a sources[].slug. ranked false = a comparison model not ranked here. inherited_from = the predecessor whose points these are.",
+   "cost_chart": "what the chart at the top of the page plots, kept in every build so an earlier week can be redrawn: as_of = the source snapshot date; points = every plotted point (model, level, index, cost_per_task as in cost_curve), for the models the routing table names; frontier = the points no other point beats on both index and cost, cheapest first; previous = the frontier of the build named in previous.build (the one `changes` compares with), absent when that build kept no points.",
    "cost_steps": "from cost_curve, for every ranked model: each step between two neighbouring published effort levels. gain = to_index - from_index; cost_ratio = to_cost / from_cost, rounded to one decimal.",
    "effort_evidence": "per class (method.effort_evidence). benchmark_steps[].model is a display name. own_jobs is a regrouping of own_levels. finished = jobs that ended cleanly (completion, not quality). median_turns is not comparable across engines. summary and summary_lead are display text.",
    "sources": "metric = the feed metric id that keys public_metrics (a trailing * is a prefix; null for own jobs). in_score = whether the source counts in priority today. weight is display text. as_of = the snapshot date (the text 'rolling 28 days' for own jobs; the window ends at data_dates.generated_at). harness_factor applies only to a score measured in another agent's harness. models_covered = ranked models with a value (0 = it changes nothing today; null for own jobs). kinds are 'class / kind'.",
@@ -894,6 +895,247 @@
       "seconds": 444.3
      }
     ]
+   }
+  ]
+ },
+ "cost_chart": {
+  "as_of": "2026-11-12",
+  "points": [
+   {
+    "model": "claude-sonnet-5.5",
+    "level": "low",
+    "index": 25.6,
+    "cost_per_task": 0.5113
+   },
+   {
+    "model": "claude-sonnet-5.5",
+    "level": "medium",
+    "index": 30.8,
+    "cost_per_task": 0.7807
+   },
+   {
+    "model": "claude-sonnet-5.5",
+    "level": "high",
+    "index": 41.5,
+    "cost_per_task": 1.6361
+   },
+   {
+    "model": "claude-sonnet-5.5",
+    "level": "xhigh",
+    "index": 49.9,
+    "cost_per_task": 4.092
+   },
+   {
+    "model": "claude-sonnet-5.5",
+    "level": "max",
+    "index": 54.5,
+    "cost_per_task": 10.0206
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "low",
+    "index": 34.8,
+    "cost_per_task": 0.9755
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "medium",
+    "index": 48.2,
+    "cost_per_task": 2.4511
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "high",
+    "index": 51.8,
+    "cost_per_task": 3.4647
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "xhigh",
+    "index": 57.4,
+    "cost_per_task": 6.0472
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "max",
+    "index": 59.1,
+    "cost_per_task": 10.0364
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "low",
+    "index": 34.8,
+    "cost_per_task": 0.1615
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "medium",
+    "index": 46.3,
+    "cost_per_task": 0.3594
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "high",
+    "index": 50.3,
+    "cost_per_task": 0.591
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "xhigh",
+    "index": 52.5,
+    "cost_per_task": 0.764
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "max",
+    "index": 54.6,
+    "cost_per_task": 1.2721
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "low",
+    "index": 53.9,
+    "cost_per_task": 3.0972
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "medium",
+    "index": 56.4,
+    "cost_per_task": 3.8026
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "high",
+    "index": 61.8,
+    "cost_per_task": 9.0784
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "xhigh",
+    "index": 62.2,
+    "cost_per_task": 14.8286
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "max",
+    "index": 64.6,
+    "cost_per_task": 26.5386
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "low",
+    "index": 18.6,
+    "cost_per_task": 0.0438
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "medium",
+    "index": 24.6,
+    "cost_per_task": 0.0918
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "high",
+    "index": 29.9,
+    "cost_per_task": 0.1586
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "xhigh",
+    "index": 34.6,
+    "cost_per_task": 0.2484
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "max",
+    "index": 36.5,
+    "cost_per_task": 0.411
+   },
+   {
+    "model": "gemini-4-argon",
+    "level": "high",
+    "index": 50.4,
+    "cost_per_task": 9.9466
+   }
+  ],
+  "frontier": [
+   {
+    "model": "claude-haiku-5.5",
+    "level": "low",
+    "index": 18.6,
+    "cost_per_task": 0.0438
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "medium",
+    "index": 24.6,
+    "cost_per_task": 0.0918
+   },
+   {
+    "model": "claude-haiku-5.5",
+    "level": "high",
+    "index": 29.9,
+    "cost_per_task": 0.1586
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "low",
+    "index": 34.8,
+    "cost_per_task": 0.1615
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "medium",
+    "index": 46.3,
+    "cost_per_task": 0.3594
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "high",
+    "index": 50.3,
+    "cost_per_task": 0.591
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "xhigh",
+    "index": 52.5,
+    "cost_per_task": 0.764
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "level": "max",
+    "index": 54.6,
+    "cost_per_task": 1.2721
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "medium",
+    "index": 56.4,
+    "cost_per_task": 3.8026
+   },
+   {
+    "model": "claude-opus-5.5",
+    "level": "xhigh",
+    "index": 57.4,
+    "cost_per_task": 6.0472
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "high",
+    "index": 61.8,
+    "cost_per_task": 9.0784
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "xhigh",
+    "index": 62.2,
+    "cost_per_task": 14.8286
+   },
+   {
+    "model": "claude-fable-5.2",
+    "level": "max",
+    "index": 64.6,
+    "cost_per_task": 26.5386
    }
   ]
  },

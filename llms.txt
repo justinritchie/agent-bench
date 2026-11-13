@@ -1,10 +1,10 @@
 # Multi-agent tasks: which coding agent
 
-> Which coding-agent CLI (Claude Code, Codex CLI, Antigravity CLI, Grok CLI), model and reasoning effort to use for five task classes (coding, agentic, research, reading, writing), with coding and agentic work also ranked by kind (for example bug fixing, frontend, terminal work), from public leaderboards, own job outcomes and relative list-price cost ($ to $$$$). Generated 2026-11-12 UTC, rebuilt about weekly. Source snapshots 2026-11-12 to 2026-11-12.
+> Which coding-agent CLI (Claude Code, Codex CLI, Antigravity CLI, Grok CLI), model and reasoning effort to use for five task classes (coding, agentic, research, reading, writing), with coding and agentic work also ranked by kind (for example bug fixing, frontend, terminal work), from public leaderboards, own job outcomes and relative list-price cost ($ to $$$$). Generated 2026-11-13 UTC, rebuilt about weekly. Source snapshots 2026-11-12 to 2026-11-12.
 
 ## Data
 
 - [bench.md](/bench.md): which engine, model and effort per task class and kind, with fallbacks, what one step up in effort gains and costs, and what changed. About 1,500 tokens; start here, and it is usually all you need.
-- [bench.json](/bench.json): every ranked candidate with its scoring inputs, each public score's source, link and snapshot date, the effort and cost curve, own-job aggregates and field definitions (`method.fields`). Over 250 KB (schema_version 10); filter it with a tool rather than reading it whole. The small blocks come first, `classes` after them.
+- [bench.json](/bench.json): every ranked candidate with its scoring inputs, each public score's source, link and snapshot date, the effort and cost curve, own-job aggregates and field definitions (`method.fields`). Over 250 KB (schema_version 11); filter it with a tool rather than reading it whole. The small blocks come first, `classes` after them.
 - [history/index.json](/history/index.json): earlier builds by date, each a full bench.json.
 - [index.html](/): the page for people, with charts.
