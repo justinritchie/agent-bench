@@ -82,5 +82,11 @@
   "path": "/history/2026-11-16.json",
   "schema_version": 11,
   "generated_at": "2026-11-16T14:27:35+00:00"
+ },
+ {
+  "date": "2026-11-17",
+  "path": "/history/2026-11-17.json",
+  "schema_version": 11,
+  "generated_at": "2026-11-17T23:01:27+00:00"
  }
 ]
