@@ -32,11 +32,14 @@ Only aggregates of our own jobs are published: job counts, success rates, median
 - [Artificial Analysis coding index](https://artificialanalysis.ai/): composite coding score
 - [Arena Text: coding](https://arena.ai/leaderboard/text): people's votes on coding prompts
 - [Arena WebDev](https://arena.ai/leaderboard/webdev): people's votes on built web apps
+- [Arena Agent: Coding index](https://arena.ai/blog/agent-arena-methodology/): coding in real agent sessions
 - [Artificial Analysis agentic index](https://artificialanalysis.ai/): composite agentic score
-- [Arena Agent: bash reliability](https://arena.ai/blog/agent-arena-methodology/): shell work in real agent sessions
-- [Arena Agent: bash recovery](https://arena.ai/blog/agent-arena-methodology/): recovering from a failed shell command
-- [Arena Agent: tool calls](https://arena.ai/blog/agent-arena-methodology/): not calling tools that do not exist
-- [Arena Agent: task outcome](https://arena.ai/blog/agent-arena-methodology/): users marking the task done
+- [Arena Agent: overall score](https://arena.ai/blog/agent-arena-methodology/): combined score in real agent sessions
+- [Arena Agent Index](https://arena.ai/blog/agent-arena-methodology/): combined score over 10.9M agent sessions
+- [Arena Agent: Tool Use index](https://arena.ai/blog/agent-arena-methodology/): tool use in real sessions
+- [Arena Agent: bash reliability](https://arena.ai/blog/agent-arena-methodology/): shell commands that succeed
+- [Arena Agent: Task Completion](https://arena.ai/blog/agent-arena-methodology/): users marking the task done
+- [Arena Agent: Steerability](https://arena.ai/blog/agent-arena-methodology/): how well the agent takes correction
 - [DeepResearch Bench](https://deepresearch-bench.github.io/): long research reports
 - [Arena Search](https://arena.ai/leaderboard/search): people's votes on search answers
 - [Arena Document](https://arena.ai/leaderboard/document): people's votes on answers about PDFs

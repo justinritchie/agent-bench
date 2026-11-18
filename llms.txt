@@ -1,6 +1,6 @@
 # Multi-agent tasks: which coding agent
 
-> Which coding-agent CLI (Claude Code, Codex CLI, Antigravity CLI, Grok CLI), model and reasoning effort to use for five task classes (coding, agentic, research, reading, writing), with coding and agentic work also ranked by kind (for example bug fixing, frontend, terminal work), from public leaderboards, own job outcomes and relative list-price cost ($ to $$$$). Generated 2026-11-17 UTC, rebuilt about weekly. Source snapshots 2026-11-17 to 2026-11-17.
+> Which coding-agent CLI (Claude Code, Codex CLI, Antigravity CLI, Grok CLI), model and reasoning effort to use for five task classes (coding, agentic, research, reading, writing), with coding and agentic work also ranked by kind (for example bug fixing, frontend, terminal work), from public leaderboards, own job outcomes and relative list-price cost ($ to $$$$). Generated 2026-11-18 UTC, rebuilt about weekly. Source snapshots 2026-11-18 to 2026-11-18.
 
 ## Data
 
