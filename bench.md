@@ -11,7 +11,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.69) | 0.81 | 14 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.57); Antigravity CLI / claude-opus-5.5 $$$$ high (0.70) | 0.65 | 6 | probation |
 | coding / review | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.54); Claude Code / claude-opus-5.5 $$$$ medium (0.46) | 0.58 | 10 | proven |
-| agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.67) | 0.69 | 61 | proven |
+| agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.68) | 0.69 | 61 | proven |
 | agentic / terminal | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.72); Claude Code / claude-opus-5.5 $$$$ medium (0.67) | 0.72 | 10 | proven |
 | agentic / data | Claude Code / claude-sonnet-5.5 $$$ | medium | - | 0.50 | 3 | unproven |
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
