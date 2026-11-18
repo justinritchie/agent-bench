@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-18T22:27:53+00:00",
+ "generated_at": "2026-11-18T22:34:30+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-18T22:27:53+00:00",
+  "generated_at": "2026-11-18T22:34:30+00:00",
   "sources_oldest": "2026-11-18",
   "sources_newest": "2026-11-18",
   "own_jobs_window_days": 28,
@@ -5510,7 +5510,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6566,
+       "priority": 0.6567,
        "status": [
         "unproven"
        ],
@@ -5540,7 +5540,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.281,
+        "cost_rank": 0.282,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7577,6 +7577,37 @@
      }
     },
     {
+     "engine": "codex",
+     "engine_name": "Codex CLI",
+     "model": "gpt-6.2-sol",
+     "model_display": "GPT-6.2 Sol",
+     "priority": 0.5882,
+     "status": [
+      "proven"
+     ],
+     "rank_rule": "evidence",
+     "tie_broken": false,
+     "inputs": {
+      "public_norm": 0.5,
+      "public_default": true,
+      "public_metrics": {},
+      "own_success": 1.0,
+      "own_jobs": 10,
+      "own_success_rate": 1.0,
+      "own_success_default": false,
+      "own_median_minutes": 4.5,
+      "speed_rank": 0.5,
+      "speed_source": "own median minutes",
+      "cost_rank": 0.255,
+      "cost_source": "own jobs",
+      "cost_default": false,
+      "cost_tier": "$$$",
+      "price_blended_per_mtok": 4.0,
+      "effort": "xhigh",
+      "effort_source": "config"
+     }
+    },
+    {
      "engine": "grok",
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
@@ -7604,37 +7635,6 @@
       "cost_tier": "$$$",
       "price_blended_per_mtok": 3.0,
       "effort": "medium",
-      "effort_source": "config"
-     }
-    },
-    {
-     "engine": "codex",
-     "engine_name": "Codex CLI",
-     "model": "gpt-6.2-sol",
-     "model_display": "GPT-6.2 Sol",
-     "priority": 0.4616,
-     "status": [
-      "proven"
-     ],
-     "rank_rule": "evidence",
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.5,
-      "public_default": true,
-      "public_metrics": {},
-      "own_success": 0.5,
-      "own_jobs": 9,
-      "own_success_rate": 1.0,
-      "own_success_default": true,
-      "own_median_minutes": 5.2,
-      "speed_rank": 0.5,
-      "speed_source": "own median minutes",
-      "cost_rank": 0.244,
-      "cost_source": "own jobs",
-      "cost_default": false,
-      "cost_tier": "$$$",
-      "price_blended_per_mtok": 4.0,
-      "effort": "xhigh",
       "effort_source": "config"
      }
     },
