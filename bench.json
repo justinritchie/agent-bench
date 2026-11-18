@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-18T19:14:59+00:00",
+ "generated_at": "2026-11-18T22:19:28+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-18T19:14:59+00:00",
+  "generated_at": "2026-11-18T22:19:28+00:00",
   "sources_oldest": "2026-11-18",
   "sources_newest": "2026-11-18",
   "own_jobs_window_days": 28,
@@ -46,6 +46,18 @@
     "to": {
      "engine": "claude",
      "model": "claude-opus-5.5"
+    }
+   },
+   {
+    "class": "writing",
+    "kind": null,
+    "from": {
+     "engine": "agy",
+     "model": "gemini-4-argon"
+    },
+    "to": {
+     "engine": "claude",
+     "model": "claude-fable-5.2"
     }
    }
   ]
@@ -150,7 +162,9 @@
     "gemini-3.8-flash",
     "gemini-4-argon",
     "gemini-4-hydrogen",
+    "gemini-4-neon",
     "gemini-pro-orchestrator-g1-pro",
+    "gemini-pro-orchestrator-neon",
     "gpt-oss-120b"
    ],
    "models_verified": true,
@@ -510,31 +524,31 @@
       "level": "low",
       "index": 53.9,
       "cost_per_task": 3.0972,
-      "seconds": 11.3
+      "seconds": 10.8
      },
      {
       "level": "medium",
       "index": 56.4,
       "cost_per_task": 3.8026,
-      "seconds": 22.2
+      "seconds": 22.1
      },
      {
       "level": "high",
       "index": 61.8,
       "cost_per_task": 9.0784,
-      "seconds": 36.6
+      "seconds": 38.9
      },
      {
       "level": "xhigh",
       "index": 62.2,
       "cost_per_task": 14.8286,
-      "seconds": 105.9
+      "seconds": 106.4
      },
      {
       "level": "max",
       "index": 64.6,
       "cost_per_task": 26.5386,
-      "seconds": 217.2
+      "seconds": 209.7
      }
     ]
    },
@@ -548,31 +562,31 @@
       "level": "low",
       "index": 34.8,
       "cost_per_task": 0.9755,
-      "seconds": 16.2
+      "seconds": 16.1
      },
      {
       "level": "medium",
       "index": 48.2,
       "cost_per_task": 2.4511,
-      "seconds": 27.3
+      "seconds": 27.2
      },
      {
       "level": "high",
       "index": 51.8,
       "cost_per_task": 3.4647,
-      "seconds": 43.8
+      "seconds": 43.7
      },
      {
       "level": "xhigh",
       "index": 57.4,
       "cost_per_task": 6.0472,
-      "seconds": 143.4
+      "seconds": 143.2
      },
      {
       "level": "max",
       "index": 59.1,
       "cost_per_task": 10.0364,
-      "seconds": 786.4
+      "seconds": 787.9
      }
     ]
    },
@@ -598,19 +612,19 @@
       "level": "high",
       "index": 41.5,
       "cost_per_task": 1.6361,
-      "seconds": 17.4
+      "seconds": 17.3
      },
      {
       "level": "xhigh",
       "index": 49.9,
       "cost_per_task": 4.092,
-      "seconds": 43.6
+      "seconds": 43.3
      },
      {
       "level": "max",
       "index": 54.5,
       "cost_per_task": 10.0206,
-      "seconds": 549.9
+      "seconds": 544.3
      }
     ]
    },
@@ -624,7 +638,7 @@
       "level": "low",
       "index": 18.6,
       "cost_per_task": 0.0438,
-      "seconds": 11.8
+      "seconds": 11.7
      },
      {
       "level": "medium",
@@ -636,19 +650,19 @@
       "level": "high",
       "index": 29.9,
       "cost_per_task": 0.1586,
-      "seconds": 29.1
+      "seconds": 29.0
      },
      {
       "level": "xhigh",
       "index": 34.6,
       "cost_per_task": 0.2484,
-      "seconds": 72.8
+      "seconds": 71.9
      },
      {
       "level": "max",
       "index": 36.5,
       "cost_per_task": 0.411,
-      "seconds": 380.4
+      "seconds": 391.5
      }
     ]
    },
@@ -674,19 +688,19 @@
       "level": "high",
       "index": 54.9,
       "cost_per_task": 0.5636,
-      "seconds": 40.8
+      "seconds": 40.6
      },
      {
       "level": "xhigh",
       "index": 55.7,
       "cost_per_task": 0.648,
-      "seconds": 104.4
+      "seconds": 104.2
      },
      {
       "level": "max",
       "index": 57.3,
       "cost_per_task": 1.0144,
-      "seconds": 225.9
+      "seconds": 225.7
      }
     ]
    },
@@ -700,13 +714,13 @@
       "level": "medium",
       "index": 47.6,
       "cost_per_task": 4.3146,
-      "seconds": 12.6
+      "seconds": 12.4
      },
      {
       "level": "high",
       "index": 50.4,
       "cost_per_task": 4.9733,
-      "seconds": 62.6
+      "seconds": 58.2
      }
     ]
    },
@@ -720,13 +734,13 @@
       "level": "medium",
       "index": 30.1,
       "cost_per_task": 6.2586,
-      "seconds": 20.1
+      "seconds": 20.0
      },
      {
       "level": "high",
       "index": 30.8,
       "cost_per_task": 7.766,
-      "seconds": 30.9
+      "seconds": 31.5
      }
     ]
    },
@@ -740,7 +754,7 @@
       "level": "high",
       "index": 3.8,
       "cost_per_task": 0.3453,
-      "seconds": 11.6
+      "seconds": 11.7
      }
     ]
    },
@@ -754,19 +768,19 @@
       "level": "low",
       "index": 31.1,
       "cost_per_task": 2.9222,
-      "seconds": 14.2
+      "seconds": 13.6
      },
      {
       "level": "high",
       "index": 35.2,
       "cost_per_task": 6.1836,
-      "seconds": 36.4
+      "seconds": 37.6
      },
      {
       "level": "xhigh",
       "index": 35.5,
       "cost_per_task": 7.7715,
-      "seconds": 80.6
+      "seconds": 76.2
      }
     ]
    },
@@ -800,7 +814,7 @@
       "level": "medium",
       "index": 41.2,
       "cost_per_task": 0.798,
-      "seconds": 18.9
+      "seconds": 17.7
      },
      {
       "level": "high",
@@ -826,31 +840,60 @@
       "level": "low",
       "index": 45.7,
       "cost_per_task": 0.6617,
-      "seconds": 15.6
+      "seconds": 14.7
      },
      {
       "level": "medium",
       "index": 57.0,
       "cost_per_task": 1.6177,
-      "seconds": 17.3
+      "seconds": 16.4
      },
      {
       "level": "high",
       "index": 60.1,
       "cost_per_task": 2.0739,
-      "seconds": 64.5
+      "seconds": 63.3
      },
      {
       "level": "xhigh",
       "index": 61.6,
       "cost_per_task": 2.5211,
-      "seconds": 147.2
+      "seconds": 147.0
      },
      {
       "level": "max",
       "index": 62.1,
       "cost_per_task": 3.9979,
-      "seconds": 472.9
+      "seconds": 458.1
+     }
+    ]
+   },
+   {
+    "model": "gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "org": "Google",
+    "ranked": false,
+    "points": [
+     {
+      "level": "low",
+      "index": 44.1,
+      "cost_per_task": 0.7452
+     },
+     {
+      "level": "medium",
+      "index": 54.9,
+      "cost_per_task": 1.9046
+     },
+     {
+      "level": "high",
+      "index": 59.6,
+      "cost_per_task": 3.7427
+     },
+     {
+      "level": "xhigh",
+      "index": 61.4,
+      "cost_per_task": 6.4448,
+      "seconds": 128.6
      }
     ]
    },
@@ -864,69 +907,31 @@
       "level": "low",
       "index": 43.3,
       "cost_per_task": 1.4237,
-      "seconds": 16.6
+      "seconds": 16.4
      },
      {
       "level": "medium",
       "index": 51.6,
       "cost_per_task": 2.7324,
-      "seconds": 19.4
+      "seconds": 18.3
      },
      {
       "level": "high",
       "index": 54.8,
       "cost_per_task": 3.2386,
-      "seconds": 108.8
+      "seconds": 108.3
      },
      {
       "level": "xhigh",
       "index": 55.3,
       "cost_per_task": 3.6589,
-      "seconds": 271.4
+      "seconds": 279.0
      },
      {
       "level": "max",
       "index": 56.9,
       "cost_per_task": 6.2447,
-      "seconds": 409.0
-     }
-    ]
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "name": "GPT-6.1 Sol",
-    "org": "OpenAI",
-    "ranked": false,
-    "points": [
-     {
-      "level": "low",
-      "index": 34.8,
-      "cost_per_task": 0.1615,
-      "seconds": 14.2
-     },
-     {
-      "level": "medium",
-      "index": 46.3,
-      "cost_per_task": 0.3594,
-      "seconds": 18.3
-     },
-     {
-      "level": "high",
-      "index": 50.3,
-      "cost_per_task": 0.591,
-      "seconds": 87.8
-     },
-     {
-      "level": "xhigh",
-      "index": 52.5,
-      "cost_per_task": 0.764,
-      "seconds": 207.4
-     },
-     {
-      "level": "max",
-      "index": 54.6,
-      "cost_per_task": 1.2721,
-      "seconds": 391.4
+      "seconds": 393.3
      }
     ]
    }
@@ -1194,6 +1199,30 @@
     "cost_per_task": 3.9979
    },
    {
+    "model": "gemini-4-neon",
+    "level": "low",
+    "index": 44.1,
+    "cost_per_task": 0.7452
+   },
+   {
+    "model": "gemini-4-neon",
+    "level": "medium",
+    "index": 54.9,
+    "cost_per_task": 1.9046
+   },
+   {
+    "model": "gemini-4-neon",
+    "level": "high",
+    "index": 59.6,
+    "cost_per_task": 3.7427
+   },
+   {
+    "model": "gemini-4-neon",
+    "level": "xhigh",
+    "index": 61.4,
+    "cost_per_task": 6.4448
+   },
+   {
     "model": "gpt-6-astra",
     "level": "low",
     "index": 43.3,
@@ -1222,36 +1251,6 @@
     "level": "max",
     "index": 56.9,
     "cost_per_task": 6.2447
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "low",
-    "index": 34.8,
-    "cost_per_task": 0.1615
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "medium",
-    "index": 46.3,
-    "cost_per_task": 0.3594
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "high",
-    "index": 50.3,
-    "cost_per_task": 0.591
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "xhigh",
-    "index": 52.5,
-    "cost_per_task": 0.764
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "max",
-    "index": 54.6,
-    "cost_per_task": 1.2721
    }
   ],
   "frontier": [
@@ -1274,22 +1273,10 @@
     "cost_per_task": 0.1586
    },
    {
-    "model": "gpt-6.1-sol",
-    "level": "low",
-    "index": 34.8,
-    "cost_per_task": 0.1615
-   },
-   {
     "model": "gpt-6.2-sol",
     "level": "low",
     "index": 40.6,
     "cost_per_task": 0.1836
-   },
-   {
-    "model": "gpt-6.1-sol",
-    "level": "medium",
-    "index": 46.3,
-    "cost_per_task": 0.3594
    },
    {
     "model": "gpt-6.2-sol",
@@ -2044,7 +2031,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.784,
+    "priority": 0.7843,
     "status": [
      "proven"
     ],
@@ -2074,7 +2061,7 @@
      "own_median_minutes": 3.7,
      "speed_rank": 0.6,
      "speed_source": "own median minutes",
-     "cost_rank": 0.224,
+     "cost_rank": 0.226,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -2089,7 +2076,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7238,
+     "priority": 0.7242,
      "status": [
       "proven"
      ],
@@ -2119,7 +2106,7 @@
       "own_median_minutes": 8.9,
       "speed_rank": 0.4,
       "speed_source": "own median minutes",
-      "cost_rank": 0.081,
+      "cost_rank": 0.084,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -2133,7 +2120,7 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.7067,
+     "priority": 0.704,
      "status": [
       "probation"
      ],
@@ -2157,9 +2144,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-10-anthropic-claude-fable-5-2-max-claude-code.json"
        }
       },
-      "own_success": 0.907,
-      "own_jobs": 108,
-      "own_success_rate": 0.907,
+      "own_success": 0.896,
+      "own_jobs": 115,
+      "own_success_rate": 0.896,
       "own_success_default": false,
       "own_median_minutes": 11.3,
       "speed_rank": 0.2,
@@ -2178,7 +2165,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.7066,
+     "priority": 0.7067,
      "status": [
       "proven"
      ],
@@ -2208,7 +2195,7 @@
       "own_median_minutes": 2.3,
       "speed_rank": 0.8,
       "speed_source": "own median minutes",
-      "cost_rank": 0.314,
+      "cost_rank": 0.315,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2222,7 +2209,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5787,
+     "priority": 0.579,
      "status": [
       "unproven"
      ],
@@ -2252,7 +2239,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.302,
+      "cost_rank": 0.304,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2266,7 +2253,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5891,
+     "priority": 0.5894,
      "status": [
       "unproven"
      ],
@@ -2296,7 +2283,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.236,
+      "cost_rank": 0.238,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -2310,7 +2297,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.5461,
+     "priority": 0.5462,
      "status": [
       "unproven"
      ],
@@ -2340,7 +2327,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.33,
+      "cost_rank": 0.331,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2354,7 +2341,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.4606,
+     "priority": 0.4608,
      "status": [
       "unproven"
      ],
@@ -2384,7 +2371,7 @@
       "own_median_minutes": 20.6,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.302,
+      "cost_rank": 0.304,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2442,7 +2429,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gpt-oss-120b",
      "model_display": "GPT-OSS 120B",
-     "priority": 0.5094,
+     "priority": 0.5096,
      "status": [
       "unproven"
      ],
@@ -2472,7 +2459,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.563,
+      "cost_rank": 0.564,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
@@ -2486,7 +2473,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3143,
+     "priority": 0.3145,
      "status": [
       "unproven"
      ],
@@ -2516,7 +2503,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.387,
+      "cost_rank": 0.388,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$",
@@ -2530,7 +2517,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.3028,
+     "priority": 0.3004,
      "status": [
       "unproven"
      ],
@@ -2560,7 +2547,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.241,
+      "cost_rank": 0.225,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2574,7 +2561,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2361,
+     "priority": 0.2338,
      "status": [
       "unproven"
      ],
@@ -2604,7 +2591,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.241,
+      "cost_rank": 0.225,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -3126,7 +3113,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.5262,
+       "priority": 0.5218,
        "status": [
         "unproven"
        ],
@@ -3156,7 +3143,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.438,
+        "cost_rank": 0.408,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3170,7 +3157,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.4979,
+       "priority": 0.4934,
        "status": [
         "unproven"
        ],
@@ -3200,7 +3187,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.438,
+        "cost_rank": 0.408,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3258,7 +3245,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.3913,
+       "priority": 0.3868,
        "status": [
         "unproven"
        ],
@@ -3288,7 +3275,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.438,
+        "cost_rank": 0.408,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3531,7 +3518,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6521,
+       "priority": 0.6522,
        "status": [
         "unproven"
        ],
@@ -3561,7 +3548,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.602,
+        "cost_rank": 0.603,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3575,7 +3562,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.5482,
+       "priority": 0.5483,
        "status": [
         "unproven"
        ],
@@ -3605,7 +3592,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.659,
+        "cost_rank": 0.66,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3619,7 +3606,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.4987,
+       "priority": 0.4988,
        "status": [
         "unproven"
        ],
@@ -3649,7 +3636,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.602,
+        "cost_rank": 0.603,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3663,7 +3650,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.4153,
+       "priority": 0.4099,
        "status": [
         "unproven"
        ],
@@ -3693,7 +3680,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.475,
+        "cost_rank": 0.439,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3707,7 +3694,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3792,
+       "priority": 0.3739,
        "status": [
         "unproven"
        ],
@@ -3737,7 +3724,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.475,
+        "cost_rank": 0.439,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3839,7 +3826,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2712,
+       "priority": 0.2659,
        "status": [
         "unproven"
        ],
@@ -3869,7 +3856,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.475,
+        "cost_rank": 0.439,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4225,11 +4212,11 @@
       "model_display": "Claude Fable 5.2",
       "levels": {
        "medium": {
-        "jobs": 78,
-        "finished": 70,
-        "finished_rate": 0.897,
-        "median_turns": 74,
-        "median_output_tokens": 97628
+        "jobs": 85,
+        "finished": 75,
+        "finished_rate": 0.882,
+        "median_turns": 75,
+        "median_output_tokens": 91660
        },
        "high": {
         "jobs": 6,
@@ -4308,11 +4295,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 78,
-      "finished": 70,
-      "finished_rate": 0.897,
-      "median_turns": 74,
-      "median_output_tokens": 97628
+      "jobs": 85,
+      "finished": 75,
+      "finished_rate": 0.882,
+      "median_turns": 75,
+      "median_output_tokens": 91660
      },
      {
       "engine": "claude",
@@ -4387,7 +4374,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.6859,
+    "priority": 0.6892,
     "status": [
      "proven"
     ],
@@ -4453,7 +4440,7 @@
      "own_median_minutes": 3.8,
      "speed_rank": 0.333,
      "speed_source": "own median minutes",
-     "cost_rank": 0.274,
+     "cost_rank": 0.296,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -4548,7 +4535,7 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.6683,
+     "priority": 0.6723,
      "status": [
       "probation"
      ],
@@ -4608,14 +4595,14 @@
         "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
        }
       },
-      "own_success": 0.75,
-      "own_jobs": 16,
-      "own_success_rate": 0.75,
+      "own_success": 0.789,
+      "own_jobs": 19,
+      "own_success_rate": 0.789,
       "own_success_default": false,
-      "own_median_minutes": 6.2,
+      "own_median_minutes": 7.5,
       "speed_rank": 0.167,
       "speed_source": "own median minutes",
-      "cost_rank": 0.038,
+      "cost_rank": 0.0,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -4629,7 +4616,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.6777,
+     "priority": 0.6803,
      "status": [
       "proven"
      ],
@@ -4659,7 +4646,7 @@
       "own_median_minutes": 2.6,
       "speed_rank": 0.5,
       "speed_source": "own median minutes",
-      "cost_rank": 0.422,
+      "cost_rank": 0.439,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -4673,7 +4660,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5966,
+     "priority": 0.6009,
      "status": [
       "proven"
      ],
@@ -4739,7 +4726,7 @@
       "own_median_minutes": 9.1,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.0,
+      "cost_rank": 0.029,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -4753,7 +4740,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5977,
+     "priority": 0.6008,
      "status": [
       "unproven"
      ],
@@ -4819,7 +4806,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.293,
+      "cost_rank": 0.314,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -4833,7 +4820,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.6243,
+     "priority": 0.6267,
      "status": [
       "unproven"
      ],
@@ -4899,7 +4886,7 @@
       "own_median_minutes": 0.3,
       "speed_rank": 0.833,
       "speed_source": "own median minutes",
-      "cost_rank": 0.444,
+      "cost_rank": 0.46,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -4913,7 +4900,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5854,
+     "priority": 0.5879,
      "status": [
       "unproven"
      ],
@@ -4979,7 +4966,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.4,
+      "cost_rank": 0.417,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -4993,7 +4980,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.5327,
+     "priority": 0.5353,
      "status": [
       "unproven"
      ],
@@ -5059,7 +5046,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.4,
+      "cost_rank": 0.417,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5073,7 +5060,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.3332,
+     "priority": 0.3322,
      "status": [
       "unproven"
      ],
@@ -5127,7 +5114,7 @@
       "own_median_minutes": 0.8,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
-      "cost_rank": 0.301,
+      "cost_rank": 0.294,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5141,7 +5128,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3317,
+     "priority": 0.3338,
      "status": [
       "unproven"
      ],
@@ -5207,7 +5194,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.536,
+      "cost_rank": 0.55,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$",
@@ -5221,7 +5208,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2883,
+     "priority": 0.2873,
      "status": [
       "unproven"
      ],
@@ -5287,7 +5274,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.301,
+      "cost_rank": 0.294,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5301,7 +5288,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2452,
+     "priority": 0.2441,
      "status": [
       "unproven"
      ],
@@ -5331,7 +5318,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.301,
+      "cost_rank": 0.294,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5353,7 +5340,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.724,
+      "priority": 0.7242,
       "status": [
        "proven"
       ],
@@ -5395,7 +5382,7 @@
        "own_median_minutes": 3.2,
        "speed_rank": 0.0,
        "speed_source": "own median minutes",
-       "cost_rank": 0.406,
+       "cost_rank": 0.407,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -5523,7 +5510,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6567,
+       "priority": 0.6566,
        "status": [
         "unproven"
        ],
@@ -5553,7 +5540,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.282,
+        "cost_rank": 0.281,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -5623,7 +5610,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6096,
+       "priority": 0.6098,
        "status": [
         "unproven"
        ],
@@ -5665,7 +5652,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.265,
+        "cost_rank": 0.266,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -5735,7 +5722,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.5573,
+       "priority": 0.5531,
        "status": [
         "unproven"
        ],
@@ -5765,7 +5752,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.273,
+        "cost_rank": 0.245,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -5895,8 +5882,8 @@
        "status": [
         "unproven"
        ],
-       "rank_rule": "tie",
-       "tie_broken": true,
+       "rank_rule": null,
+       "tie_broken": false,
        "inputs": {
         "public_norm": 0.227,
         "public_default": false,
@@ -5947,7 +5934,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3525,
+       "priority": 0.3483,
        "status": [
         "unproven"
        ],
@@ -5989,7 +5976,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.273,
+        "cost_rank": 0.245,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6003,7 +5990,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2409,
+       "priority": 0.2368,
        "status": [
         "unproven"
        ],
@@ -6033,7 +6020,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.273,
+        "cost_rank": 0.245,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6166,7 +6153,7 @@
       "engine_name": "Claude Code",
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
-      "priority": 0.554,
+      "priority": 0.5542,
       "status": [
        "proven"
       ],
@@ -6220,7 +6207,7 @@
        "own_median_minutes": 5.0,
        "speed_rank": 0.333,
        "speed_source": "own median minutes",
-       "cost_rank": 0.166,
+       "cost_rank": 0.167,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$$",
@@ -6644,7 +6631,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.5054,
+       "priority": 0.5055,
        "status": [
         "proven"
        ],
@@ -6661,7 +6648,7 @@
         "own_median_minutes": 2.7,
         "speed_rank": 0.667,
         "speed_source": "own median minutes",
-        "cost_rank": 0.369,
+        "cost_rank": 0.37,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6811,7 +6798,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.3034,
+       "priority": 0.2992,
        "status": [
         "unproven"
        ],
@@ -6865,7 +6852,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.269,
+        "cost_rank": 0.241,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6879,7 +6866,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.2449,
+       "priority": 0.2407,
        "status": [
         "unproven"
        ],
@@ -6933,7 +6920,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.269,
+        "cost_rank": 0.241,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7457,11 +7444,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 13,
-      "finished": 10,
-      "finished_rate": 0.769,
-      "median_turns": 30,
-      "median_output_tokens": 82327
+      "jobs": 16,
+      "finished": 13,
+      "finished_rate": 0.812,
+      "median_turns": 51,
+      "median_output_tokens": 86541
      },
      {
       "engine": "codex",
@@ -7516,7 +7503,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7923,
+    "priority": 0.7933,
     "status": [
      "probation"
     ],
@@ -7548,7 +7535,7 @@
      "own_median_minutes": 4.4,
      "speed_rank": 0.833,
      "speed_source": "own median minutes",
-     "cost_rank": 0.004,
+     "cost_rank": 0.011,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$$",
@@ -7563,7 +7550,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5616,
+     "priority": 0.5876,
      "status": [
       "proven"
      ],
@@ -7574,13 +7561,13 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 0.966,
-      "own_jobs": 58,
+      "own_jobs": 59,
       "own_success_rate": 0.966,
       "own_success_default": false,
-      "own_median_minutes": 4.6,
-      "speed_rank": 0.5,
+      "own_median_minutes": 4.5,
+      "speed_rank": 0.667,
       "speed_source": "own median minutes",
-      "cost_rank": 0.134,
+      "cost_rank": 0.14,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -7594,7 +7581,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.5359,
+     "priority": 0.537,
      "status": [
       "proven"
      ],
@@ -7605,13 +7592,13 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 1.0,
-      "own_jobs": 13,
+      "own_jobs": 14,
       "own_success_rate": 1.0,
       "own_success_default": false,
-      "own_median_minutes": 5.7,
+      "own_median_minutes": 5.4,
       "speed_rank": 0.333,
       "speed_source": "own median minutes",
-      "cost_rank": 0.073,
+      "cost_rank": 0.08,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -7625,7 +7612,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.4875,
+     "priority": 0.4616,
      "status": [
       "proven"
      ],
@@ -7636,13 +7623,13 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 0.5,
-      "own_jobs": 8,
+      "own_jobs": 9,
       "own_success_rate": 1.0,
       "own_success_default": true,
-      "own_median_minutes": 4.5,
-      "speed_rank": 0.667,
+      "own_median_minutes": 5.2,
+      "speed_rank": 0.5,
       "speed_source": "own median minutes",
-      "cost_rank": 0.25,
+      "cost_rank": 0.244,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -7656,7 +7643,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.4256,
+     "priority": 0.4264,
      "status": [
       "proven"
      ],
@@ -7673,7 +7660,7 @@
       "own_median_minutes": 6.6,
       "speed_rank": 0.167,
       "speed_source": "own median minutes",
-      "cost_rank": 0.337,
+      "cost_rank": 0.342,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -7687,7 +7674,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2825,
+     "priority": 0.2792,
      "status": [
       "unproven"
      ],
@@ -7717,7 +7704,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.238,
+      "cost_rank": 0.216,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -7731,7 +7718,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.2417,
+     "priority": 0.2415,
      "status": [
       "proven"
      ],
@@ -7754,11 +7741,11 @@
         "source_url": "https://arena.ai/leaderboard/search"
        }
       },
-      "own_success": 0.967,
-      "own_jobs": 30,
-      "own_success_rate": 0.967,
+      "own_success": 0.966,
+      "own_jobs": 29,
+      "own_success_rate": 0.966,
       "own_success_default": false,
-      "own_median_minutes": 8.8,
+      "own_median_minutes": 10.1,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
       "cost_rank": 0.0,
@@ -7775,7 +7762,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.2345,
+     "priority": 0.2353,
      "status": [
       "unproven"
      ],
@@ -7805,7 +7792,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.23,
+      "cost_rank": 0.235,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -7863,11 +7850,11 @@
         "median_output_tokens": 39766
        },
        "high": {
-        "jobs": 15,
-        "finished": 15,
+        "jobs": 14,
+        "finished": 14,
         "finished_rate": 1.0,
-        "median_turns": 48,
-        "median_output_tokens": 73299
+        "median_turns": 58,
+        "median_output_tokens": 68688
        }
       }
      },
@@ -7878,11 +7865,11 @@
       "model_display": "Claude Sonnet 5.5",
       "levels": {
        "medium": {
-        "jobs": 9,
-        "finished": 9,
+        "jobs": 10,
+        "finished": 10,
         "finished_rate": 1.0,
-        "median_turns": 32,
-        "median_output_tokens": 27510
+        "median_turns": 33,
+        "median_output_tokens": 25382
        },
        "high": {
         "jobs": 49,
@@ -7966,11 +7953,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "medium",
-      "jobs": 9,
-      "finished": 9,
+      "jobs": 10,
+      "finished": 10,
       "finished_rate": 1.0,
-      "median_turns": 32,
-      "median_output_tokens": 27510
+      "median_turns": 33,
+      "median_output_tokens": 25382
      },
      {
       "engine": "claude",
@@ -8002,11 +7989,11 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "high",
-      "jobs": 15,
-      "finished": 15,
+      "jobs": 14,
+      "finished": 14,
       "finished_rate": 1.0,
-      "median_turns": 48,
-      "median_output_tokens": 73299
+      "median_turns": 58,
+      "median_output_tokens": 68688
      },
      {
       "engine": "grok",
@@ -8014,11 +8001,11 @@
       "model": "grok-4.7",
       "model_display": "Grok 4.7",
       "level": "medium",
-      "jobs": 13,
-      "finished": 13,
+      "jobs": 14,
+      "finished": 14,
       "finished_rate": 1.0,
-      "median_turns": 5,
-      "median_output_tokens": 19022
+      "median_turns": 6,
+      "median_output_tokens": 18660
      },
      {
       "engine": "claude",
@@ -8083,7 +8070,7 @@
      "cost_ratio": 2.4
     },
     "summary_lead": "Claude Fable 5.2, medium to high:",
-    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 14 of 15 finished cleanly at medium, 15 of 15 at high; on the jobs each level was given (not the same jobs), median output tokens were 39,766 at medium and 73,299 at high."
+    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 14 of 15 finished cleanly at medium, 14 of 14 at high; on the jobs each level was given (not the same jobs), median output tokens were 39,766 at medium and 68,688 at high."
    }
   },
   "reading": {
@@ -8096,7 +8083,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.8067,
+    "priority": 0.8057,
     "status": [
      "probation"
     ],
@@ -8121,11 +8108,11 @@
        "source_url": "https://arena.ai/leaderboard/document"
       }
      },
-     "own_success": 0.927,
-     "own_jobs": 41,
-     "own_success_rate": 0.927,
+     "own_success": 0.923,
+     "own_jobs": 39,
+     "own_success_rate": 0.923,
      "own_success_default": false,
-     "own_median_minutes": 1.5,
+     "own_median_minutes": 1.7,
      "speed_rank": 0.833,
      "speed_source": "own median minutes",
      "cost_rank": 0.0,
@@ -8143,7 +8130,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5782,
+     "priority": 0.5784,
      "status": [
       "proven"
      ],
@@ -8160,7 +8147,7 @@
       "own_median_minutes": 1.9,
       "speed_rank": 0.5,
       "speed_source": "own median minutes",
-      "cost_rank": 0.225,
+      "cost_rank": 0.226,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8205,7 +8192,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.6053,
+     "priority": 0.6055,
      "status": [
       "proven"
      ],
@@ -8222,7 +8209,7 @@
       "own_median_minutes": 1.1,
       "speed_rank": 1.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.702,
+      "cost_rank": 0.703,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8342,7 +8329,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.3171,
+     "priority": 0.3109,
      "status": [
       "unproven"
      ],
@@ -8372,7 +8359,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.256,
+      "cost_rank": 0.214,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8386,7 +8373,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2384,
+     "priority": 0.2321,
      "status": [
       "unproven"
      ],
@@ -8416,7 +8403,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.256,
+      "cost_rank": 0.214,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8430,7 +8417,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.413,
+     "priority": 0.4131,
      "status": [
       "unproven"
      ],
@@ -8447,7 +8434,7 @@
       "own_median_minutes": 9.5,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.42,
+      "cost_rank": 0.421,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8533,11 +8520,11 @@
         "median_output_tokens": 17023
        },
        "xhigh": {
-        "jobs": 77,
-        "finished": 77,
+        "jobs": 75,
+        "finished": 75,
         "finished_rate": 1.0,
         "median_turns": 1,
-        "median_output_tokens": 8951
+        "median_output_tokens": 9057
        }
       }
      }
@@ -8561,11 +8548,11 @@
       "model": "gpt-6.1-sol",
       "model_display": "GPT-6.1 Sol",
       "level": "xhigh",
-      "jobs": 77,
-      "finished": 77,
+      "jobs": 75,
+      "finished": 75,
       "finished_rate": 1.0,
       "median_turns": 1,
-      "median_output_tokens": 8951
+      "median_output_tokens": 9057
      },
      {
       "engine": "claude",
@@ -8676,174 +8663,118 @@
     "arena_text_overall"
    ],
    "first_choice": {
-    "engine": "agy",
-    "engine_name": "Antigravity CLI",
-    "model": "gemini-4-argon",
-    "model_display": "Gemini 4 Argon",
-    "priority": 0.8033,
+    "engine": "claude",
+    "engine_name": "Claude Code",
+    "model": "claude-fable-5.2",
+    "model_display": "Claude Fable 5.2",
+    "priority": 0.7627,
     "status": [
-     "proven"
+     "probation"
     ],
-    "rank_rule": null,
-    "tie_broken": false,
+    "successor_of": "claude-fable-5.1",
+    "rank_rule": "tie",
+    "tie_broken": true,
     "inputs": {
-     "public_norm": 1.0,
+     "public_norm": 0.911,
      "public_default": false,
      "public_metrics": {
       "arena_text_overall": {
        "source": "arena-text",
-       "level": "high",
-       "score": 1529.458427301669,
-       "norm": 1.0,
-       "norm_before_discount": 1.0,
+       "level": "max",
+       "score": 1512.0447118627767,
+       "norm": 0.894,
+       "norm_before_discount": 0.894,
        "harness_relation": "model-only",
        "harness_factor": 1.0,
-       "leaderboard_name": "Gemini 4 Argon (High)",
+       "leaderboard_name": "Claude Fable 5.1 (Max)",
+       "inherited_from": "claude-fable-5.1",
        "harness": "",
        "source_url": "https://arena.ai/leaderboard/text"
       },
       "arena_text_creative_writing": {
        "source": "arena-creative-writing",
-       "level": "high",
-       "score": 1532.7266301234754,
-       "norm": 1.0,
-       "norm_before_discount": 1.0,
+       "level": "max",
+       "score": 1514.1169573368065,
+       "norm": 0.928,
+       "norm_before_discount": 0.928,
        "harness_relation": "model-only",
        "harness_factor": 1.0,
-       "leaderboard_name": "Gemini 4 Argon (High)",
+       "leaderboard_name": "Claude Fable 5.1 (Max)",
+       "inherited_from": "claude-fable-5.1",
        "harness": "",
        "source_url": "https://arena.ai/leaderboard/text"
       }
      },
-     "own_success": 0.923,
-     "own_jobs": 13,
-     "own_success_rate": 0.923,
+     "own_success": 0.931,
+     "own_jobs": 72,
+     "own_success_rate": 0.931,
      "own_success_default": false,
-     "own_median_minutes": 5.3,
-     "speed_rank": 0.4,
+     "own_median_minutes": 2.8,
+     "speed_rank": 0.8,
      "speed_source": "own median minutes",
-     "cost_rank": 0.417,
+     "cost_rank": 0.0,
      "cost_source": "own jobs",
      "cost_default": false,
-     "cost_tier": "$$$",
-     "price_blended_per_mtok": 4.0,
-     "effort": "high",
+     "cost_tier": "$$$$",
+     "price_blended_per_mtok": 16.0,
+     "effort": "medium",
      "effort_source": "default"
     }
    },
    "fallbacks": [
     {
-     "engine": "claude",
-     "engine_name": "Claude Code",
-     "model": "claude-fable-5.2",
-     "model_display": "Claude Fable 5.2",
-     "priority": 0.7627,
-     "status": [
-      "probation"
-     ],
-     "successor_of": "claude-fable-5.1",
-     "rank_rule": null,
-     "tie_broken": false,
-     "inputs": {
-      "public_norm": 0.911,
-      "public_default": false,
-      "public_metrics": {
-       "arena_text_overall": {
-        "source": "arena-text",
-        "level": "max",
-        "score": 1512.0447118627767,
-        "norm": 0.894,
-        "norm_before_discount": 0.894,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Claude Fable 5.1 (Max)",
-        "inherited_from": "claude-fable-5.1",
-        "harness": "",
-        "source_url": "https://arena.ai/leaderboard/text"
-       },
-       "arena_text_creative_writing": {
-        "source": "arena-creative-writing",
-        "level": "max",
-        "score": 1514.1169573368065,
-        "norm": 0.928,
-        "norm_before_discount": 0.928,
-        "harness_relation": "model-only",
-        "harness_factor": 1.0,
-        "leaderboard_name": "Claude Fable 5.1 (Max)",
-        "inherited_from": "claude-fable-5.1",
-        "harness": "",
-        "source_url": "https://arena.ai/leaderboard/text"
-       }
-      },
-      "own_success": 0.931,
-      "own_jobs": 72,
-      "own_success_rate": 0.931,
-      "own_success_default": false,
-      "own_median_minutes": 2.8,
-      "speed_rank": 0.8,
-      "speed_source": "own median minutes",
-      "cost_rank": 0.0,
-      "cost_source": "own jobs",
-      "cost_default": false,
-      "cost_tier": "$$$$",
-      "price_blended_per_mtok": 16.0,
-      "effort": "medium",
-      "effort_source": "default"
-     }
-    },
-    {
-     "engine": "claude",
-     "engine_name": "Claude Code",
-     "model": "claude-opus-5.5",
-     "model_display": "Claude Opus 5.5",
-     "priority": 0.7021,
+     "engine": "agy",
+     "engine_name": "Antigravity CLI",
+     "model": "gemini-4-argon",
+     "model_display": "Gemini 4 Argon",
+     "priority": 0.7733,
      "status": [
       "proven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.95,
+      "public_norm": 1.0,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
         "source": "arena-text",
         "level": "high",
-        "score": 1513.6568986729217,
-        "norm": 0.904,
-        "norm_before_discount": 0.904,
+        "score": 1529.458427301669,
+        "norm": 1.0,
+        "norm_before_discount": 1.0,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
-        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "leaderboard_name": "Gemini 4 Argon (High)",
         "harness": "",
         "source_url": "https://arena.ai/leaderboard/text"
        },
        "arena_text_creative_writing": {
         "source": "arena-creative-writing",
         "level": "high",
-        "score": 1531.5503919642447,
-        "norm": 0.995,
-        "norm_before_discount": 0.995,
+        "score": 1532.7266301234754,
+        "norm": 1.0,
+        "norm_before_discount": 1.0,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
-        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "leaderboard_name": "Gemini 4 Argon (High)",
         "harness": "",
         "source_url": "https://arena.ai/leaderboard/text"
        }
       },
-      "own_success": 0.957,
-      "own_jobs": 23,
-      "own_success_rate": 0.957,
+      "own_success": 0.923,
+      "own_jobs": 13,
+      "own_success_rate": 0.923,
       "own_success_default": false,
-      "own_median_minutes": 6.4,
+      "own_median_minutes": 5.3,
       "speed_rank": 0.2,
       "speed_source": "own median minutes",
-      "cost_rank": 0.036,
+      "cost_rank": 0.417,
       "cost_source": "own jobs",
       "cost_default": false,
-      "cost_tier": "$$$$",
-      "price_blended_per_mtok": 8.0,
-      "effort": "medium",
+      "cost_tier": "$$$",
+      "price_blended_per_mtok": 4.0,
+      "effort": "high",
       "effort_source": "default"
      }
     },
@@ -8899,6 +8830,62 @@
       "cost_default": false,
       "cost_tier": "$$$",
       "price_blended_per_mtok": 4.0,
+      "effort": "medium",
+      "effort_source": "default"
+     }
+    },
+    {
+     "engine": "claude",
+     "engine_name": "Claude Code",
+     "model": "claude-opus-5.5",
+     "model_display": "Claude Opus 5.5",
+     "priority": 0.6885,
+     "status": [
+      "proven"
+     ],
+     "rank_rule": "tie",
+     "tie_broken": true,
+     "inputs": {
+      "public_norm": 0.95,
+      "public_default": false,
+      "public_metrics": {
+       "arena_text_overall": {
+        "source": "arena-text",
+        "level": "high",
+        "score": 1513.6568986729217,
+        "norm": 0.904,
+        "norm_before_discount": 0.904,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1531.5503919642447,
+        "norm": 0.995,
+        "norm_before_discount": 0.995,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       }
+      },
+      "own_success": 0.758,
+      "own_jobs": 33,
+      "own_success_rate": 0.758,
+      "own_success_default": false,
+      "own_median_minutes": 4.8,
+      "speed_rank": 0.4,
+      "speed_source": "own median minutes",
+      "cost_rank": 0.077,
+      "cost_source": "own jobs",
+      "cost_default": false,
+      "cost_tier": "$$$$",
+      "price_blended_per_mtok": 8.0,
       "effort": "medium",
       "effort_source": "default"
      }
@@ -9163,7 +9150,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.5042,
+     "priority": 0.4985,
      "status": [
       "unproven"
      ],
@@ -9205,7 +9192,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.297,
+      "cost_rank": 0.259,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9219,7 +9206,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4664,
+     "priority": 0.4607,
      "status": [
       "unproven"
      ],
@@ -9261,7 +9248,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.297,
+      "cost_rank": 0.259,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9331,7 +9318,7 @@
      "engine_name": "Claude Code",
      "model": "claude-haiku-5.5",
      "model_display": "Claude Haiku 5.5",
-     "priority": 0.4256,
+     "priority": 0.4254,
      "status": [
       "unproven"
      ],
@@ -9373,7 +9360,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.85,
+      "cost_rank": 0.849,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
@@ -9535,11 +9522,11 @@
         "median_output_tokens": 18536
        },
        "high": {
-        "jobs": 9,
-        "finished": 9,
-        "finished_rate": 1.0,
-        "median_turns": 48,
-        "median_output_tokens": 59383
+        "jobs": 19,
+        "finished": 12,
+        "finished_rate": 0.632,
+        "median_turns": 38,
+        "median_output_tokens": 55231
        }
       }
      },
@@ -9655,11 +9642,11 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "high",
-      "jobs": 9,
-      "finished": 9,
-      "finished_rate": 1.0,
-      "median_turns": 48,
-      "median_output_tokens": 59383
+      "jobs": 19,
+      "finished": 12,
+      "finished_rate": 0.632,
+      "median_turns": 38,
+      "median_output_tokens": 55231
      },
      {
       "engine": "codex",
@@ -9725,7 +9712,7 @@
     "cost_step": {
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "rank": 2,
+     "rank": 1,
      "from": "medium",
      "to": "high",
      "from_index": 56.4,
@@ -9736,7 +9723,7 @@
      "cost_ratio": 2.4
     },
     "summary_lead": "Claude Fable 5.2, medium to high:",
-    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is ranked 2 here, and the index is general, not this kind of task. Boards: medium to high gives -2 Arena score on Arena Text: creative writing (Gemini 3.5 Flash, not ranked here); +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +8 Arena score on Arena Text: creative writing (Claude Opus 5, not ranked here, high to max); +5 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 16 finished cleanly at medium, 19 of 20 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 37,497 at high."
+    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives -2 Arena score on Arena Text: creative writing (Gemini 3.5 Flash, not ranked here); +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +8 Arena score on Arena Text: creative writing (Claude Opus 5, not ranked here, high to max); +5 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 16 finished cleanly at medium, 19 of 20 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 37,497 at high."
    }
   }
  },
@@ -9805,19 +9792,19 @@
     "level": "max",
     "variants": [
      {
-      "raw": 77,
+      "raw": 78,
       "level": "low"
      },
      {
-      "raw": 75,
+      "raw": 77,
       "level": "medium"
      },
      {
-      "raw": 78,
+      "raw": 79,
       "level": "high"
      },
      {
-      "raw": 79,
+      "raw": 86,
       "level": "xhigh"
      },
      {
@@ -9951,12 +9938,12 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 95,
+    "raw": 96,
     "unit": "tok/s",
     "level": "max",
     "variants": [
      {
-      "raw": 77,
+      "raw": 78,
       "level": "low"
      },
      {
@@ -9964,15 +9951,15 @@
       "level": "medium"
      },
      {
-      "raw": 79,
+      "raw": 80,
       "level": "high"
      },
      {
-      "raw": 79,
+      "raw": 83,
       "level": "xhigh"
      },
      {
-      "raw": 95,
+      "raw": 96,
       "level": "max"
      }
     ]
@@ -10107,7 +10094,7 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 132,
+    "raw": 133,
     "unit": "tok/s",
     "level": "max",
     "variants": [
@@ -10116,7 +10103,7 @@
       "level": "low"
      },
      {
-      "raw": 100,
+      "raw": 101,
       "level": "medium"
      },
      {
@@ -10124,11 +10111,11 @@
       "level": "high"
      },
      {
-      "raw": 101,
+      "raw": 106,
       "level": "xhigh"
      },
      {
-      "raw": 132,
+      "raw": 133,
       "level": "max"
      }
     ]
@@ -10213,28 +10200,28 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 227,
+    "raw": 230,
     "unit": "tok/s",
     "level": "max",
     "variants": [
      {
-      "raw": 158,
+      "raw": 162,
       "level": "low"
      },
      {
-      "raw": 166,
+      "raw": 167,
       "level": "medium"
      },
      {
-      "raw": 161,
+      "raw": 168,
       "level": "high"
      },
      {
-      "raw": 172,
+      "raw": 182,
       "level": "xhigh"
      },
      {
-      "raw": 227,
+      "raw": 230,
       "level": "max"
      }
     ]
@@ -10279,12 +10266,12 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 95,
+    "raw": 97,
     "unit": "tok/s",
     "level": "xhigh",
     "variants": [
      {
-      "raw": 90,
+      "raw": 91,
       "level": "low"
      },
      {
@@ -10292,15 +10279,15 @@
       "level": "medium"
      },
      {
-      "raw": 93,
+      "raw": 95,
       "level": "high"
      },
      {
-      "raw": 95,
+      "raw": 97,
       "level": "xhigh"
      },
      {
-      "raw": 91,
+      "raw": 94,
       "level": "max"
      }
     ]
@@ -10373,7 +10360,7 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 83,
+    "raw": 86,
     "unit": "tok/s",
     "level": "high",
     "variants": [
@@ -10382,7 +10369,7 @@
       "level": "medium"
      },
      {
-      "raw": 83,
+      "raw": 86,
       "level": "high"
      }
     ]
@@ -10469,11 +10456,11 @@
     "level": "high",
     "variants": [
      {
-      "raw": 120,
+      "raw": 122,
       "level": "low"
      },
      {
-      "raw": 119,
+      "raw": 120,
       "level": "medium"
      },
      {
@@ -10515,16 +10502,16 @@
     "level": "high"
    },
    "Artificial Analysis output speed": {
-    "raw": 248,
+    "raw": 250,
     "unit": "tok/s",
     "level": "low",
     "variants": [
      {
-      "raw": 248,
+      "raw": 250,
       "level": "low"
      },
      {
-      "raw": 230,
+      "raw": 229,
       "level": "high"
      }
     ]
@@ -10598,14 +10585,14 @@
    "Artificial Analysis output speed": {
     "raw": 70,
     "unit": "tok/s",
-    "level": "xhigh",
+    "level": "high",
     "variants": [
      {
-      "raw": 62,
+      "raw": 64,
       "level": "low"
      },
      {
-      "raw": 66,
+      "raw": 70,
       "level": "high"
      },
      {
@@ -10677,20 +10664,20 @@
     "level": "xhigh"
    },
    "Artificial Analysis output speed": {
-    "raw": 73,
+    "raw": 74,
     "unit": "tok/s",
     "level": "high",
     "variants": [
      {
-      "raw": 59,
+      "raw": 66,
       "level": "low"
      },
      {
-      "raw": 68,
+      "raw": 73,
       "level": "medium"
      },
      {
-      "raw": 73,
+      "raw": 74,
       "level": "high"
      },
      {
@@ -10742,7 +10729,7 @@
     "level": null
    },
    "Artificial Analysis output speed": {
-    "raw": 56,
+    "raw": 60,
     "unit": "tok/s",
     "level": "high"
    },
@@ -10822,20 +10809,20 @@
     ]
    },
    "Artificial Analysis output speed": {
-    "raw": 244,
+    "raw": 246,
     "unit": "tok/s",
     "level": "low",
     "variants": [
      {
-      "raw": 244,
+      "raw": 246,
       "level": "low"
      },
      {
-      "raw": 201,
+      "raw": 206,
       "level": "medium"
      },
      {
-      "raw": 198,
+      "raw": 200,
       "level": "high"
      },
      {
@@ -12860,6 +12847,30 @@
     },
     {
      "model": null,
+     "name": "Gemini 4 Neon",
+     "org": null,
+     "ranked": false,
+     "points": [
+      {
+       "level": "low",
+       "raw": 44.1
+      },
+      {
+       "level": "medium",
+       "raw": 54.9
+      },
+      {
+       "level": "high",
+       "raw": 59.6
+      },
+      {
+       "level": "xhigh",
+       "raw": 61.4
+      }
+     ]
+    },
+    {
+     "model": null,
      "name": "GPT-6 Astra",
      "org": null,
      "ranked": false,
@@ -12883,34 +12894,6 @@
       {
        "level": "max",
        "raw": 56.9
-      }
-     ]
-    },
-    {
-     "model": null,
-     "name": "GPT-6.1 Sol",
-     "org": null,
-     "ranked": false,
-     "points": [
-      {
-       "level": "low",
-       "raw": 34.8
-      },
-      {
-       "level": "medium",
-       "raw": 46.3
-      },
-      {
-       "level": "high",
-       "raw": 50.3
-      },
-      {
-       "level": "xhigh",
-       "raw": 52.5
-      },
-      {
-       "level": "max",
-       "raw": 54.6
       }
      ]
     }
