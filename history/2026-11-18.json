@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T01:44:30+00:00",
+ "generated_at": "2026-11-19T01:50:54+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T01:44:30+00:00",
+  "generated_at": "2026-11-19T01:50:54+00:00",
   "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
@@ -1548,7 +1548,7 @@
    "in_score": true,
    "harness_factor": 1.0,
    "as_of": "2026-11-19",
-   "models_covered": 0,
+   "models_covered": 10,
    "unit": "Arena score",
    "group": "coding",
    "lower_is_better": false,
@@ -2079,7 +2079,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.718,
+     "priority": 0.7182,
      "status": [
       "proven"
      ],
@@ -2102,9 +2102,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-30-anthropic-claude-opus-5-5-max-claude-code.json"
        }
       },
-      "own_success": 0.814,
-      "own_jobs": 215,
-      "own_success_rate": 0.814,
+      "own_success": 0.815,
+      "own_jobs": 216,
+      "own_success_rate": 0.815,
       "own_success_default": false,
       "own_median_minutes": 8.9,
       "speed_rank": 0.4,
@@ -2761,16 +2761,29 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.775,
+      "priority": 0.802,
       "status": [
        "proven"
       ],
       "rank_rule": null,
       "tie_broken": false,
       "inputs": {
-       "public_norm": 0.5,
-       "public_default": true,
-       "public_metrics": {},
+       "public_norm": 0.741,
+       "public_default": false,
+       "public_metrics": {
+        "arena_text_coding": {
+         "source": "arena-text-coding",
+         "level": "xhigh",
+         "score": 1500.934053830249,
+         "norm": 0.741,
+         "norm_before_discount": 0.741,
+         "harness_relation": "model-only",
+         "harness_factor": 1.0,
+         "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
+         "harness": "",
+         "source_url": "https://arena.ai/leaderboard/text"
+        }
+       },
        "own_success": 1.0,
        "own_jobs": 13,
        "own_success_rate": 1.0,
@@ -2778,7 +2791,7 @@
        "own_median_minutes": 6.8,
        "speed_rank": 1.0,
        "speed_source": "own median minutes",
-       "cost_rank": 1.0,
+       "cost_rank": 0.457,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -2793,17 +2806,31 @@
        "engine_name": "Claude Code",
        "model": "claude-fable-5.2",
        "model_display": "Claude Fable 5.2",
-       "priority": 0.55,
+       "priority": 0.7309,
        "status": [
         "probation"
        ],
        "successor_of": "claude-fable-5.1",
-       "rank_rule": null,
-       "tie_broken": false,
+       "rank_rule": "tie",
+       "tie_broken": true,
        "inputs": {
-        "public_norm": 0.5,
-        "public_default": true,
-        "public_metrics": {},
+        "public_norm": 0.902,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "max",
+          "score": 1527.3581732247849,
+          "norm": 0.902,
+          "norm_before_discount": 0.902,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Claude Fable 5.1 (Max)",
+          "inherited_from": "claude-fable-5.1",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
         "own_success": 1.0,
         "own_jobs": 16,
         "own_success_rate": 1.0,
@@ -2825,16 +2852,29 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.4654,
+       "priority": 0.6808,
        "status": [
         "proven"
        ],
-       "rank_rule": null,
+       "rank_rule": "evidence",
        "tie_broken": false,
        "inputs": {
-        "public_norm": 0.5,
-        "public_default": true,
-        "public_metrics": {},
+        "public_norm": 1.0,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1543.433913201904,
+          "norm": 1.0,
+          "norm_before_discount": 1.0,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Claude Opus 5.5 (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
         "own_success": 0.891,
         "own_jobs": 55,
         "own_success_rate": 0.891,
@@ -2842,11 +2882,451 @@
         "own_median_minutes": 12.3,
         "speed_rank": 0.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.118,
+        "cost_rank": 0.054,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$$",
         "price_blended_per_mtok": 8.0,
+        "effort": "medium",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "gemini-4-argon",
+       "model_display": "Gemini 4 Argon",
+       "priority": 0.7228,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": "tie",
+       "tie_broken": true,
+       "inputs": {
+        "public_norm": 0.98,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1540.214655320411,
+          "norm": 0.98,
+          "norm_before_discount": 0.98,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Gemini 4 Argon (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.545,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "claude-opus-5.5",
+       "model_display": "Claude Opus 5.5",
+       "priority": 0.7145,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 1.0,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1543.433913201904,
+          "norm": 1.0,
+          "norm_before_discount": 1.0,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Claude Opus 5.5 (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.43,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$$",
+        "price_blended_per_mtok": 8.0,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "gemini-3.8-flash",
+       "model_display": "Gemini 3.8 Flash",
+       "priority": 0.6626,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": "tie",
+       "tie_broken": true,
+       "inputs": {
+        "public_norm": 0.797,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1510.0993662714704,
+          "norm": 0.797,
+          "norm_before_discount": 0.797,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Gemini 3.8 Flash (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.693,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$",
+        "price_blended_per_mtok": 1.65,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "gemini-4-hydrogen",
+       "model_display": "Gemini 4 Hydrogen",
+       "priority": 0.6633,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.832,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1515.8583722695457,
+          "norm": 0.832,
+          "norm_before_discount": 0.832,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Gemini 4 Hydrogen (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.593,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 3.0,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "claude-sonnet-5.5",
+       "model_display": "Claude Sonnet 5.5",
+       "priority": 0.6152,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.741,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "xhigh",
+          "score": 1500.934053830249,
+          "norm": 0.741,
+          "norm_before_discount": 0.741,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.545,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 4.0,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "grok",
+       "engine_name": "Grok CLI",
+       "model": "grok-4.5",
+       "model_display": "Grok 4.5",
+       "priority": 0.5218,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": "evidence",
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.579,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": null,
+          "score": 1474.4073866510284,
+          "norm": 0.579,
+          "norm_before_discount": 0.579,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Grok 4.5",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.408,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
+       }
+      },
+      {
+       "engine": "grok",
+       "engine_name": "Grok CLI",
+       "model": "grok-4.6",
+       "model_display": "Grok 4.6",
+       "priority": 0.4934,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": "evidence",
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.516,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1464.1375061854715,
+          "norm": 0.516,
+          "norm_before_discount": 0.516,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Grok 4.6 (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.408,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
+       }
+      },
+      {
+       "engine": "claude",
+       "engine_name": "Claude Code",
+       "model": "claude-haiku-5.5",
+       "model_display": "Claude Haiku 5.5",
+       "priority": 0.5353,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.452,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "high",
+          "score": 1453.6013464916773,
+          "norm": 0.452,
+          "norm_before_discount": 0.452,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Claude Haiku 5.5 (High)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.879,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$",
+        "price_blended_per_mtok": 0.2,
+        "effort": "high",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "grok",
+       "engine_name": "Grok CLI",
+       "model": "grok-4.7",
+       "model_display": "Grok 4.7",
+       "priority": 0.3868,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.279,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": "xhigh",
+          "score": 1425.3220960408817,
+          "norm": 0.279,
+          "norm_before_discount": 0.279,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "Grok 4.7 (xHigh)",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 0.408,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$$$",
+        "price_blended_per_mtok": 3.0,
+        "effort": "medium",
+        "effort_source": "config"
+       }
+      },
+      {
+       "engine": "agy",
+       "engine_name": "Antigravity CLI",
+       "model": "gpt-oss-120b",
+       "model_display": "GPT-OSS 120B",
+       "priority": 0.35,
+       "status": [
+        "unproven"
+       ],
+       "rank_rule": null,
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.0,
+        "public_default": false,
+        "public_metrics": {
+         "arena_text_coding": {
+          "source": "arena-text-coding",
+          "level": null,
+          "score": 1379.5970875992948,
+          "norm": 0.0,
+          "norm_before_discount": 0.0,
+          "harness_relation": "model-only",
+          "harness_factor": 1.0,
+          "leaderboard_name": "gpt-oss-120b",
+          "harness": "",
+          "source_url": "https://arena.ai/leaderboard/text"
+         }
+        },
+        "own_success": 0.5,
+        "own_jobs": 0,
+        "own_success_rate": null,
+        "own_success_default": true,
+        "own_median_minutes": null,
+        "speed_rank": 0.5,
+        "speed_source": "default",
+        "cost_rank": 1.0,
+        "cost_source": "list price",
+        "cost_default": false,
+        "cost_tier": "$",
+        "price_blended_per_mtok": 0.2625,
         "effort": "medium",
         "effort_source": "default"
        }
@@ -3305,7 +3785,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3667,
+       "priority": 0.3668,
        "status": [
         "unproven"
        ],
@@ -3335,7 +3815,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.778,
+        "cost_rank": 0.779,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$",
@@ -3430,7 +3910,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.5436,
+       "priority": 0.5438,
        "status": [
         "proven"
        ],
@@ -3447,7 +3927,7 @@
         "own_median_minutes": 2.3,
         "speed_rank": 0.75,
         "speed_source": "own median minutes",
-        "cost_rank": 0.541,
+        "cost_rank": 0.542,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3584,6 +4064,34 @@
       "gain": 1.2
      },
      {
+      "source": "arena-text-coding",
+      "name": "Arena Text: coding",
+      "url": "https://arena.ai/leaderboard/text",
+      "unit": "Arena score",
+      "as_of": "2026-11-19",
+      "model": "Gemini 3.5 Flash",
+      "ranked": false,
+      "from": "medium",
+      "to": "high",
+      "from_raw": 1487,
+      "to_raw": 1493,
+      "gain": 6
+     },
+     {
+      "source": "arena-text-coding",
+      "name": "Arena Text: coding",
+      "url": "https://arena.ai/leaderboard/text",
+      "unit": "Arena score",
+      "as_of": "2026-11-19",
+      "model": "Claude Opus 5",
+      "ranked": false,
+      "from": "high",
+      "to": "max",
+      "from_raw": 1531,
+      "to_raw": 1532,
+      "gain": 1
+     },
+     {
       "source": "arena-webdev",
       "name": "Arena WebDev",
       "url": "https://arena.ai/leaderboard/webdev",
@@ -3641,11 +4149,11 @@
         "median_output_tokens": 49284
        },
        "high": {
-        "jobs": 43,
-        "finished": 42,
+        "jobs": 44,
+        "finished": 43,
         "finished_rate": 0.977,
-        "median_turns": 46,
-        "median_output_tokens": 58004
+        "median_turns": 47,
+        "median_output_tokens": 59958
        }
       }
      },
@@ -3742,11 +4250,11 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "high",
-      "jobs": 43,
-      "finished": 42,
+      "jobs": 44,
+      "finished": 43,
       "finished_rate": 0.977,
-      "median_turns": 46,
-      "median_output_tokens": 58004
+      "median_turns": 47,
+      "median_output_tokens": 59958
      },
      {
       "engine": "codex",
@@ -3847,7 +4355,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); above high, +56 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +34 Arena score on Arena WebDev (Claude Opus 5, not ranked here, high to max); and 2 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 133 of 172 finished cleanly at medium, 42 of 43 at high; on the jobs each level was given (not the same jobs), median output tokens were 49,284 at medium and 58,004 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +6 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +56 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 133 of 172 finished cleanly at medium, 43 of 44 at high; on the jobs each level was given (not the same jobs), median output tokens were 49,284 at medium and 59,958 at high."
    }
   },
   "agentic": {
@@ -5990,7 +6498,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5445,
+       "priority": 0.5444,
        "status": [
         "unproven"
        ],
@@ -6044,7 +6552,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.215,
+        "cost_rank": 0.214,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -9332,6 +9840,11 @@
     "unit": "%",
     "level": "max"
    },
+   "Arena Text: coding": {
+    "raw": 1543,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena WebDev": {
     "raw": 1816,
     "unit": "Arena score",
@@ -9477,6 +9990,11 @@
     "raw": 61.8,
     "unit": "%",
     "level": "max"
+   },
+   "Arena Text: coding": {
+    "raw": 1501,
+    "unit": "Arena score",
+    "level": "xhigh"
    },
    "Arena WebDev": {
     "raw": 1772,
@@ -9628,6 +10146,11 @@
     "raw": 40.0,
     "unit": "%",
     "level": "max"
+   },
+   "Arena Text: coding": {
+    "raw": 1454,
+    "unit": "Arena score",
+    "level": "high"
    },
    "Arena WebDev": {
     "raw": 1593,
@@ -9796,6 +10319,11 @@
     "unit": "%",
     "level": "high"
    },
+   "Arena Text: coding": {
+    "raw": 1540,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena WebDev": {
     "raw": 1679,
     "unit": "Arena score",
@@ -9871,6 +10399,11 @@
    "Terminal-Bench 4.0": {
     "raw": 19.1,
     "unit": "%",
+    "level": "high"
+   },
+   "Arena Text: coding": {
+    "raw": 1510,
+    "unit": "Arena score",
     "level": "high"
    },
    "Arena WebDev": {
@@ -9963,6 +10496,11 @@
     "unit": "%",
     "level": null
    },
+   "Arena Text: coding": {
+    "raw": 1380,
+    "unit": "Arena score",
+    "level": null
+   },
    "Arena Text: creative writing": {
     "raw": 1274,
     "unit": "Arena score",
@@ -10000,6 +10538,11 @@
    }
   },
   "grok-4.7": {
+   "Arena Text: coding": {
+    "raw": 1425,
+    "unit": "Arena score",
+    "level": "xhigh"
+   },
    "Arena WebDev": {
     "raw": 1640,
     "unit": "Arena score",
@@ -10085,6 +10628,11 @@
     "unit": "%",
     "level": "none"
    },
+   "Arena Text: coding": {
+    "raw": 1464,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena WebDev": {
     "raw": 1618,
     "unit": "Arena score",
@@ -10165,6 +10713,11 @@
     "unit": "%",
     "level": "none"
    },
+   "Arena Text: coding": {
+    "raw": 1474,
+    "unit": "Arena score",
+    "level": null
+   },
    "Arena WebDev": {
     "raw": 1552,
     "unit": "Arena score",
@@ -10205,6 +10758,11 @@
    "Terminal-Bench 4.0": {
     "raw": 56.4,
     "unit": "%",
+    "level": "high"
+   },
+   "Arena Text: coding": {
+    "raw": 1516,
+    "unit": "Arena score",
     "level": "high"
    },
    "Arena WebDev": {
@@ -10469,6 +11027,182 @@
       {
        "level": null,
        "raw": 26.0
+      }
+     ]
+    }
+   ]
+  },
+  "arena-text-coding": {
+   "levels": [
+    null,
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "series": [
+    {
+     "model": "claude-fable-5.2",
+     "name": "Claude Fable 5.2",
+     "org": "Anthropic",
+     "ranked": true,
+     "inherited_from": "Claude Fable 5.1",
+     "points": [
+      {
+       "level": "max",
+       "raw": 1527
+      }
+     ]
+    },
+    {
+     "model": "claude-opus-5.5",
+     "name": "Claude Opus 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1543
+      }
+     ]
+    },
+    {
+     "model": "claude-sonnet-5.5",
+     "name": "Claude Sonnet 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "xhigh",
+       "raw": 1501
+      }
+     ]
+    },
+    {
+     "model": "claude-haiku-5.5",
+     "name": "Claude Haiku 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1454
+      }
+     ]
+    },
+    {
+     "model": "gemini-4-argon",
+     "name": "Gemini 4 Argon",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1540
+      }
+     ]
+    },
+    {
+     "model": "gemini-3.8-flash",
+     "name": "Gemini 3.8 Flash",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1510
+      }
+     ]
+    },
+    {
+     "model": "gpt-oss-120b",
+     "name": "GPT-OSS 120B",
+     "org": "OpenAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": null,
+       "raw": 1380
+      }
+     ]
+    },
+    {
+     "model": "grok-4.7",
+     "name": "Grok 4.7",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": "xhigh",
+       "raw": 1425
+      }
+     ]
+    },
+    {
+     "model": "grok-4.6",
+     "name": "Grok 4.6",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1464
+      }
+     ]
+    },
+    {
+     "model": "grok-4.5",
+     "name": "Grok 4.5",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": null,
+       "raw": 1474
+      }
+     ]
+    },
+    {
+     "model": "gemini-4-hydrogen",
+     "name": "Gemini 4 Hydrogen",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1516
+      }
+     ]
+    },
+    {
+     "model": null,
+     "name": "Claude Opus 5",
+     "org": null,
+     "ranked": false,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1531
+      },
+      {
+       "level": "max",
+       "raw": 1532
+      }
+     ]
+    },
+    {
+     "model": null,
+     "name": "Gemini 3.5 Flash",
+     "org": null,
+     "ranked": false,
+     "points": [
+      {
+       "level": "medium",
+       "raw": 1487
+      },
+      {
+       "level": "high",
+       "raw": 1493
       }
      ]
     }
