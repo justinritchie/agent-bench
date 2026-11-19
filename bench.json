@@ -1,10 +1,10 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T00:02:20+00:00",
+ "generated_at": "2026-11-19T00:08:41+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T00:02:20+00:00",
-  "sources_oldest": "2026-11-18",
+  "generated_at": "2026-11-19T00:08:41+00:00",
+  "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
   "own_jobs_window_end": "2026-11-19",
@@ -877,17 +877,20 @@
      {
       "level": "low",
       "index": 44.1,
-      "cost_per_task": 0.7452
+      "cost_per_task": 0.7452,
+      "seconds": 15.7
      },
      {
       "level": "medium",
       "index": 54.9,
-      "cost_per_task": 1.9046
+      "cost_per_task": 1.9046,
+      "seconds": 29.4
      },
      {
       "level": "high",
       "index": 59.6,
-      "cost_per_task": 3.7427
+      "cost_per_task": 3.7427,
+      "seconds": 29.7
      },
      {
       "level": "xhigh",
@@ -1440,7 +1443,7 @@
    "weight": "public 0.45",
    "in_score": true,
    "harness_factor": 0.8,
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "models_covered": 10,
    "unit": "%",
    "group": "coding",
@@ -1467,7 +1470,7 @@
    "weight": "public 0.45",
    "in_score": true,
    "harness_factor": 0.8,
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "models_covered": 1,
    "unit": "%",
    "group": "coding",
@@ -1494,7 +1497,7 @@
    "weight": "public 0.45",
    "in_score": true,
    "harness_factor": 0.8,
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "models_covered": 0,
    "unit": "%",
    "group": "coding",
@@ -1804,7 +1807,7 @@
    "weight": "public 0.45",
    "in_score": true,
    "harness_factor": 1.0,
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "models_covered": 0,
    "unit": "score",
    "group": "research",
@@ -3938,7 +3941,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.4647,
+       "priority": 0.4646,
        "status": [
         "proven"
        ],
@@ -3955,7 +3958,7 @@
         "own_median_minutes": 4.5,
         "speed_rank": 0.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.08,
+        "cost_rank": 0.079,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -4051,7 +4054,7 @@
       "name": "Terminal-Bench 4.0",
       "url": "https://www.tbench.ai/",
       "unit": "%",
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-19",
       "model": "GLM-5.3-Flash",
       "ranked": false,
       "from": "none",
@@ -7051,7 +7054,7 @@
       "name": "Terminal-Bench 4.0",
       "url": "https://www.tbench.ai/",
       "unit": "%",
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-19",
       "model": "GLM-5.3-Flash",
       "ranked": false,
       "from": "none",
@@ -7503,7 +7506,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7604,
+    "priority": 0.728,
     "status": [
      "probation"
     ],
@@ -7528,14 +7531,14 @@
        "source_url": "https://arena.ai/leaderboard/search"
       }
      },
-     "own_success": 0.839,
+     "own_success": 0.806,
      "own_jobs": 31,
-     "own_success_rate": 0.839,
+     "own_success_rate": 0.806,
      "own_success_default": false,
-     "own_median_minutes": 4.4,
-     "speed_rank": 0.667,
+     "own_median_minutes": 4.6,
+     "speed_rank": 0.5,
      "speed_source": "own median minutes",
-     "cost_rank": 0.004,
+     "cost_rank": 0.01,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$$",
@@ -7581,7 +7584,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5616,
+     "priority": 0.5867,
      "status": [
       "proven"
      ],
@@ -7596,7 +7599,7 @@
       "own_success_rate": 0.966,
       "own_success_default": false,
       "own_median_minutes": 4.5,
-      "speed_rank": 0.5,
+      "speed_rank": 0.667,
       "speed_source": "own median minutes",
       "cost_rank": 0.134,
       "cost_source": "own jobs",
@@ -8013,9 +8016,9 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 12,
+      "jobs": 13,
       "finished": 10,
-      "finished_rate": 0.833,
+      "finished_rate": 0.769,
       "median_turns": 27,
       "median_output_tokens": 38581
      },

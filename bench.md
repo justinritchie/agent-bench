@@ -1,6 +1,6 @@
 # Multi-agent tasks: which coding agent
 
-Which engine, model and reasoning effort to send a job to, and the fallback. Generated 2026-11-19 UTC, rebuilt about weekly; source snapshots 2026-11-18 to 2026-11-19; own jobs: the 28 days before. First choices changed since 2026-11-12: writing Antigravity CLI / gemini-4-argon -> Claude Code / claude-fable-5.2; coding / features claude-fable-5.2 -> claude-sonnet-5.5; coding / multilang Codex CLI / gpt-6.1-sol -> none; and 1 more (/bench.json `changes`).
+Which engine, model and reasoning effort to send a job to, and the fallback. Generated 2026-11-19 UTC, rebuilt about weekly; source snapshots 2026-11-19 to 2026-11-19; own jobs: the 28 days before. First choices changed since 2026-11-12: writing Antigravity CLI / gemini-4-argon -> Claude Code / claude-fable-5.2; coding / features claude-fable-5.2 -> claude-sonnet-5.5; coding / multilang Codex CLI / gpt-6.1-sol -> none; and 1 more (/bench.json `changes`).
 
 For task class X, use the first choice; if it cannot run right now, the next fallback, in the order listed. The order is the ranking: with few own jobs, the evidence and tie rules can put a lower score first. A `class / kind` row ranks one kind of coding or agentic work; prefer it when the task clearly fits. score 0-1 (cheaper wins when quality is close); $-$$$$ = list-price cost tier; evidence = own jobs in 28 days; proven = at least 5; probation = a new model version counting its predecessor's jobs and public scores for 28 days; effort = the reasoning effort to run at, lowest to highest low, medium, high, xhigh, max (a fallback's follows its cost tier; '(config)' = the CLI's own config; '· source' = moved by a leaderboard gap of 0.03+).
 
@@ -16,7 +16,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | agentic / data | Claude Code / claude-sonnet-5.5 $$$ | medium | - | 0.50 | 3 | unproven |
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
 | agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / claude-opus-5.5 $$$$ high (0.59) | 0.55 | 5 | proven |
-| research | Claude Code / claude-fable-5.2 $$$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.64); Claude Code / claude-sonnet-5.5 $$$ medium (0.56) | 0.76 | 31 | probation |
+| research | Claude Code / claude-fable-5.2 $$$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.64); Claude Code / claude-sonnet-5.5 $$$ medium (0.59) | 0.73 | 31 | probation |
 | reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.58); Claude Code / claude-haiku-5.5 $ high (0.60) | 0.81 | 39 | probation |
 | writing | Claude Code / claude-fable-5.2 $$$$ | medium | Antigravity CLI / gemini-4-argon $$$ high (0.77); Claude Code / claude-sonnet-5.5 $$$ medium (0.67) | 0.76 | 73 | probation |
 
