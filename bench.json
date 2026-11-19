@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T00:55:49+00:00",
+ "generated_at": "2026-11-19T01:00:57+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T00:55:49+00:00",
+  "generated_at": "2026-11-19T01:00:57+00:00",
   "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
@@ -7553,7 +7553,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.6395,
+     "priority": 0.6392,
      "status": [
       "proven"
      ],
@@ -7564,13 +7564,13 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 1.0,
-      "own_jobs": 12,
+      "own_jobs": 13,
       "own_success_rate": 1.0,
       "own_success_default": false,
-      "own_median_minutes": 3.6,
+      "own_median_minutes": 3.8,
       "speed_rank": 0.833,
       "speed_source": "own median minutes",
-      "cost_rank": 0.264,
+      "cost_rank": 0.262,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8049,6 +8049,18 @@
      {
       "engine": "codex",
       "engine_name": "Codex CLI",
+      "model": "gpt-6.2-sol",
+      "model_display": "GPT-6.2 Sol",
+      "level": "medium",
+      "jobs": 6,
+      "finished": 6,
+      "finished_rate": 1.0,
+      "median_turns": 1,
+      "median_output_tokens": 12171
+     },
+     {
+      "engine": "codex",
+      "engine_name": "Codex CLI",
       "model": "gpt-6.2-astra",
       "model_display": "GPT-6.2 Astra",
       "level": "medium",
@@ -8057,18 +8069,6 @@
       "finished_rate": 0.4,
       "median_turns": 1,
       "median_output_tokens": 4269
-     },
-     {
-      "engine": "codex",
-      "engine_name": "Codex CLI",
-      "model": "gpt-6.2-sol",
-      "model_display": "GPT-6.2 Sol",
-      "level": "medium",
-      "jobs": 5,
-      "finished": 5,
-      "finished_rate": 1.0,
-      "median_turns": 1,
-      "median_output_tokens": 11967
      }
     ],
     "cost_step": {
