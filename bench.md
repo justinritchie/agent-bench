@@ -11,7 +11,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.68) | 0.80 | 13 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.57); Antigravity CLI / claude-opus-5.5 $$$$ high (0.70) | 0.65 | 6 | probation |
 | coding / review | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.54); Claude Code / claude-opus-5.5 $$$$ medium (0.46) | 0.58 | 10 | proven |
-| agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.68) | 0.69 | 61 | proven |
+| agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.68) | 0.69 | 60 | proven |
 | agentic / terminal | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.72); Claude Code / claude-opus-5.5 $$$$ medium (0.67) | 0.72 | 10 | proven |
 | agentic / data | Claude Code / claude-sonnet-5.5 $$$ | medium | - | 0.50 | 3 | unproven |
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
@@ -34,9 +34,9 @@ Is a higher effort worth it? One step up in effort: Artificial Analysis Intellig
 | gemini-4-argon | - | +2.8 / 1.2x | - | - |
 
 Own jobs of one model at two effort levels, per class. Not a controlled test: the effort was chosen per job. What the leaderboards gain per level: /bench.json `classes.X.effort_evidence`. No source gives tokens per level.
-- coding: Claude Opus 5.5 in Claude Code: 133 of 169 finished cleanly at medium, 42 of 43 at high.
+- coding: Claude Opus 5.5 in Claude Code: 133 of 170 finished cleanly at medium, 42 of 43 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 10 of 16 finished cleanly at medium, 8 of 8 at high.
-- research: Claude Opus 5.5 in Claude Code: 14 of 16 finished cleanly at medium, 13 of 13 at high.
+- research: Claude Opus 5.5 in Claude Code: 14 of 16 finished cleanly at medium, 12 of 12 at high.
 - reading: Claude Sonnet 5.5 in Claude Code: 72 of 72 finished cleanly at medium, 18 of 20 at high.
 - writing: Claude Sonnet 5.5 in Claude Code: 15 of 16 finished cleanly at medium, 19 of 20 at high.
 
