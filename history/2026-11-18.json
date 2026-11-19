@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T01:54:08+00:00",
+ "generated_at": "2026-11-19T01:59:38+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T01:54:08+00:00",
+  "generated_at": "2026-11-19T01:59:38+00:00",
   "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
@@ -2034,7 +2034,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.7836,
+    "priority": 0.7829,
     "status": [
      "proven"
     ],
@@ -2057,14 +2057,14 @@
        "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-30-anthropic-claude-sonnet-5-5-max-claude-code.json"
       }
      },
-     "own_success": 0.975,
-     "own_jobs": 80,
-     "own_success_rate": 0.975,
+     "own_success": 0.974,
+     "own_jobs": 78,
+     "own_success_rate": 0.974,
      "own_success_default": false,
      "own_median_minutes": 3.6,
      "speed_rank": 0.6,
      "speed_source": "own median minutes",
-     "cost_rank": 0.221,
+     "cost_rank": 0.218,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -2761,7 +2761,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.802,
+      "priority": 0.799,
       "status": [
        "proven"
       ],
@@ -2785,13 +2785,13 @@
         }
        },
        "own_success": 1.0,
-       "own_jobs": 13,
+       "own_jobs": 11,
        "own_success_rate": 1.0,
        "own_success_default": false,
        "own_median_minutes": 6.8,
        "speed_rank": 1.0,
        "speed_source": "own median minutes",
-       "cost_rank": 0.457,
+       "cost_rank": 0.437,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -4171,11 +4171,11 @@
         "median_output_tokens": 20792
        },
        "high": {
-        "jobs": 29,
-        "finished": 28,
-        "finished_rate": 0.966,
-        "median_turns": 34,
-        "median_output_tokens": 33080
+        "jobs": 27,
+        "finished": 26,
+        "finished_rate": 0.963,
+        "median_turns": 38,
+        "median_output_tokens": 35466
        }
       }
      },
@@ -4334,11 +4334,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "high",
-      "jobs": 29,
-      "finished": 28,
-      "finished_rate": 0.966,
-      "median_turns": 34,
-      "median_output_tokens": 33080
+      "jobs": 27,
+      "finished": 26,
+      "finished_rate": 0.963,
+      "median_turns": 38,
+      "median_output_tokens": 35466
      }
     ],
     "cost_step": {
