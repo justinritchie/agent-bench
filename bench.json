@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T00:08:41+00:00",
+ "generated_at": "2026-11-19T00:14:32+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T00:08:41+00:00",
+  "generated_at": "2026-11-19T00:14:32+00:00",
   "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
@@ -3941,7 +3941,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.4646,
+       "priority": 0.4647,
        "status": [
         "proven"
        ],
@@ -3958,7 +3958,7 @@
         "own_median_minutes": 4.5,
         "speed_rank": 0.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.079,
+        "cost_rank": 0.08,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -7506,7 +7506,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.728,
+    "priority": 0.7256,
     "status": [
      "probation"
     ],
@@ -7531,14 +7531,14 @@
        "source_url": "https://arena.ai/leaderboard/search"
       }
      },
-     "own_success": 0.806,
-     "own_jobs": 31,
-     "own_success_rate": 0.806,
+     "own_success": 0.8,
+     "own_jobs": 30,
+     "own_success_rate": 0.8,
      "own_success_default": false,
-     "own_median_minutes": 4.6,
+     "own_median_minutes": 4.7,
      "speed_rank": 0.5,
      "speed_source": "own median minutes",
-     "cost_rank": 0.01,
+     "cost_rank": 0.004,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$$",
@@ -7595,10 +7595,10 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 0.966,
-      "own_jobs": 59,
+      "own_jobs": 58,
       "own_success_rate": 0.966,
       "own_success_default": false,
-      "own_median_minutes": 4.5,
+      "own_median_minutes": 4.6,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
       "cost_rank": 0.134,
@@ -7875,11 +7875,11 @@
         "median_output_tokens": 25382
        },
        "high": {
-        "jobs": 49,
-        "finished": 47,
-        "finished_rate": 0.959,
+        "jobs": 48,
+        "finished": 46,
+        "finished_rate": 0.958,
         "median_turns": 42,
-        "median_output_tokens": 43507
+        "median_output_tokens": 43536
        }
       }
      },
@@ -7968,11 +7968,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "high",
-      "jobs": 49,
-      "finished": 47,
-      "finished_rate": 0.959,
+      "jobs": 48,
+      "finished": 46,
+      "finished_rate": 0.958,
       "median_turns": 42,
-      "median_output_tokens": 43507
+      "median_output_tokens": 43536
      },
      {
       "engine": "claude",
@@ -8523,11 +8523,11 @@
         "median_output_tokens": 17023
        },
        "xhigh": {
-        "jobs": 75,
-        "finished": 75,
+        "jobs": 74,
+        "finished": 74,
         "finished_rate": 1.0,
         "median_turns": 1,
-        "median_output_tokens": 9057
+        "median_output_tokens": 9004
        }
       }
      }
@@ -8551,11 +8551,11 @@
       "model": "gpt-6.1-sol",
       "model_display": "GPT-6.1 Sol",
       "level": "xhigh",
-      "jobs": 75,
-      "finished": 75,
+      "jobs": 74,
+      "finished": 74,
       "finished_rate": 1.0,
       "median_turns": 1,
-      "median_output_tokens": 9057
+      "median_output_tokens": 9004
      },
      {
       "engine": "claude",
