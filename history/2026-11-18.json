@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-19T01:00:57+00:00",
+ "generated_at": "2026-11-19T01:08:00+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-19T01:00:57+00:00",
+  "generated_at": "2026-11-19T01:08:00+00:00",
   "sources_oldest": "2026-11-19",
   "sources_newest": "2026-11-19",
   "own_jobs_window_days": 28,
@@ -4538,7 +4538,7 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.6751,
+     "priority": 0.6656,
      "status": [
       "probation"
      ],
@@ -4598,9 +4598,9 @@
         "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
        }
       },
-      "own_success": 0.8,
-      "own_jobs": 20,
-      "own_success_rate": 0.8,
+      "own_success": 0.762,
+      "own_jobs": 21,
+      "own_success_rate": 0.762,
       "own_success_default": false,
       "own_median_minutes": 8.1,
       "speed_rank": 0.167,
@@ -7447,9 +7447,9 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 17,
+      "jobs": 18,
       "finished": 14,
-      "finished_rate": 0.824,
+      "finished_rate": 0.778,
       "median_turns": 56,
       "median_output_tokens": 85662
      },
