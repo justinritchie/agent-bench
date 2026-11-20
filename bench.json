@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T12:15:43+00:00",
+ "generated_at": "2026-11-20T12:20:28+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T12:15:43+00:00",
+  "generated_at": "2026-11-20T12:20:28+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2243,7 +2243,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.7833,
+     "priority": 0.7737,
      "status": [
       "proven"
      ],
@@ -2266,9 +2266,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-17-4-1-0-gpt-6-2-sol-max-codex.json"
        }
       },
-      "own_success": 0.913,
-      "own_jobs": 23,
-      "own_success_rate": 0.913,
+      "own_success": 0.875,
+      "own_jobs": 24,
+      "own_success_rate": 0.875,
       "own_success_default": false,
       "own_median_minutes": 4.8,
       "speed_rank": 0.667,
@@ -2960,8 +2960,8 @@
         "public_default": true,
         "public_metrics": {},
         "own_success": 0.5,
-        "own_jobs": 2,
-        "own_success_rate": 0.5,
+        "own_jobs": 3,
+        "own_success_rate": 0.333,
         "own_success_default": true,
         "own_median_minutes": 2.3,
         "speed_rank": 1.0,
@@ -4747,9 +4747,9 @@
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
       "level": "medium",
-      "jobs": 19,
+      "jobs": 20,
       "finished": 17,
-      "finished_rate": 0.895,
+      "finished_rate": 0.85,
       "median_turns": 1,
       "median_output_tokens": 17579
      },
