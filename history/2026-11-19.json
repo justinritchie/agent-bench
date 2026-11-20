@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T01:39:15+00:00",
+ "generated_at": "2026-11-20T01:41:55+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T01:39:15+00:00",
+  "generated_at": "2026-11-20T01:41:55+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2287,7 +2287,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7073,
+     "priority": 0.7065,
      "status": [
       "proven"
      ],
@@ -2310,9 +2310,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-30-anthropic-claude-opus-5-5-max-claude-code.json"
        }
       },
-      "own_success": 0.771,
-      "own_jobs": 227,
-      "own_success_rate": 0.771,
+      "own_success": 0.768,
+      "own_jobs": 228,
+      "own_success_rate": 0.768,
       "own_success_default": false,
       "own_median_minutes": 8.9,
       "speed_rank": 0.4,
@@ -4438,9 +4438,9 @@
       "model_display": "Claude Opus 5.5",
       "levels": {
        "medium": {
-        "jobs": 185,
+        "jobs": 186,
         "finished": 134,
-        "finished_rate": 0.724,
+        "finished_rate": 0.72,
         "median_turns": 65,
         "median_output_tokens": 48813
        },
@@ -4534,9 +4534,9 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "medium",
-      "jobs": 185,
+      "jobs": 186,
       "finished": 134,
-      "finished_rate": 0.724,
+      "finished_rate": 0.72,
       "median_turns": 65,
       "median_output_tokens": 48813
      },
@@ -4663,7 +4663,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +57 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 134 of 185 finished cleanly at medium, 41 of 42 at high; on the jobs each level was given (not the same jobs), median output tokens were 48,813 at medium and 59,958 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +57 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 134 of 186 finished cleanly at medium, 41 of 42 at high; on the jobs each level was given (not the same jobs), median output tokens were 48,813 at medium and 59,958 at high."
    }
   },
   "agentic": {
@@ -5007,7 +5007,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5732,
+     "priority": 0.5679,
      "status": [
       "proven"
      ],
@@ -5066,9 +5066,9 @@
         "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
        }
       },
-      "own_success": 0.621,
-      "own_jobs": 29,
-      "own_success_rate": 0.621,
+      "own_success": 0.6,
+      "own_jobs": 30,
+      "own_success_rate": 0.6,
       "own_success_default": false,
       "own_median_minutes": 9.1,
       "speed_rank": 0.0,
@@ -7869,9 +7869,9 @@
       "model_display": "Claude Opus 5.5",
       "levels": {
        "medium": {
-        "jobs": 21,
+        "jobs": 22,
         "finished": 10,
-        "finished_rate": 0.476,
+        "finished_rate": 0.455,
         "median_turns": 21,
         "median_output_tokens": 53742
        },
@@ -7979,26 +7979,14 @@
       "median_output_tokens": 760
      },
      {
-      "engine": "codex",
-      "engine_name": "Codex CLI",
-      "model": "gpt-6.1-sol",
-      "model_display": "GPT-6.1 Sol",
-      "level": "high",
-      "jobs": 30,
-      "finished": 30,
-      "finished_rate": 1.0,
-      "median_turns": 1,
-      "median_output_tokens": 31759
-     },
-     {
       "engine": "claude",
       "engine_name": "Claude Code",
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "medium",
-      "jobs": 21,
+      "jobs": 22,
       "finished": 10,
-      "finished_rate": 0.476,
+      "finished_rate": 0.455,
       "median_turns": 21,
       "median_output_tokens": 53742
      },
@@ -8013,6 +8001,18 @@
       "finished_rate": 1.0,
       "median_turns": 92,
       "median_output_tokens": 90574
+     },
+     {
+      "engine": "codex",
+      "engine_name": "Codex CLI",
+      "model": "gpt-6.1-sol",
+      "model_display": "GPT-6.1 Sol",
+      "level": "high",
+      "jobs": 30,
+      "finished": 30,
+      "finished_rate": 1.0,
+      "median_turns": 1,
+      "median_output_tokens": 31759
      },
      {
       "engine": "claude",
@@ -8065,7 +8065,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); above high, +0.082 IPS score on Arena Agent: overall score (Claude Sonnet 5.5, high to max); +0.049 IPS score on Arena Agent: overall score (Claude Opus 5.5, high to max); and 6 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 10 of 21 finished cleanly at medium, 8 of 8 at high; on the jobs each level was given (not the same jobs), median output tokens were 53,742 at medium and 90,574 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); above high, +0.082 IPS score on Arena Agent: overall score (Claude Sonnet 5.5, high to max); +0.049 IPS score on Arena Agent: overall score (Claude Opus 5.5, high to max); and 6 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 10 of 22 finished cleanly at medium, 8 of 8 at high; on the jobs each level was given (not the same jobs), median output tokens were 53,742 at medium and 90,574 at high."
    }
   },
   "research": {
