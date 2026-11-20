@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T06:19:57+00:00",
+ "generated_at": "2026-11-20T06:22:54+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T06:19:57+00:00",
+  "generated_at": "2026-11-20T06:22:54+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2186,7 +2186,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.8131,
+    "priority": 0.8178,
     "status": [
      "proven"
     ],
@@ -2214,9 +2214,9 @@
      "own_success_rate": 0.974,
      "own_success_default": false,
      "own_median_minutes": 3.5,
-     "speed_rank": 0.8,
+     "speed_rank": 0.833,
      "speed_source": "own median minutes",
-     "cost_rank": 0.219,
+     "cost_rank": 0.218,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -2231,7 +2231,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.7948,
+     "priority": 0.8047,
      "status": [
       "proven"
      ],
@@ -2259,9 +2259,9 @@
       "own_success_rate": 1.0,
       "own_success_default": false,
       "own_median_minutes": 5.5,
-      "speed_rank": 0.6,
+      "speed_rank": 0.667,
       "speed_source": "own median minutes",
-      "cost_rank": 0.269,
+      "cost_rank": 0.268,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2275,7 +2275,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7007,
+     "priority": 0.7156,
      "status": [
       "proven"
      ],
@@ -2303,9 +2303,9 @@
       "own_success_rate": 0.746,
       "own_success_default": false,
       "own_median_minutes": 8.7,
-      "speed_rank": 0.4,
+      "speed_rank": 0.5,
       "speed_source": "own median minutes",
-      "cost_rank": 0.079,
+      "cost_rank": 0.078,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -2319,7 +2319,7 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.702,
+     "priority": 0.7222,
      "status": [
       "probation"
      ],
@@ -2343,12 +2343,12 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-10-anthropic-claude-fable-5-2-max-claude-code.json"
        }
       },
-      "own_success": 0.888,
-      "own_jobs": 125,
-      "own_success_rate": 0.888,
+      "own_success": 0.889,
+      "own_jobs": 126,
+      "own_success_rate": 0.889,
       "own_success_default": false,
       "own_median_minutes": 11.3,
-      "speed_rank": 0.2,
+      "speed_rank": 0.333,
       "speed_source": "own median minutes",
       "cost_rank": 0.0,
       "cost_source": "own jobs",
@@ -2364,7 +2364,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5766,
+     "priority": 0.5763,
      "status": [
       "unproven"
      ],
@@ -2394,7 +2394,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.288,
+      "cost_rank": 0.286,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2408,7 +2408,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.587,
+     "priority": 0.5867,
      "status": [
       "unproven"
      ],
@@ -2438,7 +2438,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.222,
+      "cost_rank": 0.22,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -2452,7 +2452,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.544,
+     "priority": 0.5437,
      "status": [
       "unproven"
      ],
@@ -2482,7 +2482,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.316,
+      "cost_rank": 0.314,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2496,7 +2496,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.4585,
+     "priority": 0.4582,
      "status": [
       "unproven"
      ],
@@ -2526,7 +2526,7 @@
       "own_median_minutes": 20.6,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.288,
+      "cost_rank": 0.286,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2584,7 +2584,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gpt-oss-120b",
      "model_display": "GPT-OSS 120B",
-     "priority": 0.5147,
+     "priority": 0.5144,
      "status": [
       "unproven"
      ],
@@ -2614,7 +2614,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.598,
+      "cost_rank": 0.596,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
@@ -2628,12 +2628,12 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3122,
+     "priority": 0.3119,
      "status": [
       "unproven"
      ],
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": "evidence",
+     "tie_broken": false,
      "inputs": {
       "public_norm": 0.125,
       "public_default": false,
@@ -2658,7 +2658,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.373,
+      "cost_rank": 0.371,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2672,11 +2672,11 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2968,
+     "priority": 0.2966,
      "status": [
       "unproven"
      ],
-     "rank_rule": null,
+     "rank_rule": "evidence",
      "tie_broken": false,
      "inputs": {
       "public_norm": 0.148,
@@ -2702,7 +2702,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.201,
+      "cost_rank": 0.2,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2716,11 +2716,11 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2302,
+     "priority": 0.23,
      "status": [
       "unproven"
      ],
-     "rank_rule": null,
+     "rank_rule": "evidence",
      "tie_broken": false,
      "inputs": {
       "public_norm": 0.0,
@@ -2746,13 +2746,44 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.201,
+      "cost_rank": 0.2,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
       "price_blended_per_mtok": 3.0,
       "effort": "medium",
       "effort_source": "config"
+     }
+    },
+    {
+     "engine": "agy",
+     "engine_name": "Antigravity CLI",
+     "model": "gemini-4-neon",
+     "model_display": "Gemini 4 Neon",
+     "priority": 0.4121,
+     "status": [
+      "unproven"
+     ],
+     "rank_rule": null,
+     "tie_broken": false,
+     "inputs": {
+      "public_norm": 0.5,
+      "public_default": true,
+      "public_metrics": {},
+      "own_success": 0.5,
+      "own_jobs": 1,
+      "own_success_rate": 1.0,
+      "own_success_default": true,
+      "own_median_minutes": 15.8,
+      "speed_rank": 0.167,
+      "speed_source": "own median minutes",
+      "cost_rank": 0.247,
+      "cost_source": "list price",
+      "cost_default": false,
+      "cost_tier": "$$$$",
+      "price_blended_per_mtok": 6.0,
+      "effort": "high",
+      "effort_source": "default"
      }
     }
    ],
@@ -2767,7 +2798,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.679,
+      "priority": 0.6792,
       "status": [
        "proven"
       ],
@@ -2784,7 +2815,7 @@
        "own_median_minutes": 4.8,
        "speed_rank": 1.0,
        "speed_source": "own median minutes",
-       "cost_rank": 0.36,
+       "cost_rank": 0.361,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -2799,7 +2830,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.5205,
+       "priority": 0.5207,
        "status": [
         "proven"
        ],
@@ -2816,7 +2847,7 @@
         "own_median_minutes": 7.4,
         "speed_rank": 0.5,
         "speed_source": "own median minutes",
-        "cost_rank": 0.27,
+        "cost_rank": 0.271,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -2913,7 +2944,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.7712,
+      "priority": 0.7714,
       "status": [
        "proven"
       ],
@@ -2943,7 +2974,7 @@
        "own_median_minutes": 6.8,
        "speed_rank": 1.0,
        "speed_source": "own median minutes",
-       "cost_rank": 0.411,
+       "cost_rank": 0.412,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -2958,7 +2989,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-neon",
        "model_display": "Gemini 4 Neon",
-       "priority": 0.7143,
+       "priority": 0.7142,
        "status": [
         "unproven"
        ],
@@ -2988,7 +3019,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.429,
+        "cost_rank": 0.428,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -3046,7 +3077,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.6828,
+       "priority": 0.6827,
        "status": [
         "unproven"
        ],
@@ -3076,7 +3107,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.492,
+        "cost_rank": 0.491,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3090,7 +3121,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6774,
+       "priority": 0.6772,
        "status": [
         "unproven"
        ],
@@ -3120,7 +3151,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.384,
+        "cost_rank": 0.382,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -3223,7 +3254,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.62,
+       "priority": 0.6199,
        "status": [
         "unproven"
        ],
@@ -3253,7 +3284,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.538,
+        "cost_rank": 0.537,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3267,7 +3298,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5834,
+       "priority": 0.5832,
        "status": [
         "unproven"
        ],
@@ -3297,7 +3328,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.492,
+        "cost_rank": 0.491,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3311,7 +3342,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.4955,
+       "priority": 0.4956,
        "status": [
         "unproven"
        ],
@@ -3341,7 +3372,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.35,
+        "cost_rank": 0.351,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3355,7 +3386,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.469,
+       "priority": 0.4691,
        "status": [
         "unproven"
        ],
@@ -3385,7 +3416,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.35,
+        "cost_rank": 0.351,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3399,7 +3430,7 @@
        "engine_name": "Claude Code",
        "model": "claude-haiku-5.5",
        "model_display": "Claude Haiku 5.5",
-       "priority": 0.5087,
+       "priority": 0.509,
        "status": [
         "unproven"
        ],
@@ -3429,7 +3460,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.825,
+        "cost_rank": 0.827,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$",
@@ -3443,7 +3474,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.4172,
+       "priority": 0.4176,
        "status": [
         "unproven"
        ],
@@ -3473,7 +3504,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.416,
+        "cost_rank": 0.419,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3487,7 +3518,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.365,
+       "priority": 0.3651,
        "status": [
         "unproven"
        ],
@@ -3517,7 +3548,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.35,
+        "cost_rank": 0.351,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3672,7 +3703,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.7076,
+       "priority": 0.7071,
        "status": [
         "unproven"
        ],
@@ -3702,7 +3733,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.441,
+        "cost_rank": 0.438,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -3760,7 +3791,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6503,
+       "priority": 0.65,
        "status": [
         "unproven"
        ],
@@ -3790,7 +3821,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.578,
+        "cost_rank": 0.576,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3804,7 +3835,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-neon",
        "model_display": "Gemini 4 Neon",
-       "priority": 0.6248,
+       "priority": 0.6244,
        "status": [
         "unproven"
        ],
@@ -3834,7 +3865,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.498,
+        "cost_rank": 0.495,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -3848,7 +3879,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6079,
+       "priority": 0.6083,
        "status": [
         "unproven"
        ],
@@ -3878,7 +3909,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.481,
+        "cost_rank": 0.484,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3892,7 +3923,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.5424,
+       "priority": 0.542,
        "status": [
         "unproven"
        ],
@@ -3922,7 +3953,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.636,
+        "cost_rank": 0.633,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3936,7 +3967,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.5,
+       "priority": 0.4997,
        "status": [
         "unproven"
        ],
@@ -3966,7 +3997,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.578,
+        "cost_rank": 0.576,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4112,7 +4143,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3654,
+       "priority": 0.365,
        "status": [
         "unproven"
        ],
@@ -4142,7 +4173,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.755,
+        "cost_rank": 0.752,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4542,11 +4573,11 @@
       "model_display": "Claude Fable 5.2",
       "levels": {
        "medium": {
-        "jobs": 96,
-        "finished": 84,
-        "finished_rate": 0.875,
-        "median_turns": 72,
-        "median_output_tokens": 80678
+        "jobs": 97,
+        "finished": 85,
+        "finished_rate": 0.876,
+        "median_turns": 71,
+        "median_output_tokens": 80097
        },
        "high": {
         "jobs": 6,
@@ -4625,11 +4656,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 96,
-      "finished": 84,
-      "finished_rate": 0.875,
-      "median_turns": 72,
-      "median_output_tokens": 80678
+      "jobs": 97,
+      "finished": 85,
+      "finished_rate": 0.876,
+      "median_turns": 71,
+      "median_output_tokens": 80097
      },
      {
       "engine": "claude",
@@ -5118,7 +5149,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-neon",
      "model_display": "Gemini 4 Neon",
-     "priority": 0.5891,
+     "priority": 0.5888,
      "status": [
       "unproven"
      ],
@@ -5172,7 +5203,7 @@
       "own_median_minutes": 7.5,
       "speed_rank": 0.286,
       "speed_source": "own median minutes",
-      "cost_rank": 0.375,
+      "cost_rank": 0.373,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -5186,7 +5217,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.6025,
+     "priority": 0.6021,
      "status": [
       "unproven"
      ],
@@ -5252,7 +5283,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.334,
+      "cost_rank": 0.332,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -5266,7 +5297,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5883,
+     "priority": 0.588,
      "status": [
       "unproven"
      ],
@@ -5332,7 +5363,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.432,
+      "cost_rank": 0.43,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5346,7 +5377,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.6215,
+     "priority": 0.6212,
      "status": [
       "unproven"
      ],
@@ -5412,7 +5443,7 @@
       "own_median_minutes": 0.3,
       "speed_rank": 0.857,
       "speed_source": "own median minutes",
-      "cost_rank": 0.473,
+      "cost_rank": 0.471,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5426,7 +5457,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.5343,
+     "priority": 0.5341,
      "status": [
       "unproven"
      ],
@@ -5492,7 +5523,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.432,
+      "cost_rank": 0.43,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5574,7 +5605,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.3335,
+     "priority": 0.3332,
      "status": [
       "unproven"
      ],
@@ -5640,7 +5671,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.557,
+      "cost_rank": 0.555,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -6012,7 +6043,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6257,
+       "priority": 0.626,
        "status": [
         "unproven"
        ],
@@ -6054,7 +6085,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.279,
+        "cost_rank": 0.281,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6068,7 +6099,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6069,
+       "priority": 0.6065,
        "status": [
         "unproven"
        ],
@@ -6110,7 +6141,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.247,
+        "cost_rank": 0.244,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -6124,7 +6155,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5986,
+       "priority": 0.5981,
        "status": [
         "unproven"
        ],
@@ -6166,7 +6197,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.356,
+        "cost_rank": 0.353,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6224,7 +6255,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.5126,
+       "priority": 0.5123,
        "status": [
         "unproven"
        ],
@@ -6266,7 +6297,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.401,
+        "cost_rank": 0.399,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6280,7 +6311,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.4955,
+       "priority": 0.495,
        "status": [
         "unproven"
        ],
@@ -6322,7 +6353,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.356,
+        "cost_rank": 0.353,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6336,7 +6367,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3769,
+       "priority": 0.3766,
        "status": [
         "unproven"
        ],
@@ -6378,7 +6409,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.495,
+        "cost_rank": 0.493,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6448,7 +6479,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-neon",
        "model_display": "Gemini 4 Neon",
-       "priority": 0.2438,
+       "priority": 0.2435,
        "status": [
         "unproven"
        ],
@@ -6478,7 +6509,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.292,
+        "cost_rank": 0.29,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -6793,7 +6824,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-neon",
        "model_display": "Gemini 4 Neon",
-       "priority": 0.608,
+       "priority": 0.6077,
        "status": [
         "unproven"
        ],
@@ -6847,7 +6878,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.287,
+        "cost_rank": 0.285,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -6861,7 +6892,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.5859,
+       "priority": 0.5857,
        "status": [
         "unproven"
        ],
@@ -6915,7 +6946,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.242,
+        "cost_rank": 0.24,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -6929,7 +6960,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.5575,
+       "priority": 0.5572,
        "status": [
         "unproven"
        ],
@@ -6983,7 +7014,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.394,
+        "cost_rank": 0.392,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6997,7 +7028,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5594,
+       "priority": 0.559,
        "status": [
         "unproven"
        ],
@@ -7051,7 +7082,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.35,
+        "cost_rank": 0.347,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7269,7 +7300,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.4879,
+       "priority": 0.4874,
        "status": [
         "unproven"
        ],
@@ -7323,7 +7354,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.35,
+        "cost_rank": 0.347,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7337,7 +7368,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3129,
+       "priority": 0.3126,
        "status": [
         "unproven"
        ],
@@ -7391,7 +7422,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.486,
+        "cost_rank": 0.484,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -8263,7 +8294,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5015,
+     "priority": 0.5012,
      "status": [
       "unproven"
      ],
@@ -8293,7 +8324,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.216,
+      "cost_rank": 0.214,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -8929,7 +8960,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.5466,
+     "priority": 0.5462,
      "status": [
       "unproven"
      ],
@@ -8959,7 +8990,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.598,
+      "cost_rank": 0.595,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9342,7 +9373,7 @@
     "engine_name": "Antigravity CLI",
     "model": "gemini-4-argon",
     "model_display": "Gemini 4 Argon",
-    "priority": 0.7889,
+    "priority": 0.7891,
     "status": [
      "proven"
     ],
@@ -9384,7 +9415,7 @@
      "own_median_minutes": 5.3,
      "speed_rank": 0.333,
      "speed_source": "own median minutes",
-     "cost_rank": 0.388,
+     "cost_rank": 0.389,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -9456,7 +9487,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7084,
+     "priority": 0.7086,
      "status": [
       "proven"
      ],
@@ -9498,7 +9529,7 @@
       "own_median_minutes": 5.2,
       "speed_rank": 0.5,
       "speed_source": "own median minutes",
-      "cost_rank": 0.064,
+      "cost_rank": 0.065,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -9512,7 +9543,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.6678,
+     "priority": 0.668,
      "status": [
       "proven"
      ],
@@ -9554,7 +9585,7 @@
       "own_median_minutes": 4.0,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
-      "cost_rank": 0.187,
+      "cost_rank": 0.188,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9568,7 +9599,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.6657,
+     "priority": 0.6654,
      "status": [
       "unproven"
      ],
@@ -9610,7 +9641,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.243,
+      "cost_rank": 0.241,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -9624,7 +9655,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-neon",
      "model_display": "Gemini 4 Neon",
-     "priority": 0.6035,
+     "priority": 0.6032,
      "status": [
       "unproven"
      ],
@@ -9666,7 +9697,7 @@
       "own_median_minutes": 9.1,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.298,
+      "cost_rank": 0.296,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -9680,7 +9711,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.6618,
+     "priority": 0.6617,
      "status": [
       "unproven"
      ],
@@ -9722,7 +9753,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.547,
+      "cost_rank": 0.546,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9736,7 +9767,7 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.6594,
+     "priority": 0.6591,
      "status": [
       "unproven"
      ],
@@ -9778,7 +9809,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.432,
+      "cost_rank": 0.43,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9792,7 +9823,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.5401,
+     "priority": 0.5402,
      "status": [
       "proven"
      ],
@@ -9834,7 +9865,7 @@
       "own_median_minutes": 1.8,
       "speed_rank": 1.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.564,
+      "cost_rank": 0.565,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9848,7 +9879,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5669,
+     "priority": 0.5667,
      "status": [
       "unproven"
      ],
@@ -9890,7 +9921,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.376,
+      "cost_rank": 0.375,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9904,7 +9935,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.4916,
+     "priority": 0.4918,
      "status": [
       "unproven"
      ],
@@ -9946,7 +9977,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.201,
+      "cost_rank": 0.202,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9960,7 +9991,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4542,
+     "priority": 0.4544,
      "status": [
       "unproven"
      ],
@@ -10002,7 +10033,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.201,
+      "cost_rank": 0.202,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -10016,7 +10047,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.3445,
+     "priority": 0.3446,
      "status": [
       "proven"
      ],
@@ -10058,7 +10089,7 @@
       "own_median_minutes": 8.5,
       "speed_rank": 0.167,
       "speed_source": "own median minutes",
-      "cost_rank": 0.336,
+      "cost_rank": 0.337,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -10072,7 +10103,7 @@
      "engine_name": "Claude Code",
      "model": "claude-haiku-5.5",
      "model_display": "Claude Haiku 5.5",
-     "priority": 0.415,
+     "priority": 0.4153,
      "status": [
       "unproven"
      ],
@@ -10114,7 +10145,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.785,
+      "cost_rank": 0.787,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",

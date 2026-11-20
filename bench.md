@@ -6,7 +6,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 
 | class | first choice | effort | fallbacks | score | evidence | status |
 |---|---|---|---|---|---|---|
-| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.79); Claude Code / claude-opus-5.5 $$$$ medium (0.70) | 0.81 | 78 | proven |
+| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.80); Claude Code / claude-opus-5.5 $$$$ medium (0.72) | 0.82 | 78 | proven |
 | coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.52); Antigravity CLI / gpt-oss-120b $ medium (0.57) | 0.68 | 25 | proven |
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.64) | 0.77 | 11 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.71) | 0.65 | 6 | probation |
