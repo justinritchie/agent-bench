@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T14:04:53+00:00",
+ "generated_at": "2026-11-20T14:11:17+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T14:04:53+00:00",
+  "generated_at": "2026-11-20T14:11:17+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2243,7 +2243,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.7737,
+     "priority": 0.7762,
      "status": [
       "proven"
      ],
@@ -2266,11 +2266,11 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-17-4-1-0-gpt-6-2-sol-max-codex.json"
        }
       },
-      "own_success": 0.875,
-      "own_jobs": 24,
-      "own_success_rate": 0.875,
+      "own_success": 0.885,
+      "own_jobs": 26,
+      "own_success_rate": 0.885,
       "own_success_default": false,
-      "own_median_minutes": 4.8,
+      "own_median_minutes": 4.9,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
       "cost_rank": 0.27,
@@ -2960,10 +2960,10 @@
         "public_default": true,
         "public_metrics": {},
         "own_success": 0.5,
-        "own_jobs": 3,
-        "own_success_rate": 0.333,
+        "own_jobs": 4,
+        "own_success_rate": 0.5,
         "own_success_default": true,
-        "own_median_minutes": 2.3,
+        "own_median_minutes": 3.6,
         "speed_rank": 1.0,
         "speed_source": "own median minutes",
         "cost_rank": 0.452,
@@ -4279,7 +4279,7 @@
       "engine_name": "Codex CLI",
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
-      "priority": 0.6125,
+      "priority": 0.6122,
       "status": [
        "proven"
       ],
@@ -4289,14 +4289,14 @@
        "public_norm": 0.5,
        "public_default": true,
        "public_metrics": {},
-       "own_success": 0.917,
-       "own_jobs": 12,
-       "own_success_rate": 0.917,
+       "own_success": 0.923,
+       "own_jobs": 13,
+       "own_success_rate": 0.923,
        "own_success_default": false,
-       "own_median_minutes": 2.6,
+       "own_median_minutes": 2.9,
        "speed_rank": 0.5,
        "speed_source": "own median minutes",
-       "cost_rank": 0.555,
+       "cost_rank": 0.543,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -4747,11 +4747,11 @@
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
       "level": "medium",
-      "jobs": 20,
-      "finished": 17,
-      "finished_rate": 0.85,
+      "jobs": 22,
+      "finished": 19,
+      "finished_rate": 0.864,
       "median_turns": 1,
-      "median_output_tokens": 17579
+      "median_output_tokens": 15199
      },
      {
       "engine": "codex",
@@ -6110,7 +6110,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6263,
+       "priority": 0.6264,
        "status": [
         "unproven"
        ],
@@ -6152,7 +6152,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.283,
+        "cost_rank": 0.284,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
