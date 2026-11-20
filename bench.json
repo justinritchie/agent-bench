@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T15:46:27+00:00",
+ "generated_at": "2026-11-20T15:55:45+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T15:46:27+00:00",
+  "generated_at": "2026-11-20T15:55:45+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -3790,7 +3790,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.7138,
+       "priority": 0.7139,
        "status": [
         "unproven"
        ],
@@ -3820,7 +3820,7 @@
         "own_median_minutes": 1.6,
         "speed_rank": 1.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.501,
+        "cost_rank": 0.502,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4279,7 +4279,7 @@
       "engine_name": "Codex CLI",
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
-      "priority": 0.6122,
+      "priority": 0.6123,
       "status": [
        "proven"
       ],
@@ -4296,7 +4296,7 @@
        "own_median_minutes": 2.9,
        "speed_rank": 0.5,
        "speed_source": "own median minutes",
-       "cost_rank": 0.543,
+       "cost_rank": 0.544,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -4311,7 +4311,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5353,
+       "priority": 0.5354,
        "status": [
         "proven"
        ],
@@ -4328,7 +4328,7 @@
         "own_median_minutes": 2.2,
         "speed_rank": 0.75,
         "speed_source": "own median minutes",
-        "cost_rank": 0.485,
+        "cost_rank": 0.486,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7435,7 +7435,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3102,
+       "priority": 0.3104,
        "status": [
         "unproven"
        ],
@@ -7489,7 +7489,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.468,
+        "cost_rank": 0.469,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -8208,7 +8208,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7466,
+    "priority": 0.7269,
     "status": [
      "probation"
     ],
@@ -8233,12 +8233,12 @@
        "source_url": "https://arena.ai/leaderboard/search"
       }
      },
-     "own_success": 0.758,
-     "own_jobs": 33,
-     "own_success_rate": 0.758,
+     "own_success": 0.765,
+     "own_jobs": 34,
+     "own_success_rate": 0.765,
      "own_success_default": false,
-     "own_median_minutes": 4.6,
-     "speed_rank": 0.714,
+     "own_median_minutes": 4.7,
+     "speed_rank": 0.571,
      "speed_source": "own median minutes",
      "cost_rank": 0.0,
      "cost_source": "own jobs",
@@ -8255,7 +8255,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5716,
+     "priority": 0.593,
      "status": [
       "proven"
      ],
@@ -8270,7 +8270,7 @@
       "own_success_rate": 0.964,
       "own_success_default": false,
       "own_median_minutes": 4.6,
-      "speed_rank": 0.571,
+      "speed_rank": 0.714,
       "speed_source": "own median minutes",
       "cost_rank": 0.133,
       "cost_source": "own jobs",
@@ -8361,7 +8361,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.4982,
+     "priority": 0.4984,
      "status": [
       "unproven"
      ],
@@ -8391,7 +8391,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.194,
+      "cost_rank": 0.195,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -8750,11 +8750,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 18,
-      "finished": 13,
-      "finished_rate": 0.722,
-      "median_turns": 29,
-      "median_output_tokens": 51284
+      "jobs": 19,
+      "finished": 14,
+      "finished_rate": 0.737,
+      "median_turns": 30,
+      "median_output_tokens": 38981
      },
      {
       "engine": "grok",
