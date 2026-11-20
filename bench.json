@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T03:33:44+00:00",
+ "generated_at": "2026-11-20T03:38:28+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T03:33:44+00:00",
+  "generated_at": "2026-11-20T03:38:28+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2684,7 +2684,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2992,
+     "priority": 0.2984,
      "status": [
       "unproven"
      ],
@@ -2714,7 +2714,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.217,
+      "cost_rank": 0.212,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2728,7 +2728,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2326,
+     "priority": 0.2318,
      "status": [
       "unproven"
      ],
@@ -2758,7 +2758,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.217,
+      "cost_rank": 0.212,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -3324,7 +3324,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.4969,
+       "priority": 0.4958,
        "status": [
         "unproven"
        ],
@@ -3354,7 +3354,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.368,
+        "cost_rank": 0.361,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3368,7 +3368,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.4703,
+       "priority": 0.4692,
        "status": [
         "unproven"
        ],
@@ -3398,7 +3398,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.368,
+        "cost_rank": 0.361,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3456,7 +3456,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.3672,
+       "priority": 0.3662,
        "status": [
         "unproven"
        ],
@@ -3486,7 +3486,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.368,
+        "cost_rank": 0.361,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3949,7 +3949,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.4081,
+       "priority": 0.4066,
        "status": [
         "unproven"
        ],
@@ -3979,7 +3979,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.43,
+        "cost_rank": 0.42,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3993,7 +3993,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3734,
+       "priority": 0.3719,
        "status": [
         "unproven"
        ],
@@ -4023,7 +4023,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.43,
+        "cost_rank": 0.42,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4125,7 +4125,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2645,
+       "priority": 0.263,
        "status": [
         "unproven"
        ],
@@ -4155,7 +4155,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.43,
+        "cost_rank": 0.42,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -5475,7 +5475,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.3196,
+     "priority": 0.3185,
      "status": [
       "unproven"
      ],
@@ -5529,7 +5529,7 @@
       "own_median_minutes": 0.8,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
-      "cost_rank": 0.315,
+      "cost_rank": 0.308,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5623,7 +5623,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2923,
+     "priority": 0.2912,
      "status": [
       "unproven"
      ],
@@ -5689,7 +5689,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.315,
+      "cost_rank": 0.308,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5703,7 +5703,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2473,
+     "priority": 0.2462,
      "status": [
       "unproven"
      ],
@@ -5733,7 +5733,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.315,
+      "cost_rank": 0.308,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -6149,7 +6149,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.5543,
+       "priority": 0.5532,
        "status": [
         "unproven"
        ],
@@ -6179,7 +6179,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.238,
+        "cost_rank": 0.231,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6361,7 +6361,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3478,
+       "priority": 0.3467,
        "status": [
         "unproven"
        ],
@@ -6403,7 +6403,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.238,
+        "cost_rank": 0.231,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6461,7 +6461,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2357,
+       "priority": 0.2347,
        "status": [
         "unproven"
        ],
@@ -6491,7 +6491,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.238,
+        "cost_rank": 0.231,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7374,7 +7374,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.2824,
+       "priority": 0.2813,
        "status": [
         "unproven"
        ],
@@ -7428,7 +7428,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.234,
+        "cost_rank": 0.227,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7442,7 +7442,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.2446,
+       "priority": 0.2435,
        "status": [
         "unproven"
        ],
@@ -7496,7 +7496,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.234,
+        "cost_rank": 0.227,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -8250,7 +8250,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.278,
+     "priority": 0.277,
      "status": [
       "unproven"
      ],
@@ -8280,7 +8280,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.208,
+      "cost_rank": 0.201,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8948,7 +8948,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.3122,
+     "priority": 0.3107,
      "status": [
       "unproven"
      ],
@@ -8978,7 +8978,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.223,
+      "cost_rank": 0.213,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8992,7 +8992,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2335,
+     "priority": 0.232,
      "status": [
       "unproven"
      ],
@@ -9022,7 +9022,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.223,
+      "cost_rank": 0.213,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9825,7 +9825,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.4914,
+     "priority": 0.4901,
      "status": [
       "unproven"
      ],
@@ -9867,7 +9867,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.227,
+      "cost_rank": 0.218,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9881,7 +9881,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4555,
+     "priority": 0.4541,
      "status": [
       "unproven"
      ],
@@ -9923,7 +9923,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.227,
+      "cost_rank": 0.218,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9937,7 +9937,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.3191,
+     "priority": 0.3162,
      "status": [
       "proven"
      ],
@@ -9973,13 +9973,13 @@
        }
       },
       "own_success": 0.5,
-      "own_jobs": 6,
+      "own_jobs": 5,
       "own_success_rate": 1.0,
       "own_success_default": true,
-      "own_median_minutes": 7.3,
+      "own_median_minutes": 8.5,
       "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.346,
+      "cost_rank": 0.327,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -10326,18 +10326,6 @@
       "median_output_tokens": 21596
      },
      {
-      "engine": "grok",
-      "engine_name": "Grok CLI",
-      "model": "grok-4.7",
-      "model_display": "Grok 4.7",
-      "level": "medium",
-      "jobs": 6,
-      "finished": 6,
-      "finished_rate": 1.0,
-      "median_turns": 8,
-      "median_output_tokens": 28139
-     },
-     {
       "engine": "codex",
       "engine_name": "Codex CLI",
       "model": "gpt-6.2-astra",
@@ -10348,6 +10336,18 @@
       "finished_rate": 1.0,
       "median_turns": 1,
       "median_output_tokens": 16506
+     },
+     {
+      "engine": "grok",
+      "engine_name": "Grok CLI",
+      "model": "grok-4.7",
+      "model_display": "Grok 4.7",
+      "level": "medium",
+      "jobs": 5,
+      "finished": 5,
+      "finished_rate": 1.0,
+      "median_turns": 7,
+      "median_output_tokens": 32966
      }
     ],
     "cost_step": {
