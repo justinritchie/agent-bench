@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T09:05:43+00:00",
+ "generated_at": "2026-11-20T09:10:57+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T09:05:43+00:00",
+  "generated_at": "2026-11-20T09:10:57+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2243,7 +2243,7 @@
      "engine_name": "Codex CLI",
      "model": "gpt-6.2-sol",
      "model_display": "GPT-6.2 Sol",
-     "priority": 0.7771,
+     "priority": 0.7786,
      "status": [
       "proven"
      ],
@@ -2266,11 +2266,11 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-17-4-1-0-gpt-6-2-sol-max-codex.json"
        }
       },
-      "own_success": 0.889,
-      "own_jobs": 18,
-      "own_success_rate": 0.889,
+      "own_success": 0.895,
+      "own_jobs": 19,
+      "own_success_rate": 0.895,
       "own_success_default": false,
-      "own_median_minutes": 5.5,
+      "own_median_minutes": 6.1,
       "speed_rank": 0.667,
       "speed_source": "own median minutes",
       "cost_rank": 0.269,
@@ -4279,7 +4279,7 @@
       "engine_name": "Codex CLI",
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
-      "priority": 0.5466,
+      "priority": 0.5071,
       "status": [
        "proven"
       ],
@@ -4290,13 +4290,13 @@
        "public_default": true,
        "public_metrics": {},
        "own_success": 0.5,
-       "own_jobs": 8,
-       "own_success_rate": 0.875,
+       "own_jobs": 9,
+       "own_success_rate": 0.889,
        "own_success_default": true,
-       "own_median_minutes": 2.1,
-       "speed_rank": 0.75,
+       "own_median_minutes": 2.3,
+       "speed_rank": 0.5,
        "speed_source": "own median minutes",
-       "cost_rank": 0.561,
+       "cost_rank": 0.547,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -4309,41 +4309,9 @@
       {
        "engine": "claude",
        "engine_name": "Claude Code",
-       "model": "claude-fable-5.2",
-       "model_display": "Claude Fable 5.2",
-       "priority": 0.4778,
-       "status": [
-        "probation"
-       ],
-       "successor_of": "claude-fable-5.1",
-       "rank_rule": "evidence",
-       "tie_broken": false,
-       "inputs": {
-        "public_norm": 0.5,
-        "public_default": true,
-        "public_metrics": {},
-        "own_success": 0.861,
-        "own_jobs": 36,
-        "own_success_rate": 0.861,
-        "own_success_default": false,
-        "own_median_minutes": 3.8,
-        "speed_rank": 0.25,
-        "speed_source": "own median minutes",
-        "cost_rank": 0.0,
-        "cost_source": "own jobs",
-        "cost_default": false,
-        "cost_tier": "$$$$",
-        "price_blended_per_mtok": 16.0,
-        "effort": "medium",
-        "effort_source": "default"
-       }
-      },
-      {
-       "engine": "claude",
-       "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.4979,
+       "priority": 0.5354,
        "status": [
         "proven"
        ],
@@ -4358,7 +4326,7 @@
         "own_success_rate": 0.889,
         "own_success_default": true,
         "own_median_minutes": 2.2,
-        "speed_rank": 0.5,
+        "speed_rank": 0.75,
         "speed_source": "own median minutes",
         "cost_rank": 0.486,
         "cost_source": "own jobs",
@@ -4396,6 +4364,38 @@
         "cost_default": false,
         "cost_tier": "$$$$",
         "price_blended_per_mtok": 8.0,
+        "effort": "medium",
+        "effort_source": "default"
+       }
+      },
+      {
+       "engine": "claude",
+       "engine_name": "Claude Code",
+       "model": "claude-fable-5.2",
+       "model_display": "Claude Fable 5.2",
+       "priority": 0.4778,
+       "status": [
+        "probation"
+       ],
+       "successor_of": "claude-fable-5.1",
+       "rank_rule": "evidence",
+       "tie_broken": false,
+       "inputs": {
+        "public_norm": 0.5,
+        "public_default": true,
+        "public_metrics": {},
+        "own_success": 0.861,
+        "own_jobs": 36,
+        "own_success_rate": 0.861,
+        "own_success_default": false,
+        "own_median_minutes": 3.8,
+        "speed_rank": 0.25,
+        "speed_source": "own median minutes",
+        "cost_rank": 0.0,
+        "cost_source": "own jobs",
+        "cost_default": false,
+        "cost_tier": "$$$$",
+        "price_blended_per_mtok": 16.0,
         "effort": "medium",
         "effort_source": "default"
        }
@@ -4747,11 +4747,11 @@
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
       "level": "medium",
-      "jobs": 14,
-      "finished": 12,
-      "finished_rate": 0.857,
+      "jobs": 15,
+      "finished": 13,
+      "finished_rate": 0.867,
       "median_turns": 1,
-      "median_output_tokens": 21102
+      "median_output_tokens": 24625
      },
      {
       "engine": "codex",
