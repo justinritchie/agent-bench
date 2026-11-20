@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T03:05:22+00:00",
+ "generated_at": "2026-11-20T03:07:26+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T03:05:22+00:00",
+  "generated_at": "2026-11-20T03:07:26+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -4174,7 +4174,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.5351,
+      "priority": 0.5353,
       "status": [
        "proven"
       ],
@@ -4191,7 +4191,7 @@
        "own_median_minutes": 2.2,
        "speed_rank": 0.75,
        "speed_source": "own median minutes",
-       "cost_rank": 0.484,
+       "cost_rank": 0.485,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -5755,7 +5755,7 @@
       "engine_name": "Claude Code",
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
-      "priority": 0.7754,
+      "priority": 0.7756,
       "status": [
        "proven"
       ],
@@ -5797,7 +5797,7 @@
        "own_median_minutes": 3.2,
        "speed_rank": 0.333,
        "speed_source": "own median minutes",
-       "cost_rank": 0.407,
+       "cost_rank": 0.408,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -7034,7 +7034,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.5168,
+       "priority": 0.517,
        "status": [
         "proven"
        ],
@@ -7088,7 +7088,7 @@
         "own_median_minutes": 2.7,
         "speed_rank": 0.667,
         "speed_source": "own median minutes",
-        "cost_rank": 0.37,
+        "cost_rank": 0.371,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -8760,7 +8760,7 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 0.976,
-      "own_jobs": 85,
+      "own_jobs": 84,
       "own_success_rate": 0.976,
       "own_success_default": false,
       "own_median_minutes": 1.7,
@@ -9117,11 +9117,11 @@
         "median_output_tokens": 14422
        },
        "high": {
-        "jobs": 13,
-        "finished": 11,
-        "finished_rate": 0.846,
-        "median_turns": 33,
-        "median_output_tokens": 35561
+        "jobs": 12,
+        "finished": 10,
+        "finished_rate": 0.833,
+        "median_turns": 36,
+        "median_output_tokens": 35084
        }
       }
      },
@@ -9215,11 +9215,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "high",
-      "jobs": 13,
-      "finished": 11,
-      "finished_rate": 0.846,
-      "median_turns": 33,
-      "median_output_tokens": 35561
+      "jobs": 12,
+      "finished": 10,
+      "finished_rate": 0.833,
+      "median_turns": 36,
+      "median_output_tokens": 35084
      },
      {
       "engine": "claude",
