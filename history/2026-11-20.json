@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T17:56:10+00:00",
+ "generated_at": "2026-11-20T18:04:37+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T17:56:10+00:00",
+  "generated_at": "2026-11-20T18:04:37+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2299,7 +2299,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7022,
+     "priority": 0.7017,
      "status": [
       "proven"
      ],
@@ -2322,9 +2322,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-30-anthropic-claude-opus-5-5-max-claude-code.json"
        }
       },
-      "own_success": 0.692,
-      "own_jobs": 260,
-      "own_success_rate": 0.692,
+      "own_success": 0.69,
+      "own_jobs": 261,
+      "own_success_rate": 0.69,
       "own_success_default": false,
       "own_median_minutes": 8.7,
       "speed_rank": 0.5,
@@ -2740,7 +2740,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2953,
+     "priority": 0.2939,
      "status": [
       "unproven"
      ],
@@ -2770,7 +2770,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.191,
+      "cost_rank": 0.182,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -2784,7 +2784,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2287,
+     "priority": 0.2273,
      "status": [
       "unproven"
      ],
@@ -2814,7 +2814,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.191,
+      "cost_rank": 0.182,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -3410,7 +3410,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.494,
+       "priority": 0.4919,
        "status": [
         "unproven"
        ],
@@ -3440,7 +3440,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.34,
+        "cost_rank": 0.326,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3454,7 +3454,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.4675,
+       "priority": 0.4654,
        "status": [
         "unproven"
        ],
@@ -3484,7 +3484,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.34,
+        "cost_rank": 0.326,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3586,7 +3586,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.3635,
+       "priority": 0.3614,
        "status": [
         "unproven"
        ],
@@ -3616,7 +3616,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.34,
+        "cost_rank": 0.326,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3815,7 +3815,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.7138,
+       "priority": 0.7139,
        "status": [
         "unproven"
        ],
@@ -3845,7 +3845,7 @@
         "own_median_minutes": 1.6,
         "speed_rank": 1.0,
         "speed_source": "own median minutes",
-        "cost_rank": 0.501,
+        "cost_rank": 0.502,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4079,7 +4079,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.3989,
+       "priority": 0.3962,
        "status": [
         "unproven"
        ],
@@ -4109,7 +4109,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.378,
+        "cost_rank": 0.36,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4123,7 +4123,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3656,
+       "priority": 0.3629,
        "status": [
         "unproven"
        ],
@@ -4153,7 +4153,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.378,
+        "cost_rank": 0.36,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4255,7 +4255,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2567,
+       "priority": 0.254,
        "status": [
         "unproven"
        ],
@@ -4285,7 +4285,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.378,
+        "cost_rank": 0.36,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4304,7 +4304,7 @@
       "engine_name": "Codex CLI",
       "model": "gpt-6.2-sol",
       "model_display": "GPT-6.2 Sol",
-      "priority": 0.6122,
+      "priority": 0.6123,
       "status": [
        "proven"
       ],
@@ -4321,7 +4321,7 @@
        "own_median_minutes": 2.9,
        "speed_rank": 0.5,
        "speed_source": "own median minutes",
-       "cost_rank": 0.543,
+       "cost_rank": 0.544,
        "cost_source": "own jobs",
        "cost_default": false,
        "cost_tier": "$$$",
@@ -4336,7 +4336,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.5353,
+       "priority": 0.5354,
        "status": [
         "proven"
        ],
@@ -4353,7 +4353,7 @@
         "own_median_minutes": 2.2,
         "speed_rank": 0.75,
         "speed_source": "own median minutes",
-        "cost_rank": 0.485,
+        "cost_rank": 0.486,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -4568,9 +4568,9 @@
       "model_display": "Claude Opus 5.5",
       "levels": {
        "medium": {
-        "jobs": 214,
+        "jobs": 215,
         "finished": 138,
-        "finished_rate": 0.645,
+        "finished_rate": 0.642,
         "median_turns": 62,
         "median_output_tokens": 47210
        },
@@ -4664,9 +4664,9 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "medium",
-      "jobs": 214,
+      "jobs": 215,
       "finished": 138,
-      "finished_rate": 0.645,
+      "finished_rate": 0.642,
       "median_turns": 62,
       "median_output_tokens": 47210
      },
@@ -4817,7 +4817,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +55 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 138 of 214 finished cleanly at medium, 42 of 46 at high; on the jobs each level was given (not the same jobs), median output tokens were 47,210 at medium and 60,092 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +55 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 138 of 215 finished cleanly at medium, 42 of 46 at high; on the jobs each level was given (not the same jobs), median output tokens were 47,210 at medium and 60,092 at high."
    }
   },
   "agentic": {
@@ -4924,8 +4924,8 @@
      "status": [
       "proven"
      ],
-     "rank_rule": null,
-     "tie_broken": false,
+     "rank_rule": "tie",
+     "tie_broken": true,
      "inputs": {
       "public_norm": 0.359,
       "public_default": false,
@@ -5000,13 +5000,13 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.6538,
+     "priority": 0.6767,
      "status": [
       "probation"
      ],
      "successor_of": "claude-fable-5.1",
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": null,
+     "tie_broken": false,
      "inputs": {
       "public_norm": 1.0,
       "public_default": false,
@@ -5060,12 +5060,12 @@
         "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
        }
       },
-      "own_success": 0.815,
-      "own_jobs": 27,
-      "own_success_rate": 0.815,
+      "own_success": 0.821,
+      "own_jobs": 28,
+      "own_success_rate": 0.821,
       "own_success_default": false,
-      "own_median_minutes": 9.9,
-      "speed_rank": 0.0,
+      "own_median_minutes": 9.0,
+      "speed_rank": 0.143,
       "speed_source": "own median minutes",
       "cost_rank": 0.0,
       "cost_source": "own jobs",
@@ -5161,12 +5161,12 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5934,
+     "priority": 0.5718,
      "status": [
       "proven"
      ],
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": "evidence",
+     "tie_broken": false,
      "inputs": {
       "public_norm": 0.906,
       "public_default": false,
@@ -5225,9 +5225,9 @@
       "own_success_rate": 0.606,
       "own_success_default": false,
       "own_median_minutes": 9.1,
-      "speed_rank": 0.143,
+      "speed_rank": 0.0,
       "speed_source": "own median minutes",
-      "cost_rank": 0.085,
+      "cost_rank": 0.084,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$$",
@@ -5641,7 +5641,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.3228,
+     "priority": 0.3209,
      "status": [
       "unproven"
      ],
@@ -5695,7 +5695,7 @@
       "own_median_minutes": 0.8,
       "speed_rank": 0.714,
       "speed_source": "own median minutes",
-      "cost_rank": 0.29,
+      "cost_rank": 0.277,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5789,7 +5789,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.2885,
+     "priority": 0.2865,
      "status": [
       "unproven"
      ],
@@ -5855,7 +5855,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.29,
+      "cost_rank": 0.277,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -5869,7 +5869,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.2435,
+     "priority": 0.2416,
      "status": [
       "unproven"
      ],
@@ -5899,7 +5899,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.29,
+      "cost_rank": 0.277,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -6034,7 +6034,7 @@
        "engine_name": "Claude Code",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6317,
+       "priority": 0.6319,
        "status": [
         "proven"
        ],
@@ -6076,7 +6076,7 @@
         "own_median_minutes": 3.4,
         "speed_rank": 0.333,
         "speed_source": "own median minutes",
-        "cost_rank": 0.282,
+        "cost_rank": 0.283,
         "cost_source": "own jobs",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6315,7 +6315,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.5483,
+       "priority": 0.5462,
        "status": [
         "unproven"
        ],
@@ -6345,7 +6345,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.198,
+        "cost_rank": 0.184,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6583,7 +6583,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.3417,
+       "priority": 0.3397,
        "status": [
         "unproven"
        ],
@@ -6625,7 +6625,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.198,
+        "cost_rank": 0.184,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6639,7 +6639,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.5",
        "model_display": "Grok 4.5",
-       "priority": 0.2297,
+       "priority": 0.2276,
        "status": [
         "unproven"
        ],
@@ -6669,7 +6669,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.198,
+        "cost_rank": 0.184,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7484,7 +7484,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3102,
+       "priority": 0.3104,
        "status": [
         "unproven"
        ],
@@ -7538,7 +7538,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.468,
+        "cost_rank": 0.469,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7552,7 +7552,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.7",
        "model_display": "Grok 4.7",
-       "priority": 0.2764,
+       "priority": 0.2743,
        "status": [
         "unproven"
        ],
@@ -7606,7 +7606,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.194,
+        "cost_rank": 0.18,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -7620,7 +7620,7 @@
        "engine_name": "Grok CLI",
        "model": "grok-4.6",
        "model_display": "Grok 4.6",
-       "priority": 0.2386,
+       "priority": 0.2365,
        "status": [
         "unproven"
        ],
@@ -7674,7 +7674,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.194,
+        "cost_rank": 0.18,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -8164,11 +8164,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 24,
-      "finished": 20,
-      "finished_rate": 0.833,
-      "median_turns": 48,
-      "median_output_tokens": 87609
+      "jobs": 25,
+      "finished": 21,
+      "finished_rate": 0.84,
+      "median_turns": 45,
+      "median_output_tokens": 86541
      },
      {
       "engine": "codex",
@@ -8301,7 +8301,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.5299,
+     "priority": 0.5296,
      "status": [
       "proven"
      ],
@@ -8312,13 +8312,13 @@
       "public_default": true,
       "public_metrics": {},
       "own_success": 1.0,
-      "own_jobs": 17,
+      "own_jobs": 18,
       "own_success_rate": 1.0,
       "own_success_default": false,
-      "own_median_minutes": 6.5,
+      "own_median_minutes": 6.1,
       "speed_rank": 0.286,
       "speed_source": "own median minutes",
-      "cost_rank": 0.08,
+      "cost_rank": 0.078,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8420,7 +8420,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.5096,
+     "priority": 0.5077,
      "status": [
       "unproven"
      ],
@@ -8450,7 +8450,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.165,
+      "cost_rank": 0.152,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -8777,11 +8777,11 @@
       "model": "grok-4.7",
       "model_display": "Grok 4.7",
       "level": "medium",
-      "jobs": 17,
-      "finished": 17,
+      "jobs": 18,
+      "finished": 18,
       "finished_rate": 1.0,
       "median_turns": 5,
-      "median_output_tokens": 20118
+      "median_output_tokens": 19570
      },
      {
       "engine": "codex",
@@ -8871,7 +8871,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7139,
+    "priority": 0.7089,
     "status": [
      "probation"
     ],
@@ -8896,9 +8896,9 @@
        "source_url": "https://arena.ai/leaderboard/document"
       }
      },
-     "own_success": 0.884,
-     "own_jobs": 43,
-     "own_success_rate": 0.884,
+     "own_success": 0.864,
+     "own_jobs": 44,
+     "own_success_rate": 0.864,
      "own_success_default": false,
      "own_median_minutes": 3.3,
      "speed_rank": 0.286,
@@ -9117,7 +9117,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.3047,
+     "priority": 0.3015,
      "status": [
       "unproven"
      ],
@@ -9147,7 +9147,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.173,
+      "cost_rank": 0.152,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9161,7 +9161,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.226,
+     "priority": 0.2228,
      "status": [
       "unproven"
      ],
@@ -9191,7 +9191,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.173,
+      "cost_rank": 0.152,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9446,9 +9446,9 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 30,
+      "jobs": 31,
       "finished": 26,
-      "finished_rate": 0.867,
+      "finished_rate": 0.839,
       "median_turns": 20,
       "median_output_tokens": 21918
      },
@@ -10067,7 +10067,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.4897,
+     "priority": 0.487,
      "status": [
       "unproven"
      ],
@@ -10109,7 +10109,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.188,
+      "cost_rank": 0.17,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -10123,7 +10123,7 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4523,
+     "priority": 0.4496,
      "status": [
       "unproven"
      ],
@@ -10165,7 +10165,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.188,
+      "cost_rank": 0.17,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -10235,7 +10235,7 @@
      "engine_name": "Claude Code",
      "model": "claude-haiku-5.5",
      "model_display": "Claude Haiku 5.5",
-     "priority": 0.4177,
+     "priority": 0.4175,
      "status": [
       "unproven"
      ],
@@ -10277,7 +10277,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.803,
+      "cost_rank": 0.802,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$",
