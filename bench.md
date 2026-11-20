@@ -6,9 +6,9 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 
 | class | first choice | effort | fallbacks | score | evidence | status |
 |---|---|---|---|---|---|---|
-| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.80); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.82 | 79 | proven |
-| coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.52); Antigravity CLI / gpt-oss-120b $ medium (0.57) | 0.68 | 25 | proven |
-| coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.64) | 0.77 | 11 | proven |
+| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.80); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.81 | 79 | proven |
+| coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.52); Claude Code / claude-fable-5.2 $$$$ medium (0.35) | 0.68 | 25 | proven |
+| coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.63) | 0.77 | 11 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.71) | 0.65 | 6 | probation |
 | coding / review | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.48); Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.51) | 0.54 | 9 | proven |
 | agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.65) | 0.69 | 67 | proven |
@@ -18,7 +18,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / gemini-4-neon $$$$ high (0.61) | 0.55 | 5 | proven |
 | research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.57); Grok CLI / grok-4.7 $$$ medium (config) (0.53) | 0.75 | 33 | probation |
 | reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.63); Claude Code / claude-haiku-5.5 $ high (0.60) | 0.73 | 41 | probation |
-| writing | Antigravity CLI / gemini-4-argon $$$ | high | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.79 | 13 | proven |
+| writing | Antigravity CLI / gemini-4-argon $$$ | high | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.68) | 0.81 | 13 | proven |
 
 Kinds: bugfix = finding and fixing defects in existing code; features = new features, tools and restructuring; frontend = web pages, UI components and styling; review = code review, audits and tests; terminal = shell, installs, configuration, server upkeep; data = data processing and one-off scripts; browser = driving web pages and forms; tools = multi-step work through APIs and tool connectors.
 
@@ -36,7 +36,7 @@ Is a higher effort worth it? One step up in effort: Artificial Analysis Intellig
 | gemini-4-neon | +10.8 / 2.6x | - | +4.7 / 2.0x | +1.8 / 1.7x | - |
 
 Own jobs of one model at two effort levels, per class. Not a controlled test: the effort was chosen per job. What the leaderboards gain per level: /bench.json `classes.X.effort_evidence`. No source gives tokens per level.
-- coding: Claude Opus 5.5 in Claude Code: 135 of 198 finished cleanly at medium, 41 of 44 at high.
+- coding: Claude Opus 5.5 in Claude Code: 135 of 199 finished cleanly at medium, 42 of 45 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 10 of 23 finished cleanly at medium, 8 of 8 at high.
 - research: Claude Opus 5.5 in Claude Code: 15 of 18 finished cleanly at medium, 12 of 12 at high.
 - reading: Claude Opus 5.5 in Claude Code: 16 of 19 finished cleanly at medium, 81 of 95 at high.
