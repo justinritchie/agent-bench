@@ -35,7 +35,7 @@ Is a higher effort worth it? One step up in effort: Artificial Analysis Intellig
 | gemini-4-neon | +10.8 / 2.6x | +4.7 / 2.0x | +1.8 / 1.7x | - |
 
 Own jobs of one model at two effort levels, per class. Not a controlled test: the effort was chosen per job. What the leaderboards gain per level: /bench.json `classes.X.effort_evidence`. No source gives tokens per level.
-- coding: Claude Opus 5.5 in Claude Code: 134 of 183 finished cleanly at medium, 41 of 42 at high.
+- coding: Claude Opus 5.5 in Claude Code: 134 of 184 finished cleanly at medium, 41 of 42 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 10 of 21 finished cleanly at medium, 8 of 8 at high.
 - research: Claude Opus 5.5 in Claude Code: 14 of 16 finished cleanly at medium, 12 of 12 at high.
 - reading: Claude Opus 5.5 in Claude Code: 16 of 19 finished cleanly at medium, 77 of 90 at high.
