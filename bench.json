@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T01:33:06+00:00",
+ "generated_at": "2026-11-20T01:36:04+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T01:33:06+00:00",
+  "generated_at": "2026-11-20T01:36:04+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -8842,7 +8842,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5435,
+     "priority": 0.5415,
      "status": [
       "proven"
      ],
@@ -8852,9 +8852,9 @@
       "public_norm": 0.5,
       "public_default": true,
       "public_metrics": {},
-      "own_success": 0.853,
-      "own_jobs": 109,
-      "own_success_rate": 0.853,
+      "own_success": 0.845,
+      "own_jobs": 110,
+      "own_success_rate": 0.845,
       "own_success_default": false,
       "own_median_minutes": 2.0,
       "speed_rank": 0.5,
@@ -9095,9 +9095,9 @@
         "median_output_tokens": 67562
        },
        "high": {
-        "jobs": 90,
+        "jobs": 91,
         "finished": 77,
-        "finished_rate": 0.856,
+        "finished_rate": 0.846,
         "median_turns": 16,
         "median_output_tokens": 12819
        }
@@ -9167,9 +9167,9 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "high",
-      "jobs": 90,
+      "jobs": 91,
       "finished": 77,
-      "finished_rate": 0.856,
+      "finished_rate": 0.846,
       "median_turns": 16,
       "median_output_tokens": 12819
      },
@@ -9272,7 +9272,7 @@
      "cost_ratio": 2.4
     },
     "summary_lead": "Claude Fable 5.2, medium to high:",
-    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +1 Arena score on Arena Document (Gemini 3.5 Flash, not ranked here); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 16 of 19 finished cleanly at medium, 77 of 90 at high; on the jobs each level was given (not the same jobs), median output tokens were 67,562 at medium and 12,819 at high."
+    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +1 Arena score on Arena Document (Gemini 3.5 Flash, not ranked here); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 16 of 19 finished cleanly at medium, 77 of 91 at high; on the jobs each level was given (not the same jobs), median output tokens were 67,562 at medium and 12,819 at high."
    }
   },
   "writing": {
