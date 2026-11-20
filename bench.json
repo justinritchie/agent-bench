@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T06:52:05+00:00",
+ "generated_at": "2026-11-20T06:55:59+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T06:52:05+00:00",
+  "generated_at": "2026-11-20T06:55:59+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -3791,7 +3791,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-sonnet-5.5",
        "model_display": "Claude Sonnet 5.5",
-       "priority": 0.6499,
+       "priority": 0.65,
        "status": [
         "unproven"
        ],
@@ -3821,7 +3821,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.575,
+        "cost_rank": 0.576,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -3967,7 +3967,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-argon",
        "model_display": "Gemini 4 Argon",
-       "priority": 0.4995,
+       "priority": 0.4997,
        "status": [
         "unproven"
        ],
@@ -3997,7 +3997,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.575,
+        "cost_rank": 0.576,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6099,7 +6099,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.6065,
+       "priority": 0.6066,
        "status": [
         "unproven"
        ],
@@ -6141,7 +6141,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.244,
+        "cost_rank": 0.245,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
