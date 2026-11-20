@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T19:16:45+00:00",
+ "generated_at": "2026-11-20T19:20:37+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T19:16:45+00:00",
+  "generated_at": "2026-11-20T19:20:37+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -4924,8 +4924,8 @@
      "status": [
       "proven"
      ],
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": null,
+     "tie_broken": false,
      "inputs": {
       "public_norm": 0.359,
       "public_default": false,
@@ -5000,13 +5000,13 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.6767,
+     "priority": 0.6552,
      "status": [
       "probation"
      ],
      "successor_of": "claude-fable-5.1",
-     "rank_rule": null,
-     "tie_broken": false,
+     "rank_rule": "tie",
+     "tie_broken": true,
      "inputs": {
       "public_norm": 1.0,
       "public_default": false,
@@ -5064,8 +5064,8 @@
       "own_jobs": 28,
       "own_success_rate": 0.821,
       "own_success_default": false,
-      "own_median_minutes": 8.7,
-      "speed_rank": 0.143,
+      "own_median_minutes": 11.2,
+      "speed_rank": 0.0,
       "speed_source": "own median minutes",
       "cost_rank": 0.0,
       "cost_source": "own jobs",
@@ -5161,12 +5161,12 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5718,
+     "priority": 0.5933,
      "status": [
       "proven"
      ],
-     "rank_rule": "evidence",
-     "tie_broken": false,
+     "rank_rule": "tie",
+     "tie_broken": true,
      "inputs": {
       "public_norm": 0.906,
       "public_default": false,
@@ -5225,7 +5225,7 @@
       "own_success_rate": 0.606,
       "own_success_default": false,
       "own_median_minutes": 9.1,
-      "speed_rank": 0.0,
+      "speed_rank": 0.143,
       "speed_source": "own median minutes",
       "cost_rank": 0.084,
       "cost_source": "own jobs",
