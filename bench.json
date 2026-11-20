@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T05:49:53+00:00",
+ "generated_at": "2026-11-20T06:00:03+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T05:49:53+00:00",
+  "generated_at": "2026-11-20T06:00:03+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2319,7 +2319,7 @@
      "engine_name": "Claude Code",
      "model": "claude-fable-5.2",
      "model_display": "Claude Fable 5.2",
-     "priority": 0.7035,
+     "priority": 0.704,
      "status": [
       "probation"
      ],
@@ -2343,9 +2343,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-11-10-anthropic-claude-fable-5-2-max-claude-code.json"
        }
       },
-      "own_success": 0.894,
-      "own_jobs": 123,
-      "own_success_rate": 0.894,
+      "own_success": 0.896,
+      "own_jobs": 125,
+      "own_success_rate": 0.896,
       "own_success_default": false,
       "own_median_minutes": 11.3,
       "speed_rank": 0.2,
@@ -4513,11 +4513,11 @@
       "model_display": "GPT-6.1 Sol",
       "levels": {
        "medium": {
-        "jobs": 14,
-        "finished": 14,
+        "jobs": 15,
+        "finished": 15,
         "finished_rate": 1.0,
         "median_turns": 1,
-        "median_output_tokens": 16963
+        "median_output_tokens": 15499
        },
        "high": {
         "jobs": 81,
@@ -4542,11 +4542,11 @@
       "model_display": "Claude Fable 5.2",
       "levels": {
        "medium": {
-        "jobs": 94,
-        "finished": 83,
-        "finished_rate": 0.883,
-        "median_turns": 73,
-        "median_output_tokens": 81260
+        "jobs": 96,
+        "finished": 85,
+        "finished_rate": 0.885,
+        "median_turns": 71,
+        "median_output_tokens": 80097
        },
        "high": {
         "jobs": 6,
@@ -4589,11 +4589,11 @@
       "model": "gpt-6.1-sol",
       "model_display": "GPT-6.1 Sol",
       "level": "medium",
-      "jobs": 14,
-      "finished": 14,
+      "jobs": 15,
+      "finished": 15,
       "finished_rate": 1.0,
       "median_turns": 1,
-      "median_output_tokens": 16963
+      "median_output_tokens": 15499
      },
      {
       "engine": "codex",
@@ -4625,11 +4625,11 @@
       "model": "claude-fable-5.2",
       "model_display": "Claude Fable 5.2",
       "level": "medium",
-      "jobs": 94,
-      "finished": 83,
-      "finished_rate": 0.883,
-      "median_turns": 73,
-      "median_output_tokens": 81260
+      "jobs": 96,
+      "finished": 85,
+      "finished_rate": 0.885,
+      "median_turns": 71,
+      "median_output_tokens": 80097
      },
      {
       "engine": "claude",
@@ -4716,7 +4716,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.698,
+    "priority": 0.695,
     "status": [
      "proven"
     ],
@@ -4775,9 +4775,9 @@
        "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
       }
      },
-     "own_success": 0.833,
-     "own_jobs": 66,
-     "own_success_rate": 0.833,
+     "own_success": 0.821,
+     "own_jobs": 67,
+     "own_success_rate": 0.821,
      "own_success_default": false,
      "own_median_minutes": 3.9,
      "speed_rank": 0.429,
@@ -6012,7 +6012,7 @@
        "engine_name": "Codex CLI",
        "model": "gpt-6.2-sol",
        "model_display": "GPT-6.2 Sol",
-       "priority": 0.6252,
+       "priority": 0.6254,
        "status": [
         "unproven"
        ],
@@ -6054,7 +6054,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.276,
+        "cost_rank": 0.277,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6224,7 +6224,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-hydrogen",
        "model_display": "Gemini 4 Hydrogen",
-       "priority": 0.5129,
+       "priority": 0.5131,
        "status": [
         "unproven"
        ],
@@ -6266,7 +6266,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.403,
+        "cost_rank": 0.404,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6336,7 +6336,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-3.8-flash",
        "model_display": "Gemini 3.8 Flash",
-       "priority": 0.3772,
+       "priority": 0.3773,
        "status": [
         "unproven"
        ],
@@ -6378,7 +6378,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.497,
+        "cost_rank": 0.498,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$",
@@ -6448,7 +6448,7 @@
        "engine_name": "Antigravity CLI",
        "model": "gemini-4-neon",
        "model_display": "Gemini 4 Neon",
-       "priority": 0.2441,
+       "priority": 0.2443,
        "status": [
         "unproven"
        ],
@@ -6478,7 +6478,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.294,
+        "cost_rank": 0.295,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -7922,9 +7922,9 @@
       "model_display": "Claude Sonnet 5.5",
       "levels": {
        "medium": {
-        "jobs": 61,
+        "jobs": 62,
         "finished": 50,
-        "finished_rate": 0.82,
+        "finished_rate": 0.806,
         "median_turns": 26,
         "median_output_tokens": 36274
        },
@@ -7967,9 +7967,9 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "medium",
-      "jobs": 61,
+      "jobs": 62,
       "finished": 50,
-      "finished_rate": 0.82,
+      "finished_rate": 0.806,
       "median_turns": 26,
       "median_output_tokens": 36274
      },
