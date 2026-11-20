@@ -16,8 +16,8 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | agentic / data | Claude Code / claude-sonnet-5.5 $$$ | medium | - | 0.50 | 2 | unproven |
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
 | agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / gemini-4-neon $$$$ high (0.60) | 0.55 | 5 | proven |
-| research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.59); Grok CLI / grok-4.7 $$$ medium (config) (0.53) | 0.72 | 35 | probation |
-| reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.60); Claude Code / claude-opus-5.5 $$$$ medium (0.54) | 0.71 | 48 | probation |
+| research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.57); Grok CLI / grok-4.7 $$$ medium (config) (0.53) | 0.74 | 35 | probation |
+| reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.60); Claude Code / claude-opus-5.5 $$$$ medium (0.54) | 0.73 | 48 | probation |
 | writing | Antigravity CLI / gemini-4-argon $$$ | high | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.68) | 0.82 | 14 | proven |
 
 Kinds: bugfix = finding and fixing defects in existing code; features = new features, tools and restructuring; frontend = web pages, UI components and styling; review = code review, audits and tests; terminal = shell, installs, configuration, server upkeep; data = data processing and one-off scripts; browser = driving web pages and forms; tools = multi-step work through APIs and tool connectors.
@@ -39,7 +39,7 @@ Own jobs of one model at two effort levels, per class. Not a controlled test: th
 - coding: Claude Opus 5.5 in Claude Code: 138 of 215 finished cleanly at medium, 42 of 46 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 12 of 25 finished cleanly at medium, 8 of 8 at high.
 - research: Claude Opus 5.5 in Claude Code: 15 of 18 finished cleanly at medium, 11 of 11 at high.
-- reading: Claude Opus 5.5 in Claude Code: 19 of 22 finished cleanly at medium, 85 of 103 at high.
+- reading: Claude Opus 5.5 in Claude Code: 19 of 22 finished cleanly at medium, 87 of 105 at high.
 - writing: Claude Sonnet 5.5 in Claude Code: 16 of 18 finished cleanly at medium, 17 of 18 at high.
 
 Where a number comes from (/bench.json): `classes.X.first_choice.inputs` (a score's inputs, each public metric with its source and link), `sources` (snapshot dates), `method.fields` (definitions).
