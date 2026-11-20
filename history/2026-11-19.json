@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T03:48:23+00:00",
+ "generated_at": "2026-11-20T03:50:41+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T03:48:23+00:00",
+  "generated_at": "2026-11-20T03:50:41+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2047,7 +2047,7 @@
    "in_score": true,
    "harness_factor": 1.0,
    "as_of": "2026-11-20",
-   "models_covered": 0,
+   "models_covered": 11,
    "unit": "Arena score",
    "group": "writing",
    "lower_is_better": false,
@@ -9286,7 +9286,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7544,
+    "priority": 0.763,
     "status": [
      "probation"
     ],
@@ -9294,7 +9294,7 @@
     "rank_rule": "tie",
     "tie_broken": true,
     "inputs": {
-     "public_norm": 0.892,
+     "public_norm": 0.911,
      "public_default": false,
      "public_metrics": {
       "arena_text_overall": {
@@ -9303,6 +9303,19 @@
        "score": 1511.9232964210828,
        "norm": 0.892,
        "norm_before_discount": 0.892,
+       "harness_relation": "model-only",
+       "harness_factor": 1.0,
+       "leaderboard_name": "Claude Fable 5.1 (Max)",
+       "inherited_from": "claude-fable-5.1",
+       "harness": "",
+       "source_url": "https://arena.ai/leaderboard/text"
+      },
+      "arena_text_creative_writing": {
+       "source": "arena-creative-writing",
+       "level": "max",
+       "score": 1515.6991904742235,
+       "norm": 0.929,
+       "norm_before_discount": 0.929,
        "harness_relation": "model-only",
        "harness_factor": 1.0,
        "leaderboard_name": "Claude Fable 5.1 (Max)",
@@ -9333,14 +9346,14 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-argon",
      "model_display": "Gemini 4 Argon",
-     "priority": 0.7642,
+     "priority": 0.7637,
      "status": [
       "proven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.993,
+      "public_norm": 0.992,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9349,6 +9362,18 @@
         "score": 1528.572348635968,
         "norm": 0.993,
         "norm_before_discount": 0.993,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 4 Argon (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1531.7767351117213,
+        "norm": 0.991,
+        "norm_before_discount": 0.991,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Gemini 4 Argon (High)",
@@ -9377,14 +9402,14 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.6692,
+     "priority": 0.688,
      "status": [
       "proven"
      ],
      "rank_rule": "tie",
      "tie_broken": true,
      "inputs": {
-      "public_norm": 0.904,
+      "public_norm": 0.946,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9393,6 +9418,18 @@
         "score": 1513.9997379477963,
         "norm": 0.904,
         "norm_before_discount": 0.904,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1530.567481513206,
+        "norm": 0.987,
+        "norm_before_discount": 0.987,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Claude Opus 5.5 (High)",
@@ -9442,6 +9479,18 @@
         "leaderboard_name": "Gemini 4 Neon (High)",
         "harness": "",
         "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1534.044074971473,
+        "norm": 1.0,
+        "norm_before_discount": 1.0,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 4 Neon (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
        }
       },
       "own_success": 0.5,
@@ -9465,14 +9514,14 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.6384,
+     "priority": 0.6586,
      "status": [
       "proven"
      ],
      "rank_rule": "tie",
      "tie_broken": true,
      "inputs": {
-      "public_norm": 0.636,
+      "public_norm": 0.681,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9481,6 +9530,18 @@
         "score": 1469.864305437707,
         "norm": 0.636,
         "norm_before_discount": 0.636,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "xhigh",
+        "score": 1462.9888747156,
+        "norm": 0.726,
+        "norm_before_discount": 0.726,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
@@ -9509,14 +9570,14 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.646,
+     "priority": 0.6648,
      "status": [
       "unproven"
      ],
      "rank_rule": "evidence",
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.904,
+      "public_norm": 0.946,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9525,6 +9586,18 @@
         "score": 1513.9997379477963,
         "norm": 0.904,
         "norm_before_discount": 0.904,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Opus 5.5 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1530.567481513206,
+        "norm": 0.987,
+        "norm_before_discount": 0.987,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Claude Opus 5.5 (High)",
@@ -9553,14 +9626,14 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-3.8-flash",
      "model_display": "Gemini 3.8 Flash",
-     "priority": 0.6518,
+     "priority": 0.6585,
      "status": [
       "unproven"
      ],
      "rank_rule": "tie",
      "tie_broken": true,
      "inputs": {
-      "public_norm": 0.818,
+      "public_norm": 0.833,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9569,6 +9642,18 @@
         "score": 1499.7792514162468,
         "norm": 0.818,
         "norm_before_discount": 0.818,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 3.8 Flash (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1494.6207522523132,
+        "norm": 0.848,
+        "norm_before_discount": 0.848,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Gemini 3.8 Flash (High)",
@@ -9597,14 +9682,14 @@
      "engine_name": "Antigravity CLI",
      "model": "gemini-4-hydrogen",
      "model_display": "Gemini 4 Hydrogen",
-     "priority": 0.6404,
+     "priority": 0.6561,
      "status": [
       "unproven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.83,
+      "public_norm": 0.865,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9613,6 +9698,18 @@
         "score": 1501.7686144174559,
         "norm": 0.83,
         "norm_before_discount": 0.83,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Gemini 4 Hydrogen (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1508.3514366853,
+        "norm": 0.901,
+        "norm_before_discount": 0.901,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Gemini 4 Hydrogen (High)",
@@ -9645,8 +9742,8 @@
      "status": [
       "proven"
      ],
-     "rank_rule": null,
-     "tie_broken": false,
+     "rank_rule": "tie",
+     "tie_broken": true,
      "inputs": {
       "public_norm": 0.5,
       "public_default": true,
@@ -9672,14 +9769,14 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.5449,
+     "priority": 0.5651,
      "status": [
       "unproven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.636,
+      "public_norm": 0.681,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9688,6 +9785,18 @@
         "score": 1469.864305437707,
         "norm": 0.636,
         "norm_before_discount": 0.636,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "xhigh",
+        "score": 1462.9888747156,
+        "norm": 0.726,
+        "norm_before_discount": 0.726,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Claude Sonnet 5.5 (xHigh)",
@@ -9716,14 +9825,14 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.5",
      "model_display": "Grok 4.5",
-     "priority": 0.4582,
+     "priority": 0.4901,
      "status": [
       "unproven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.501,
+      "public_norm": 0.572,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9732,6 +9841,18 @@
         "score": 1447.8396676645395,
         "norm": 0.501,
         "norm_before_discount": 0.501,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Grok 4.5",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": null,
+        "score": 1441.3864683877723,
+        "norm": 0.643,
+        "norm_before_discount": 0.643,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Grok 4.5",
@@ -9760,14 +9881,14 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.6",
      "model_display": "Grok 4.6",
-     "priority": 0.4096,
+     "priority": 0.4541,
      "status": [
       "unproven"
      ],
-     "rank_rule": "evidence",
+     "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.393,
+      "public_norm": 0.492,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9776,6 +9897,18 @@
         "score": 1430.0505605501128,
         "norm": 0.393,
         "norm_before_discount": 0.393,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Grok 4.6 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1428.0285257653395,
+        "norm": 0.591,
+        "norm_before_discount": 0.591,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Grok 4.6 (High)",
@@ -9804,14 +9937,14 @@
      "engine_name": "Grok CLI",
      "model": "grok-4.7",
      "model_display": "Grok 4.7",
-     "priority": 0.2676,
+     "priority": 0.3162,
      "status": [
       "proven"
      ],
      "rank_rule": "evidence",
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.208,
+      "public_norm": 0.316,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9820,6 +9953,18 @@
         "score": 1399.596567472175,
         "norm": 0.208,
         "norm_before_discount": 0.208,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Grok 4.7 (xHigh)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "xhigh",
+        "score": 1384.328244112015,
+        "norm": 0.423,
+        "norm_before_discount": 0.423,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Grok 4.7 (xHigh)",
@@ -9848,14 +9993,14 @@
      "engine_name": "Claude Code",
      "model": "claude-haiku-5.5",
      "model_display": "Claude Haiku 5.5",
-     "priority": 0.404,
+     "priority": 0.4121,
      "status": [
       "unproven"
      ],
      "rank_rule": null,
      "tie_broken": false,
      "inputs": {
-      "public_norm": 0.198,
+      "public_norm": 0.216,
       "public_default": false,
       "public_metrics": {
        "arena_text_overall": {
@@ -9864,6 +10009,18 @@
         "score": 1398.100625760157,
         "norm": 0.198,
         "norm_before_discount": 0.198,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "Claude Haiku 5.5 (High)",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": "high",
+        "score": 1335.0184690925912,
+        "norm": 0.233,
+        "norm_before_discount": 0.233,
         "harness_relation": "model-only",
         "harness_factor": 1.0,
         "leaderboard_name": "Claude Haiku 5.5 (High)",
@@ -9913,6 +10070,18 @@
         "leaderboard_name": "gpt-oss-120b",
         "harness": "",
         "source_url": "https://arena.ai/leaderboard/text"
+       },
+       "arena_text_creative_writing": {
+        "source": "arena-creative-writing",
+        "level": null,
+        "score": 1274.6452782870601,
+        "norm": 0.0,
+        "norm_before_discount": 0.0,
+        "harness_relation": "model-only",
+        "harness_factor": 1.0,
+        "leaderboard_name": "gpt-oss-120b",
+        "harness": "",
+        "source_url": "https://arena.ai/leaderboard/text"
        }
       },
       "own_success": 0.5,
@@ -9934,6 +10103,34 @@
    ],
    "effort_evidence": {
     "benchmark_steps": [
+     {
+      "source": "arena-creative-writing",
+      "name": "Arena Text: creative writing",
+      "url": "https://arena.ai/leaderboard/text",
+      "unit": "Arena score",
+      "as_of": "2026-11-20",
+      "model": "Claude Opus 5",
+      "ranked": false,
+      "from": "high",
+      "to": "max",
+      "from_raw": 1486,
+      "to_raw": 1494,
+      "gain": 8
+     },
+     {
+      "source": "arena-creative-writing",
+      "name": "Arena Text: creative writing",
+      "url": "https://arena.ai/leaderboard/text",
+      "unit": "Arena score",
+      "as_of": "2026-11-20",
+      "model": "Gemini 3.5 Flash",
+      "ranked": false,
+      "from": "medium",
+      "to": "high",
+      "from_raw": 1471,
+      "to_raw": 1469,
+      "gain": -2
+     },
      {
       "source": "arena-text",
       "name": "Arena Text",
@@ -10167,7 +10364,7 @@
      "cost_ratio": 2.4
     },
     "summary_lead": "Claude Fable 5.2, medium to high:",
-    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +4 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 16 finished cleanly at medium, 16 of 17 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 40,899 at high."
+    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives -2 Arena score on Arena Text: creative writing (Gemini 3.5 Flash, not ranked here); +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +8 Arena score on Arena Text: creative writing (Claude Opus 5, not ranked here, high to max); +4 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 16 finished cleanly at medium, 16 of 17 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 40,899 at high."
    }
   }
  },
@@ -10344,6 +10541,11 @@
     "unit": "Arena score",
     "level": "medium"
    },
+   "Arena Text: creative writing": {
+    "raw": 1531,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena Text": {
     "raw": 1514,
     "unit": "Arena score",
@@ -10495,6 +10697,11 @@
      }
     ]
    },
+   "Arena Text: creative writing": {
+    "raw": 1463,
+    "unit": "Arena score",
+    "level": "xhigh"
+   },
    "Arena Text": {
     "raw": 1470,
     "unit": "Arena score",
@@ -10594,6 +10801,11 @@
    "Arena Agent: Steerability": {
     "raw": 0.008,
     "unit": "IPS score",
+    "level": "high"
+   },
+   "Arena Text: creative writing": {
+    "raw": 1335,
+    "unit": "Arena score",
     "level": "high"
    },
    "Arena Text": {
@@ -10788,6 +11000,11 @@
     "unit": "IPS score",
     "level": "high"
    },
+   "Arena Text: creative writing": {
+    "raw": 1532,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena Text": {
     "raw": 1529,
     "unit": "Arena score",
@@ -10870,6 +11087,11 @@
     "unit": "Arena score",
     "level": "high"
    },
+   "Arena Text: creative writing": {
+    "raw": 1495,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena Text": {
     "raw": 1500,
     "unit": "Arena score",
@@ -10927,6 +11149,11 @@
    },
    "Arena Text: coding": {
     "raw": 1380,
+    "unit": "Arena score",
+    "level": null
+   },
+   "Arena Text: creative writing": {
+    "raw": 1275,
     "unit": "Arena score",
     "level": null
    },
@@ -10990,6 +11217,11 @@
    "Arena Agent: Steerability": {
     "raw": -0.043,
     "unit": "IPS score",
+    "level": "xhigh"
+   },
+   "Arena Text: creative writing": {
+    "raw": 1384,
+    "unit": "Arena score",
     "level": "xhigh"
    },
    "Arena Text": {
@@ -11082,6 +11314,11 @@
     "unit": "Arena score",
     "level": "high"
    },
+   "Arena Text: creative writing": {
+    "raw": 1428,
+    "unit": "Arena score",
+    "level": "high"
+   },
    "Arena Text": {
     "raw": 1430,
     "unit": "Arena score",
@@ -11147,6 +11384,11 @@
     "unit": "Arena score",
     "level": null
    },
+   "Arena Text: creative writing": {
+    "raw": 1441,
+    "unit": "Arena score",
+    "level": null
+   },
    "Arena Text": {
     "raw": 1448,
     "unit": "Arena score",
@@ -11197,6 +11439,11 @@
    "Arena Agent: Steerability": {
     "raw": 0.174,
     "unit": "IPS score",
+    "level": "high"
+   },
+   "Arena Text: creative writing": {
+    "raw": 1508,
+    "unit": "Arena score",
     "level": "high"
    },
    "Arena Text": {
@@ -11285,6 +11532,11 @@
    "Arena Agent: Steerability": {
     "raw": 0.212,
     "unit": "IPS score",
+    "level": "high"
+   },
+   "Arena Text: creative writing": {
+    "raw": 1534,
+    "unit": "Arena score",
     "level": "high"
    },
    "Arena Text": {
@@ -12847,6 +13099,194 @@
       {
        "level": "high",
        "raw": 1462
+      }
+     ]
+    }
+   ]
+  },
+  "arena-creative-writing": {
+   "levels": [
+    null,
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "series": [
+    {
+     "model": "claude-fable-5.2",
+     "name": "Claude Fable 5.2",
+     "org": "Anthropic",
+     "ranked": true,
+     "inherited_from": "Claude Fable 5.1",
+     "points": [
+      {
+       "level": "max",
+       "raw": 1516
+      }
+     ]
+    },
+    {
+     "model": "claude-opus-5.5",
+     "name": "Claude Opus 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1531
+      }
+     ]
+    },
+    {
+     "model": "claude-sonnet-5.5",
+     "name": "Claude Sonnet 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "xhigh",
+       "raw": 1463
+      }
+     ]
+    },
+    {
+     "model": "claude-haiku-5.5",
+     "name": "Claude Haiku 5.5",
+     "org": "Anthropic",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1335
+      }
+     ]
+    },
+    {
+     "model": "gemini-4-argon",
+     "name": "Gemini 4 Argon",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1532
+      }
+     ]
+    },
+    {
+     "model": "gemini-3.8-flash",
+     "name": "Gemini 3.8 Flash",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1495
+      }
+     ]
+    },
+    {
+     "model": "gpt-oss-120b",
+     "name": "GPT-OSS 120B",
+     "org": "OpenAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": null,
+       "raw": 1275
+      }
+     ]
+    },
+    {
+     "model": "grok-4.7",
+     "name": "Grok 4.7",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": "xhigh",
+       "raw": 1384
+      }
+     ]
+    },
+    {
+     "model": "grok-4.6",
+     "name": "Grok 4.6",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1428
+      }
+     ]
+    },
+    {
+     "model": "grok-4.5",
+     "name": "Grok 4.5",
+     "org": "xAI",
+     "ranked": true,
+     "points": [
+      {
+       "level": null,
+       "raw": 1441
+      }
+     ]
+    },
+    {
+     "model": "gemini-4-hydrogen",
+     "name": "Gemini 4 Hydrogen",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1508
+      }
+     ]
+    },
+    {
+     "model": "gemini-4-neon",
+     "name": "Gemini 4 Neon",
+     "org": "Google",
+     "ranked": true,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1534
+      }
+     ]
+    },
+    {
+     "model": null,
+     "name": "Claude Opus 5",
+     "org": null,
+     "ranked": false,
+     "points": [
+      {
+       "level": "high",
+       "raw": 1486
+      },
+      {
+       "level": "max",
+       "raw": 1494
+      }
+     ]
+    },
+    {
+     "model": null,
+     "name": "Gemini 3.5 Flash",
+     "org": null,
+     "ranked": false,
+     "points": [
+      {
+       "level": "medium",
+       "raw": 1471
+      },
+      {
+       "level": "high",
+       "raw": 1469
       }
      ]
     }
