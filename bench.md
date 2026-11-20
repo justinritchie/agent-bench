@@ -9,7 +9,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.78); Claude Code / claude-opus-5.5 $$$$ medium (0.70) | 0.81 | 79 | proven |
 | coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.46); Claude Code / claude-fable-5.2 $$$$ medium (0.35) | 0.62 | 25 | proven |
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.63) | 0.77 | 11 | proven |
-| coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.70) | 0.65 | 6 | probation |
+| coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.70) | 0.65 | 7 | probation |
 | coding / review | Codex CLI / gpt-6.2-sol $$$ | xhigh (config) | Claude Code / claude-sonnet-5.5 $$$ medium (0.54); Claude Code / claude-fable-5.2 $$$$ medium (0.48) | 0.61 | 13 | proven |
 | agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.66) | 0.69 | 65 | proven |
 | agentic / terminal | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.67); Claude Code / claude-sonnet-5.5 $$$ medium (0.63) | 0.72 | 4 | unproven |
