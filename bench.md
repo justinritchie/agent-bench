@@ -6,9 +6,9 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 
 | class | first choice | effort | fallbacks | score | evidence | status |
 |---|---|---|---|---|---|---|
-| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.81); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.82 | 79 | proven |
+| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.80); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.82 | 79 | proven |
 | coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.52); Antigravity CLI / gpt-oss-120b $ medium (0.57) | 0.68 | 25 | proven |
-| coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.56); Claude Code / claude-opus-5.5 $$$$ medium (0.45) | 0.77 | 11 | proven |
+| coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.64) | 0.77 | 11 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.71) | 0.65 | 6 | probation |
 | coding / review | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.48); Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.51) | 0.54 | 9 | proven |
 | agentic | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.71); Claude Code / claude-fable-5.2 $$$$ medium (0.65) | 0.69 | 67 | proven |
