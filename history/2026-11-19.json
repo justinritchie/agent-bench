@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T05:44:29+00:00",
+ "generated_at": "2026-11-20T05:49:53+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T05:44:29+00:00",
+  "generated_at": "2026-11-20T05:49:53+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2186,7 +2186,7 @@
     "engine_name": "Claude Code",
     "model": "claude-sonnet-5.5",
     "model_display": "Claude Sonnet 5.5",
-    "priority": 0.8125,
+    "priority": 0.8129,
     "status": [
      "proven"
     ],
@@ -2210,13 +2210,13 @@
       }
      },
      "own_success": 0.974,
-     "own_jobs": 77,
+     "own_jobs": 78,
      "own_success_rate": 0.974,
      "own_success_default": false,
      "own_median_minutes": 3.5,
      "speed_rank": 0.8,
      "speed_source": "own median minutes",
-     "cost_rank": 0.215,
+     "cost_rank": 0.218,
      "cost_source": "own jobs",
      "cost_default": false,
      "cost_tier": "$$$",
@@ -4491,11 +4491,11 @@
       "model_display": "Claude Sonnet 5.5",
       "levels": {
        "medium": {
-        "jobs": 51,
-        "finished": 50,
-        "finished_rate": 0.98,
+        "jobs": 52,
+        "finished": 51,
+        "finished_rate": 0.981,
         "median_turns": 27,
-        "median_output_tokens": 20792
+        "median_output_tokens": 20001
        },
        "high": {
         "jobs": 26,
@@ -4649,11 +4649,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "medium",
-      "jobs": 51,
-      "finished": 50,
-      "finished_rate": 0.98,
+      "jobs": 52,
+      "finished": 51,
+      "finished_rate": 0.981,
       "median_turns": 27,
-      "median_output_tokens": 20792
+      "median_output_tokens": 20001
      },
      {
       "engine": "claude",
@@ -5038,12 +5038,12 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5919,
+     "priority": 0.5872,
      "status": [
       "proven"
      ],
-     "rank_rule": "tie",
-     "tie_broken": true,
+     "rank_rule": "evidence",
+     "tie_broken": false,
      "inputs": {
       "public_norm": 0.906,
       "public_default": false,
@@ -5097,9 +5097,9 @@
         "source_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/viewer/agent_task_outcome_explicit"
        }
       },
-      "own_success": 0.6,
-      "own_jobs": 30,
-      "own_success_rate": 0.6,
+      "own_success": 0.581,
+      "own_jobs": 31,
+      "own_success_rate": 0.581,
       "own_success_default": false,
       "own_median_minutes": 9.1,
       "speed_rank": 0.143,
@@ -7900,9 +7900,9 @@
       "model_display": "Claude Opus 5.5",
       "levels": {
        "medium": {
-        "jobs": 22,
+        "jobs": 23,
         "finished": 10,
-        "finished_rate": 0.455,
+        "finished_rate": 0.435,
         "median_turns": 21,
         "median_output_tokens": 53742
        },
@@ -8015,9 +8015,9 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "medium",
-      "jobs": 22,
+      "jobs": 23,
       "finished": 10,
-      "finished_rate": 0.455,
+      "finished_rate": 0.435,
       "median_turns": 21,
       "median_output_tokens": 53742
      },
@@ -8096,7 +8096,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); above high, +0.082 IPS score on Arena Agent: overall score (Claude Sonnet 5.5, high to max); +0.049 IPS score on Arena Agent: overall score (Claude Opus 5.5, high to max); and 6 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 10 of 22 finished cleanly at medium, 8 of 8 at high; on the jobs each level was given (not the same jobs), median output tokens were 53,742 at medium and 90,574 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: not enough data on medium to high (none scores one model at both); above high, +0.082 IPS score on Arena Agent: overall score (Claude Sonnet 5.5, high to max); +0.049 IPS score on Arena Agent: overall score (Claude Opus 5.5, high to max); and 6 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 10 of 23 finished cleanly at medium, 8 of 8 at high; on the jobs each level was given (not the same jobs), median output tokens were 53,742 at medium and 90,574 at high."
    }
   },
   "research": {
@@ -8805,7 +8805,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.6339,
+     "priority": 0.6332,
      "status": [
       "proven"
      ],
@@ -8815,14 +8815,14 @@
       "public_norm": 0.5,
       "public_default": true,
       "public_metrics": {},
-      "own_success": 0.976,
-      "own_jobs": 85,
-      "own_success_rate": 0.976,
+      "own_success": 0.977,
+      "own_jobs": 86,
+      "own_success_rate": 0.977,
       "own_success_default": false,
       "own_median_minutes": 1.7,
       "speed_rank": 0.833,
       "speed_source": "own median minutes",
-      "cost_rank": 0.266,
+      "cost_rank": 0.26,
       "cost_source": "own jobs",
       "cost_default": false,
       "cost_tier": "$$$",
@@ -9166,11 +9166,11 @@
       "model_display": "Claude Sonnet 5.5",
       "levels": {
        "medium": {
-        "jobs": 73,
-        "finished": 73,
+        "jobs": 74,
+        "finished": 74,
         "finished_rate": 1.0,
         "median_turns": 17,
-        "median_output_tokens": 14606
+        "median_output_tokens": 14648
        },
        "high": {
         "jobs": 12,
@@ -9259,11 +9259,11 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "medium",
-      "jobs": 73,
-      "finished": 73,
+      "jobs": 74,
+      "finished": 74,
       "finished_rate": 1.0,
       "median_turns": 17,
-      "median_output_tokens": 14606
+      "median_output_tokens": 14648
      },
      {
       "engine": "claude",
@@ -9512,7 +9512,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.6633,
+     "priority": 0.6565,
      "status": [
       "proven"
      ],
@@ -9547,9 +9547,9 @@
         "source_url": "https://arena.ai/leaderboard/text"
        }
       },
-      "own_success": 0.939,
-      "own_jobs": 33,
-      "own_success_rate": 0.939,
+      "own_success": 0.912,
+      "own_jobs": 34,
+      "own_success_rate": 0.912,
       "own_success_default": false,
       "own_median_minutes": 4.0,
       "speed_rank": 0.6,
@@ -10247,9 +10247,9 @@
       "model_display": "Claude Sonnet 5.5",
       "levels": {
        "medium": {
-        "jobs": 16,
+        "jobs": 17,
         "finished": 15,
-        "finished_rate": 0.938,
+        "finished_rate": 0.882,
         "median_turns": 12,
         "median_output_tokens": 41401
        },
@@ -10362,9 +10362,9 @@
       "model": "claude-sonnet-5.5",
       "model_display": "Claude Sonnet 5.5",
       "level": "medium",
-      "jobs": 16,
+      "jobs": 17,
       "finished": 15,
-      "finished_rate": 0.938,
+      "finished_rate": 0.882,
       "median_turns": 12,
       "median_output_tokens": 41401
      },
@@ -10443,7 +10443,7 @@
      "cost_ratio": 2.4
     },
     "summary_lead": "Claude Fable 5.2, medium to high:",
-    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is ranked 2 here, and the index is general, not this kind of task. Boards: medium to high gives -2 Arena score on Arena Text: creative writing (Gemini 3.5 Flash, not ranked here); +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +8 Arena score on Arena Text: creative writing (Claude Opus 5, not ranked here, high to max); +4 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 16 finished cleanly at medium, 16 of 17 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 40,899 at high."
+    "summary": "Claude Fable 5.2, medium to high: +5.4 on the Artificial Analysis index (56.4 to 61.8) for 2.4 times the list-price cost per task ($3.80 to $9.08); it is ranked 2 here, and the index is general, not this kind of task. Boards: medium to high gives -2 Arena score on Arena Text: creative writing (Gemini 3.5 Flash, not ranked here); +5 Arena score on Arena Text (Gemini 3.5 Flash, not ranked here); above high, +8 Arena score on Arena Text: creative writing (Claude Opus 5, not ranked here, high to max); +4 Arena score on Arena Text (Claude Opus 5, not ranked here, high to max); cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Sonnet 5.5 in Claude Code): 15 of 17 finished cleanly at medium, 16 of 17 at high; on the jobs each level was given (not the same jobs), median output tokens were 41,401 at medium and 40,899 at high."
    }
   }
  },
