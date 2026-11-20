@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-20T07:19:49+00:00",
+ "generated_at": "2026-11-20T07:27:05+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-20T07:19:49+00:00",
+  "generated_at": "2026-11-20T07:27:05+00:00",
   "sources_oldest": "2026-11-20",
   "sources_newest": "2026-11-20",
   "own_jobs_window_days": 28,
@@ -2275,7 +2275,7 @@
      "engine_name": "Claude Code",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.7135,
+     "priority": 0.7127,
      "status": [
       "proven"
      ],
@@ -2298,9 +2298,9 @@
         "source_url": "https://github.com/harbor-framework/terminal-bench/blob/main/leaderboard/submissions/2026-09-30-anthropic-claude-opus-5-5-max-claude-code.json"
        }
       },
-      "own_success": 0.736,
-      "own_jobs": 239,
-      "own_success_rate": 0.736,
+      "own_success": 0.733,
+      "own_jobs": 240,
+      "own_success_rate": 0.733,
       "own_success_default": false,
       "own_median_minutes": 8.7,
       "speed_rank": 0.5,
@@ -4331,7 +4331,7 @@
        "engine_name": "Claude Code",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.4607,
+       "priority": 0.4567,
        "status": [
         "proven"
        ],
@@ -4341,9 +4341,9 @@
         "public_norm": 0.5,
         "public_default": true,
         "public_metrics": {},
-        "own_success": 0.895,
-        "own_jobs": 57,
-        "own_success_rate": 0.895,
+        "own_success": 0.879,
+        "own_jobs": 58,
+        "own_success_rate": 0.879,
         "own_success_default": false,
         "own_median_minutes": 4.5,
         "speed_rank": 0.0,
@@ -4500,9 +4500,9 @@
       "model_display": "Claude Opus 5.5",
       "levels": {
        "medium": {
-        "jobs": 195,
+        "jobs": 196,
         "finished": 135,
-        "finished_rate": 0.692,
+        "finished_rate": 0.689,
         "median_turns": 65,
         "median_output_tokens": 48342
        },
@@ -4596,9 +4596,9 @@
       "model": "claude-opus-5.5",
       "model_display": "Claude Opus 5.5",
       "level": "medium",
-      "jobs": 195,
+      "jobs": 196,
       "finished": 135,
-      "finished_rate": 0.692,
+      "finished_rate": 0.689,
       "median_turns": 65,
       "median_output_tokens": 48342
      },
@@ -4737,7 +4737,7 @@
      "cost_ratio": 2.1
     },
     "summary_lead": "Claude Sonnet 5.5, medium to high:",
-    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +55 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 135 of 195 finished cleanly at medium, 41 of 44 at high; on the jobs each level was given (not the same jobs), median output tokens were 48,342 at medium and 59,958 at high."
+    "summary": "Claude Sonnet 5.5, medium to high: +10.7 on the Artificial Analysis index (30.8 to 41.5) for 2.1 times the list-price cost per task ($0.78 to $1.64); it is the first choice here, and the index is general, not this kind of task. Boards: medium to high gives +5 Arena score on Arena Text: coding (Gemini 3.5 Flash, not ranked here); above high, +55 Arena score on Arena WebDev (Claude Sonnet 5.5, high to xhigh); +1 Arena score on Arena Text: coding (Claude Opus 5, not ranked here, high to max); and 3 more; cost per level comes only from Artificial Analysis (list price per task), and no source gives tokens. Our jobs (Claude Opus 5.5 in Claude Code): 135 of 196 finished cleanly at medium, 41 of 44 at high; on the jobs each level was given (not the same jobs), median output tokens were 48,342 at medium and 59,958 at high."
    }
   },
   "agentic": {
@@ -6904,7 +6904,7 @@
        "engine_name": "Antigravity CLI",
        "model": "claude-opus-5.5",
        "model_display": "Claude Opus 5.5",
-       "priority": 0.5858,
+       "priority": 0.5857,
        "status": [
         "unproven"
        ],
@@ -6958,7 +6958,7 @@
         "own_median_minutes": null,
         "speed_rank": 0.5,
         "speed_source": "default",
-        "cost_rank": 0.241,
+        "cost_rank": 0.24,
         "cost_source": "list price",
         "cost_default": false,
         "cost_tier": "$$$$",
@@ -8153,7 +8153,7 @@
     "engine_name": "Claude Code",
     "model": "claude-fable-5.2",
     "model_display": "Claude Fable 5.2",
-    "priority": 0.7269,
+    "priority": 0.7466,
     "status": [
      "probation"
     ],
@@ -8178,12 +8178,12 @@
        "source_url": "https://arena.ai/leaderboard/search"
       }
      },
-     "own_success": 0.765,
-     "own_jobs": 34,
-     "own_success_rate": 0.765,
+     "own_success": 0.758,
+     "own_jobs": 33,
+     "own_success_rate": 0.758,
      "own_success_default": false,
-     "own_median_minutes": 4.7,
-     "speed_rank": 0.571,
+     "own_median_minutes": 4.6,
+     "speed_rank": 0.714,
      "speed_source": "own median minutes",
      "cost_rank": 0.0,
      "cost_source": "own jobs",
@@ -8200,7 +8200,7 @@
      "engine_name": "Claude Code",
      "model": "claude-sonnet-5.5",
      "model_display": "Claude Sonnet 5.5",
-     "priority": 0.593,
+     "priority": 0.5716,
      "status": [
       "proven"
      ],
@@ -8215,7 +8215,7 @@
       "own_success_rate": 0.964,
       "own_success_default": false,
       "own_median_minutes": 4.6,
-      "speed_rank": 0.714,
+      "speed_rank": 0.571,
       "speed_source": "own median minutes",
       "cost_rank": 0.133,
       "cost_source": "own jobs",
@@ -8306,7 +8306,7 @@
      "engine_name": "Antigravity CLI",
      "model": "claude-opus-5.5",
      "model_display": "Claude Opus 5.5",
-     "priority": 0.5006,
+     "priority": 0.5005,
      "status": [
       "unproven"
      ],
@@ -8336,7 +8336,7 @@
       "own_median_minutes": null,
       "speed_rank": 0.5,
       "speed_source": "default",
-      "cost_rank": 0.21,
+      "cost_rank": 0.209,
       "cost_source": "list price",
       "cost_default": false,
       "cost_tier": "$$$$",
