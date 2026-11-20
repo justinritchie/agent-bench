@@ -38,7 +38,7 @@ Is a higher effort worth it? One step up in effort: Artificial Analysis Intellig
 Own jobs of one model at two effort levels, per class. Not a controlled test: the effort was chosen per job. What the leaderboards gain per level: /bench.json `classes.X.effort_evidence`. No source gives tokens per level.
 - coding: Claude Opus 5.5 in Claude Code: 138 of 215 finished cleanly at medium, 42 of 46 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 12 of 25 finished cleanly at medium, 8 of 8 at high.
-- research: Claude Opus 5.5 in Claude Code: 15 of 18 finished cleanly at medium, 12 of 12 at high.
+- research: Claude Opus 5.5 in Claude Code: 15 of 18 finished cleanly at medium, 11 of 11 at high.
 - reading: Claude Opus 5.5 in Claude Code: 17 of 20 finished cleanly at medium, 85 of 99 at high.
 - writing: Claude Sonnet 5.5 in Claude Code: 16 of 18 finished cleanly at medium, 17 of 18 at high.
 
