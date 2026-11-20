@@ -6,7 +6,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 
 | class | first choice | effort | fallbacks | score | evidence | status |
 |---|---|---|---|---|---|---|
-| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.80); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.81 | 79 | proven |
+| coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.77); Claude Code / claude-opus-5.5 $$$$ medium (0.71) | 0.82 | 79 | proven |
 | coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.52); Claude Code / claude-fable-5.2 $$$$ medium (0.35) | 0.68 | 25 | proven |
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.63) | 0.77 | 11 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.71) | 0.65 | 6 | probation |
@@ -39,7 +39,7 @@ Own jobs of one model at two effort levels, per class. Not a controlled test: th
 - coding: Claude Opus 5.5 in Claude Code: 135 of 200 finished cleanly at medium, 42 of 45 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 10 of 23 finished cleanly at medium, 8 of 8 at high.
 - research: Claude Opus 5.5 in Claude Code: 15 of 18 finished cleanly at medium, 12 of 12 at high.
-- reading: Claude Opus 5.5 in Claude Code: 16 of 19 finished cleanly at medium, 81 of 95 at high.
+- reading: Claude Opus 5.5 in Claude Code: 16 of 19 finished cleanly at medium, 82 of 96 at high.
 - writing: Claude Sonnet 5.5 in Claude Code: 16 of 18 finished cleanly at medium, 17 of 18 at high.
 
 Where a number comes from (/bench.json): `classes.X.first_choice.inputs` (a score's inputs, each public metric with its source and link), `sources` (snapshot dates), `method.fields` (definitions).
