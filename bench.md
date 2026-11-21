@@ -1,6 +1,6 @@
 # Multi-agent tasks: which coding agent
 
-Which engine, model and reasoning effort to send a job to, and the fallback. Generated 2026-11-20 UTC, rebuilt about weekly; source snapshots 2026-11-20 to 2026-11-20; own jobs: the 28 days before. First choices changed since 2026-11-13: agentic claude-haiku-5.5 -> claude-sonnet-5.5; coding / review Claude Code / claude-sonnet-5.5 -> Codex CLI / gpt-6.2-sol; coding / multilang Codex CLI / gpt-6.1-sol -> none; and 3 more (/bench.json `changes`).
+Which engine, model and reasoning effort to send a job to, and the fallback. Generated 2026-11-21 UTC, rebuilt about weekly; source snapshots 2026-11-20 to 2026-11-21; own jobs: the 28 days before. First choices changed since 2026-11-13: agentic claude-haiku-5.5 -> claude-sonnet-5.5; coding / review Claude Code / claude-sonnet-5.5 -> Codex CLI / gpt-6.2-sol; coding / multilang Codex CLI / gpt-6.1-sol -> none; and 3 more (/bench.json `changes`).
 
 For task class X, use the first choice; if it cannot run right now, the next fallback, in the order listed. The order is the ranking: with few own jobs, the evidence and tie rules can put a lower score first. A `class / kind` row ranks one kind of coding or agentic work; prefer it when the task clearly fits. score 0-1 (cheaper wins when quality is close); $-$$$$ = list-price cost tier; evidence = own jobs in 28 days; proven = at least 5; probation = a new model version counting its predecessor's jobs and public scores for 28 days; effort = the reasoning effort to run at, lowest to highest low, medium, high, xhigh, max (a fallback's follows its cost tier; '(config)' = the CLI's own config; '· source' = moved by a leaderboard gap of 0.03+).
 
@@ -39,7 +39,7 @@ Own jobs of one model at two effort levels, per class. Not a controlled test: th
 - coding: Claude Opus 5.5 in Claude Code: 138 of 215 finished cleanly at medium, 42 of 46 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 12 of 25 finished cleanly at medium, 8 of 8 at high.
 - research: GPT-6.1 Sol in Codex CLI: 11 of 11 finished cleanly at medium, 29 of 30 at high.
-- reading: Claude Opus 5.5 in Claude Code: 19 of 22 finished cleanly at medium, 92 of 110 at high.
+- reading: Claude Opus 5.5 in Claude Code: 20 of 23 finished cleanly at medium, 94 of 112 at high.
 - writing: Claude Sonnet 5.5 in Claude Code: 16 of 18 finished cleanly at medium, 17 of 18 at high.
 
 Where a number comes from (/bench.json): `classes.X.first_choice.inputs` (a score's inputs, each public metric with its source and link), `sources` (snapshot dates), `method.fields` (definitions).
