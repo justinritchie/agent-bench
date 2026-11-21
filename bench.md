@@ -15,8 +15,8 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | agentic / terminal | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-haiku-5.5 $ high (0.67); Claude Code / claude-sonnet-5.5 $$$ medium (0.63) | 0.72 | 4 | unproven |
 | agentic / data | Claude Code / claude-sonnet-5.5 $$$ | medium | - | 0.50 | 2 | unproven |
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
-| agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / gemini-4-neon $$$$ high (0.61) | 0.55 | 5 | proven |
-| research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.57); Grok CLI / grok-4.7 $$$ medium (config) (0.55) | 0.74 | 35 | probation |
+| agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / gemini-4-neon $$$$ high (0.60) | 0.55 | 5 | proven |
+| research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.57); Grok CLI / grok-4.7 $$$ medium (config) (0.53) | 0.74 | 35 | probation |
 | reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.60); Claude Code / claude-opus-5.5 $$$$ medium (0.54) | 0.71 | 49 | probation |
 | writing | Antigravity CLI / gemini-4-argon $$$ | high | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.68) | 0.82 | 14 | proven |
 
