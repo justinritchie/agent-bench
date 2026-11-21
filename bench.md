@@ -7,7 +7,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | class | first choice | effort | fallbacks | score | evidence | status |
 |---|---|---|---|---|---|---|
 | coding | Claude Code / claude-sonnet-5.5 $$$ | medium | Codex CLI / gpt-6.2-sol $$$ xhigh (config) (0.78); Claude Code / claude-opus-5.5 $$$$ medium (0.70) | 0.81 | 79 | proven |
-| coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.46); Claude Code / claude-fable-5.2 $$$$ medium (0.35) | 0.62 | 25 | proven |
+| coding / bugfix | Claude Code / claude-sonnet-5.5 $$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.45); Claude Code / claude-fable-5.2 $$$$ medium (0.35) | 0.62 | 25 | proven |
 | coding / features | Claude Code / claude-sonnet-5.5 $$$ | medium | Antigravity CLI / gemini-4-neon $$$$ high (0.71); Claude Code / claude-opus-5.5 $$$$ medium (0.63) | 0.77 | 11 | proven |
 | coding / frontend | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-opus-5.5 $$$$ medium (0.58); Antigravity CLI / claude-opus-5.5 $$$$ high (0.70) | 0.65 | 8 | probation |
 | coding / review | Codex CLI / gpt-6.2-sol $$$ | xhigh (config) | Claude Code / claude-sonnet-5.5 $$$ medium (0.54); Claude Code / claude-fable-5.2 $$$$ medium (0.48) | 0.61 | 13 | proven |
@@ -17,7 +17,7 @@ For task class X, use the first choice; if it cannot run right now, the next fal
 | agentic / browser | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.42) | 0.57 | 1 | unproven |
 | agentic / tools | Claude Code / claude-opus-5.5 $$$$ | medium | Claude Code / claude-fable-5.2 $$$$ medium (0.57); Antigravity CLI / gemini-4-neon $$$$ high (0.60) | 0.55 | 5 | proven |
 | research | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.57); Grok CLI / grok-4.7 $$$ medium (config) (0.53) | 0.74 | 35 | probation |
-| reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.60); Claude Code / claude-opus-5.5 $$$$ medium (0.54) | 0.71 | 49 | probation |
+| reading | Claude Code / claude-fable-5.2 $$$$ | medium | Claude Code / claude-sonnet-5.5 $$$ medium (0.60); Claude Code / claude-opus-5.5 $$$$ medium (0.54) | 0.71 | 47 | probation |
 | writing | Antigravity CLI / gemini-4-argon $$$ | high | Claude Code / claude-fable-5.2 $$$$ medium (0.73); Claude Code / claude-opus-5.5 $$$$ medium (0.68) | 0.82 | 14 | proven |
 
 Kinds: bugfix = finding and fixing defects in existing code; features = new features, tools and restructuring; frontend = web pages, UI components and styling; review = code review, audits and tests; terminal = shell, installs, configuration, server upkeep; data = data processing and one-off scripts; browser = driving web pages and forms; tools = multi-step work through APIs and tool connectors.
@@ -36,7 +36,7 @@ Is a higher effort worth it? One step up in effort: Artificial Analysis Intellig
 | gemini-4-neon | +10.8 / 2.6x | - | +4.7 / 2.0x | +1.8 / 1.7x | - |
 
 Own jobs of one model at two effort levels, per class. Not a controlled test: the effort was chosen per job. What the leaderboards gain per level: /bench.json `classes.X.effort_evidence`. No source gives tokens per level.
-- coding: Claude Opus 5.5 in Claude Code: 138 of 216 finished cleanly at medium, 42 of 46 at high.
+- coding: Claude Opus 5.5 in Claude Code: 138 of 217 finished cleanly at medium, 42 of 46 at high.
 - agentic: Claude Opus 5.5 in Claude Code: 12 of 25 finished cleanly at medium, 8 of 8 at high.
 - research: GPT-6.1 Sol in Codex CLI: 11 of 11 finished cleanly at medium, 29 of 30 at high.
 - reading: Claude Opus 5.5 in Claude Code: 20 of 23 finished cleanly at medium, 94 of 112 at high.
