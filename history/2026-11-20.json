@@ -1,9 +1,9 @@
 {
  "schema_version": 11,
- "generated_at": "2026-11-21T00:55:42+00:00",
+ "generated_at": "2026-11-21T01:00:20+00:00",
  "title": "Multi-agent tasks: which coding agent",
  "data_dates": {
-  "generated_at": "2026-11-21T00:55:42+00:00",
+  "generated_at": "2026-11-21T01:00:20+00:00",
   "sources_oldest": "2026-11-21",
   "sources_newest": "2026-11-21",
   "own_jobs_window_days": 28,
